@@ -1,0 +1,121 @@
+{
+  "stage": "step1_data_prepared_awaiting_review",
+  "verified_at_utc": "2026-11-16T02:20:29.302327+00:00",
+  "day6_repository": "https://github.com/justcoffeee/K5-L3B-DAY06-PhamHoangHuy-2A202603836-DataIngestion",
+  "day6_commit": "43b4a97419b7193c6b2306287a0833b7d5eb7922",
+  "strategy": "C",
+  "selection": "Reuse Day06 dev-selected C; no Day07 benchmark evaluated",
+  "store_counts": {
+    "A": 331,
+    "B": 411,
+    "C": 411
+  },
+  "pgvector_version": "0.8.7",
+  "index_sha256": "61968c94682cb220246ddb305411b40018b96a2d44f1191f58740959c5f383df",
+  "matches_frozen_day6_index": true,
+  "chunks": 411,
+  "source_units": 54,
+  "documents": 6,
+  "all_chunks_match_source_offsets": true,
+  "all_vectors_finite_normalized_384d": true,
+  "embedding": {
+    "EMBEDDING_MODEL": "intfloat/multilingual-e5-small",
+    "EMBEDDING_REVISION": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "EMBEDDING_DIMENSIONS": "384",
+    "EMBEDDING_DEVICE": "cpu",
+    "EMBEDDING_MAX_TOKENS": "512",
+    "EMBEDDING_QUERY_PREFIX": "query: ",
+    "EMBEDDING_DOCUMENT_PREFIX": "passage: ",
+    "EMBEDDING_NORMALIZE": "true",
+    "VECTOR_STORE": "pgvector",
+    "VECTOR_DISTANCE": "cosine"
+  },
+  "smoke_check": {
+    "query": "How do I add an item to the end of a Python list?",
+    "query_dimensions": 384,
+    "top3": [
+      {
+        "chunk_id": "f9ab9a02bf3383243e332ac560b27dbc",
+        "text": "5.1. More on Lists\n\nThe list data type has some more methods. Here are all of the methods of list objects:\n\nlist.append(value, /)\n\nAdd an item to the end of the list. Similar to a[len(a):] = [x].\n\nlist.extend(iterable, /)\n\nExtend the list by appending all the items from the iterable. Similar to a[len(a):] = iterable.\n\nlist.insert(index, value, /)",
+        "metadata": {
+          "chapter": 5,
+          "version": "3.14.10",
+          "char_end": 483,
+          "language": "en",
+          "char_start": 135,
+          "block_kinds": [
+            "heading",
+            "paragraph",
+            "term"
+          ],
+          "section_ids": [
+            "more-on-lists"
+          ],
+          "unit_char_start_in_chapter": 0,
+          "document_id": "python-3.14-ch05",
+          "source": "https://docs.python.org/3.14/tutorial/datastructures.html",
+          "page": "python-3.14-ch05-u001"
+        },
+        "score": 0.8931049640837306
+      },
+      {
+        "chunk_id": "6713445f8d29820661a5d0f210010c7a",
+        "text": "Insert an item at a given position. The first argument is the index of the element before which to insert, so a.insert(0, x) inserts at the front of the list, and a.insert(len(a), x) is equivalent to a.append(x).\n\nlist.remove(value, /)\n\nRemove the first item from the list whose value is equal to value. It raises a ValueError if there is no such item.\n\nlist.pop(index=-1, /)",
+        "metadata": {
+          "chapter": 5,
+          "version": "3.14.10",
+          "char_end": 860,
+          "language": "en",
+          "char_start": 485,
+          "block_kinds": [
+            "paragraph",
+            "term"
+          ],
+          "section_ids": [
+            "more-on-lists"
+          ],
+          "unit_char_start_in_chapter": 0,
+          "document_id": "python-3.14-ch05",
+          "source": "https://docs.python.org/3.14/tutorial/datastructures.html",
+          "page": "python-3.14-ch05-u001"
+        },
+        "score": 0.871795527446005
+      },
+      {
+        "chunk_id": "e8d023727367b0f20a7c3b6060eee5e1",
+        "text": "5.1.1. Using Lists as Stacks\n\nThe list methods make it very easy to use a list as a stack, where the last element added is the first element retrieved (“last-in, first-out”). To add an item to the top of the stack, use append(). To retrieve an item from the top of the stack, use pop() without an explicit index. For example:",
+        "metadata": {
+          "chapter": 5,
+          "version": "3.14.10",
+          "char_end": 890,
+          "language": "en",
+          "char_start": 565,
+          "block_kinds": [
+            "heading",
+            "paragraph"
+          ],
+          "section_ids": [
+            "using-lists-as-stacks"
+          ],
+          "unit_char_start_in_chapter": 2573,
+          "document_id": "python-3.14-ch05",
+          "source": "https://docs.python.org/3.14/tutorial/datastructures.html",
+          "page": "python-3.14-ch05-u002"
+        },
+        "score": 0.865191511225196
+      }
+    ],
+    "note": "Connectivity check only; not a scored benchmark or quality claim"
+  },
+  "api_cost_usd": 0,
+  "database_modified": false,
+  "files_sha256": {
+    "chunks.json": "6edf14e08f47e467b4c2fbc8bca3bc50901a4b91e1bcc712f36be00df137f804",
+    "source_units.jsonl": "4ffdfb0b3c45fcf492a281478dd39b65013d33fe56aa661ebe6c5e78ad2bb024",
+    "source_manifest.json": "83be32232ff5fb69ed6c7c5acb6081ef760442bc2663095a4cefbc9daf6347f5",
+    "license.html": "f0848b75eb634387636c2c3c238ab15d0cd838d25759b5d2fa398186be6a4789",
+    "copyright.html": "d4188b75afeb6f78aadcf3f5b2720c748ae353568d03db5d203ed0ad8a92514f"
+  },
+  "page_semantics": "page is the stable Day06 source-unit ID, not a printed page number",
+  "benchmark": "Not created; Day06 test was already inspected; prepare a new Day07 held-out set later"
+}

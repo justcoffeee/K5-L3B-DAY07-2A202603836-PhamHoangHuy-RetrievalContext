@@ -1,0 +1,135 @@
+{
+  "dense": {
+    "cases": 17,
+    "answerable": 15,
+    "statuses": {
+      "error": 9,
+      "answered": 7,
+      "abstain": 1
+    },
+    "original_query": {
+      "hit1": {
+        "n": 7,
+        "N": 15,
+        "rate": 0.4666666666666667
+      },
+      "hit3": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      },
+      "context_evidence": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      }
+    },
+    "agent_first_search": {
+      "hit1": {
+        "n": 7,
+        "N": 15,
+        "rate": 0.4666666666666667
+      },
+      "hit3": {
+        "n": 9,
+        "N": 15,
+        "rate": 0.6
+      }
+    },
+    "agent_any_search_evidence": {
+      "n": 10,
+      "N": 15,
+      "rate": 0.6666666666666666
+    },
+    "final_context_evidence": {
+      "n": 7,
+      "N": 15,
+      "rate": 0.4666666666666667
+    },
+    "final_context_miss_ids": [
+      "D01",
+      "D02",
+      "D03",
+      "D04",
+      "D05",
+      "D07",
+      "D09",
+      "D11"
+    ],
+    "tool_use": {
+      "n": 8,
+      "N": 8,
+      "rate": 1.0
+    },
+    "search_call_distribution": {
+      "0": 5,
+      "2": 11,
+      "3": 1
+    },
+    "errors": [
+      {
+        "id": "D01",
+        "stage": "provider",
+        "type": "ProviderError"
+      },
+      {
+        "id": "D02",
+        "stage": "provider",
+        "type": "ProviderError"
+      },
+      {
+        "id": "D03",
+        "stage": "provider",
+        "type": "ProviderError"
+      },
+      {
+        "id": "D04",
+        "stage": "provider",
+        "type": "ProviderError"
+      },
+      {
+        "id": "D05",
+        "stage": "provider",
+        "type": "ProviderError"
+      },
+      {
+        "id": "D07",
+        "stage": "provider",
+        "type": "ProviderError"
+      },
+      {
+        "id": "D09",
+        "stage": "provider",
+        "type": "ProviderError"
+      },
+      {
+        "id": "D11",
+        "stage": "provider",
+        "type": "ProviderError"
+      },
+      {
+        "id": "D16",
+        "stage": "provider",
+        "type": "ProviderError"
+      }
+    ],
+    "median_agent_seconds": 17.762663800000155,
+    "model_requests_including_retries": 30,
+    "known_usage": {
+      "prompt_tokens": 20820,
+      "completion_tokens": 2395,
+      "total_tokens": 23215,
+      "prompt_cache_hit_tokens": 11904,
+      "prompt_cache_miss_tokens": 8916
+    },
+    "failed_requests_without_usage": 9,
+    "estimated_api_cost_usd_range": [
+      0.002810112,
+      0.005620224
+    ],
+    "cost_note": "Estimate using published Flash off-peak/peak prices: cache-hit input 0.003/0.006, other input 0.15/0.30, output 0.60/1.20 USD per million. Actual billing may differ. Local embedding/retrieval API cost is zero.",
+    "semantic_quality": null,
+    "review_status": "pending; grounded answer/citation support/abstention correctness require reading outputs",
+    "denominator_policy": "All answerable cases stay in retrieval denominator, failures count as misses. Tool use excludes and separately reports failed cases."
+  }
+}

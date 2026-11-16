@@ -1,0 +1,84 @@
+{
+  "scope": "Connectivity diagnosis only; no benchmark questions",
+  "checks": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "reply_is_ok": true,
+      "elapsed_seconds": 7.836
+    },
+    {
+      "attempt": 2,
+      "ok": false,
+      "public_exception": "ProviderError",
+      "underlying_exception": "URLError",
+      "reason_type": "TimeoutError",
+      "errno": 10060,
+      "winerror": 10060,
+      "http_status": null
+    }
+  ],
+  "model_calls": [
+    {
+      "attempt": 1,
+      "request": {
+        "model": "deepseek-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply exactly OK. This is only a connectivity diagnostic."
+          }
+        ],
+        "tools": [],
+        "tool_choice": "none",
+        "thinking": {
+          "type": "disabled"
+        },
+        "max_tokens": 640,
+        "stream": false,
+        "temperature": 0
+      },
+      "served_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 15,
+        "completion_tokens": 1,
+        "total_tokens": 16,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 15
+      },
+      "status": "ok",
+      "finish_reason": "stop",
+      "response": {
+        "role": "assistant",
+        "content": "OK"
+      },
+      "elapsed_seconds": 7.8355319000038435
+    },
+    {
+      "attempt": 1,
+      "request": {
+        "model": "deepseek-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply exactly OK. This is only a connectivity diagnostic."
+          }
+        ],
+        "tools": [],
+        "tool_choice": "none",
+        "thinking": {
+          "type": "disabled"
+        },
+        "max_tokens": 640,
+        "stream": false,
+        "temperature": 0
+      },
+      "status": "error",
+      "error": "transport_or_response",
+      "elapsed_seconds": 21.03853859999799
+    }
+  ]
+}

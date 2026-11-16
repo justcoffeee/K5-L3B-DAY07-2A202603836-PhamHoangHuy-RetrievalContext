@@ -1,0 +1,132 @@
+{
+  "status": "connection_retry_fixed_heldout_completed",
+  "recorded_at_utc": "2026-11-16T03:55:14.331236+00:00",
+  "history": [
+    {
+      "run_directory": "20261116T032840548620Z",
+      "preflight_ok": false,
+      "test_evaluated": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "error_type": "ProviderError",
+          "http_status": null
+        },
+        {
+          "attempt": 2,
+          "ok": false,
+          "error_type": "ProviderError",
+          "http_status": null
+        },
+        {
+          "attempt": 3,
+          "ok": false,
+          "error_type": "ProviderError",
+          "http_status": null
+        },
+        {
+          "attempt": 4,
+          "ok": true
+        }
+      ],
+      "provider_sha256": "cd8885f9081b8ba614853088d013d93e4dbd4bcbfa774128a6da31a34f9ede43",
+      "request_attempts": 6,
+      "failed_attempts": 3,
+      "known_total_tokens": 714,
+      "log_sha256": "764e58e32f511d32b1efc0258a53dbfc9982ac00ed94dd8087d42c48f9276942"
+    },
+    {
+      "run_directory": "20261116T033151223927Z",
+      "preflight_ok": false,
+      "test_evaluated": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        },
+        {
+          "attempt": 2,
+          "ok": false,
+          "error_type": "ProviderError",
+          "http_status": null
+        },
+        {
+          "attempt": 3,
+          "ok": true
+        },
+        {
+          "attempt": 4,
+          "ok": false,
+          "error_type": "ProviderError",
+          "http_status": null
+        }
+      ],
+      "provider_sha256": "cd8885f9081b8ba614853088d013d93e4dbd4bcbfa774128a6da31a34f9ede43",
+      "request_attempts": 7,
+      "failed_attempts": 2,
+      "known_total_tokens": 1123,
+      "log_sha256": "9afd941a0ea7cf1b77280337588bed11cf79f3ec87e0e92b66129d93b36ff401"
+    },
+    {
+      "run_directory": "20261116T033621996757Z",
+      "preflight_ok": false,
+      "test_evaluated": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        },
+        {
+          "attempt": 2,
+          "ok": false,
+          "error_type": "ProviderError",
+          "http_status": null
+        },
+        {
+          "attempt": 3,
+          "ok": true
+        },
+        {
+          "attempt": 4,
+          "ok": false,
+          "error_type": "ProviderError",
+          "http_status": null
+        }
+      ],
+      "provider_sha256": "cd8885f9081b8ba614853088d013d93e4dbd4bcbfa774128a6da31a34f9ede43",
+      "request_attempts": 6,
+      "failed_attempts": 2,
+      "known_total_tokens": 816,
+      "log_sha256": "11c9b1a3542bec3347d775615a177bf4b7ab6be3bba94364aec442df8069d15f"
+    },
+    {
+      "run_directory": "20261116T034326996108Z",
+      "preflight_ok": true,
+      "test_evaluated": true,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        },
+        {
+          "attempt": 2,
+          "ok": true
+        }
+      ],
+      "provider_sha256": "f26bdf9bc3ff4155af3ba83d82711423193529071583d7bb2efb2309923b8a6f",
+      "request_attempts": 4,
+      "failed_attempts": 0,
+      "known_total_tokens": 808,
+      "log_sha256": "9bc19a5903b5b313a2ab2a57838602614842edcfd22c512c4be0c82e7a94994b"
+    }
+  ],
+  "registered_test_run": "C:\\Code\\VINAI\\K5-L3B-DAY07-2A202603836-PhamHoangHuy-RetrievalContext\\results\\test\\20261116T034326996108Z",
+  "test_cases_executed": 14,
+  "test_gold_scored": true,
+  "new_AI_assisted_labels_user_confirmation": "pending",
+  "transport_diagnosis": "URLError caused by TimeoutError, WinError/errno10060; bounded socket retry added and validated on dev before test. No general Internet failure or API-key failure inferred.",
+  "known_probe_requests": 23,
+  "known_probe_tokens": 3461,
+  "billing_note": "Counts here are protocol preflights only, exclude separate diagnostic and dev validation. Failed requests without usage may have unknown billing."
+}

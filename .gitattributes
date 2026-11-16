@@ -1,0 +1,16 @@
+# These files are bound to recorded SHA-256 values: preserve their exact bytes.
+.gitattributes text eol=lf
+src/** -text whitespace=cr-at-eol
+benchmark/** -text -whitespace
+configs/** -text whitespace=cr-at-eol
+data/day6/** -text -whitespace
+results/** -text -whitespace
+demo/** -text whitespace=cr-at-eol
+requirements-lock.txt -text whitespace=cr-at-eol
+
+# The frozen Windows runtime hashed this existing starter file with CRLF.
+starter/baseline.py text eol=crlf
+
+# Recorded evidence may contain intentional trailing spaces; handwritten code
+# and documentation retain the normal whitespace checks.
+scripts/** text eol=lf

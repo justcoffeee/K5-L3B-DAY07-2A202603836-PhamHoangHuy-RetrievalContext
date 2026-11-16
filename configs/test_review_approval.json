@@ -1,0 +1,14 @@
+{
+  "status": "user_confirmed_AI_assisted_test_reviews",
+  "recorded_at_utc": "2026-11-16T04:03:04.795287+00:00",
+  "user_message": "mình duyệt nhé",
+  "scope": "14 source-inspected test reviews, then personal report/demo/submission preparation; no commit or push",
+  "origin": "AI-assisted labels confirmed by user, not independent blind human annotation",
+  "run": "results/test/20261116T034326996108Z",
+  "review_count": 14,
+  "review_files_sha256": {
+    "baseline/reviews_ai_assisted.json": "f92abd65cbebda0bb99323911006b3fad85afb18e15a950ec00e3c063e5f3aac",
+    "I1/reviews_ai_assisted.json": "d0f5be4359036dba498d717536084254850c0c173ad705a392b896846465af9d"
+  },
+  "comparison_sha256": "54c7802e5401080ec63439501b53f430b5a02bf63133482162f7b95166e5a33c"
+}

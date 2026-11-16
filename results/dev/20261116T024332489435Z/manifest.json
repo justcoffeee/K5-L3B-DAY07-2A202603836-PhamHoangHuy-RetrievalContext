@@ -1,0 +1,45 @@
+{
+  "status": "complete",
+  "started_at_utc": "2026-11-16T02:43:32.490002+00:00",
+  "config": {
+    "split": "dev",
+    "methods": [
+      "dense",
+      "tfidf",
+      "hybrid"
+    ],
+    "top_k": 3,
+    "max_searches": 3,
+    "budget_chars": 800,
+    "model": "deepseek-flash",
+    "thinking": "disabled",
+    "temperature": 0,
+    "max_output_tokens": 640,
+    "rrf_k": 60,
+    "hybrid_candidate_depth": 20,
+    "index_strategy": "C",
+    "filters": null,
+    "query_sha256": "3117c6f72677861df48a6fe9896dbac14b42e942329e5f94714222aa702a149c",
+    "corpus_sha256": "6edf14e08f47e467b4c2fbc8bca3bc50901a4b91e1bcc712f36be00df137f804",
+    "dev_labels_sha256": "5e6079f330c7c2a097b7c3b58ddbdb8ae20cc36b8da9805407e4819d037244f8",
+    "index_sha256": "61968c94682cb220246ddb305411b40018b96a2d44f1191f58740959c5f383df",
+    "code_sha256": {
+      "src/__init__.py": "96303971a0e5ad95fcb04ad3afd84a607495132b8e2611369372dd127f7b1fd6",
+      "src/agent.py": "58ab8cc54799babff2c7c54e221a4a539b2e1909ef52109830785d0d30183f8b",
+      "src/provider.py": "04d3b2338933a8e8817447099db91f908046c6027dbfc63688bf357726ea54f6",
+      "src/retrieval.py": "18d54f8f27834ba3ee249a5cb443339b9e8ad4171173b467260a2d32327df1d5",
+      "src/run_dev.py": "00a18f0d7fde70a77e1660846fefba54cb9757b7a8c1ea2f48e9f67a4af2cec1"
+    }
+  },
+  "test_evaluated": false,
+  "benchmark_approval": {
+    "scope": "Step 2 benchmark accepted by user; AI-assisted labels confirmed, not independent blind annotation",
+    "message": "mình xác nhận bước 2 nhé, bước 3 chạy model nào vậy",
+    "recorded_at_utc": "2026-11-16T02:42:54.464278+00:00"
+  },
+  "latency_note": "Model loading excluded. Query embeddings cached within each dense adapter; hybrid has its own cache. All timings are actual observed warm/local timings, not a controlled hardware benchmark.",
+  "last_initialization_seconds": 10.1022054999994,
+  "completed_at_utc": "2026-11-16T02:46:30.375011+00:00",
+  "trace_count": 51,
+  "semantic_review": "pending"
+}

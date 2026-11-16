@@ -1,0 +1,206 @@
+[
+  {
+    "query_id": "T01",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "refusal_observed": false,
+    "reason": "Đủ giữ newline trong triple-quoted string và thêm backslash ở cuối dòng để bỏ newline đầu.",
+    "citation_reviews": [
+      {
+        "id": "994429862692bd5708095b1fa49fd3f0",
+        "supports": true,
+        "reason": "Đoạn triple-quotes nêu giữ end-of-line và dùng backslash cuối dòng để ngăn newline."
+      }
+    ],
+    "observed_inline_citations": [
+      "994429862692bd5708095b1fa49fd3f0"
+    ],
+    "unlisted_inline_citations": [],
+    "review_origin": "AI-assisted source/context/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "92cfe9aae2439bffc6dbef9464b3bd6bf4ae5067c9674f63969af0c31eacdc3e",
+    "strict_gold_context_miss": false,
+    "source_note": ""
+  },
+  {
+    "query_id": "T02",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "abstention_correct": null,
+    "refusal_observed": false,
+    "reason": "Đúng dấu * ngay trước tham số keyword-only đầu tiên; phần bổ sung sau *args có evidence.",
+    "citation_reviews": [
+      {
+        "id": "e5a6879e3f04a49ee60f47f27e202599",
+        "supports": true,
+        "reason": "Nêu dấu * phải đứng ngay trước keyword-only parameter đầu tiên."
+      },
+      {
+        "id": "e0314b602ac6d5516855f20afe6c1d66",
+        "supports": true,
+        "reason": "Hỗ trợ riêng phần mọi tham số sau *args là keyword-only."
+      },
+      {
+        "id": "152e1f92cf8f8f2c493ff147cb500c70",
+        "supports": true,
+        "reason": "Đoạn nêu kwd_only_arg chỉ nhận keyword arguments như chỉ ra bởi * trong định nghĩa."
+      }
+    ],
+    "observed_inline_citations": [
+      "e5a6879e3f04a49ee60f47f27e202599",
+      "e0314b602ac6d5516855f20afe6c1d66",
+      "152e1f92cf8f8f2c493ff147cb500c70"
+    ],
+    "unlisted_inline_citations": [],
+    "review_origin": "AI-assisted source/context/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "ad7179f0e2c88a90f542f4af7556376d0f47ea4f6159621671d50e1f880e2224",
+    "strict_gold_context_miss": false,
+    "source_note": ""
+  },
+  {
+    "query_id": "T03",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "abstention_correct": null,
+    "refusal_observed": false,
+    "reason": "Đủ del xóa theo index/slice không trả giá trị, khác pop trả phần tử bị xóa.",
+    "citation_reviews": [
+      {
+        "id": "e12d5e0b102af3fb583cc06e854db00b",
+        "supports": true,
+        "reason": "Đủ del theo index, xóa slice/clear list và sự khác biệt với pop trả giá trị."
+      },
+      {
+        "id": "e4976e7c8c03d1c6a37a18f46e14e9dd",
+        "supports": true,
+        "reason": "Hỗ trợ phần pop trả phần tử, mặc định cuối list và IndexError khi rỗng/ngoài phạm vi."
+      }
+    ],
+    "observed_inline_citations": [
+      "e12d5e0b102af3fb583cc06e854db00b",
+      "e4976e7c8c03d1c6a37a18f46e14e9dd"
+    ],
+    "unlisted_inline_citations": [],
+    "review_origin": "AI-assisted source/context/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "2ded64289901ac7bac70a376b3b6a54b73d4a5b201bdd6101b91ac864706f1c2",
+    "strict_gold_context_miss": false,
+    "source_note": ""
+  },
+  {
+    "query_id": "T04",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "abstention_correct": null,
+    "refusal_observed": false,
+    "reason": "I1 ghép bằng chứng with/close trong f75 với đóng file ngay cả khi có vấn đề trong af4; phần finally chỉ là ví dụ tương tự có nguồn.",
+    "citation_reviews": [
+      {
+        "id": "f75f860f3d3396f0a832c86aa44c9a01",
+        "supports": true,
+        "reason": "Nêu với with hoặc close thì file được đóng, khi không dùng with phải gọi close; có cảnh báo ghi dữ liệu và tài nguyên."
+      },
+      {
+        "id": "af4e9b992542a8f255a34c2e182dc1f8",
+        "supports": true,
+        "reason": "Nêu đóng file ngay cả khi có vấn đề và predefined cleanup. Trong I1, f75 thiết lập quan hệ với with; baseline thiếu antecedent nên nguồn này chưa đủ cho khẳng định with/exception hoàn chỉnh."
+      },
+      {
+        "id": "52ea2a41af6c0b37599d089c0178c2c9",
+        "supports": true,
+        "reason": "Hỗ trợ riêng phép so sánh với finally giải phóng tài nguyên bất kể thành công."
+      }
+    ],
+    "observed_inline_citations": [
+      "f75f860f3d3396f0a832c86aa44c9a01",
+      "af4e9b992542a8f255a34c2e182dc1f8",
+      "52ea2a41af6c0b37599d089c0178c2c9"
+    ],
+    "unlisted_inline_citations": [],
+    "review_origin": "AI-assisted source/context/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "0d264006b9be9642585c1488eafb35d3b9942767bf15ad919db97468ed4bc4da",
+    "strict_gold_context_miss": true,
+    "source_note": "T04 chapter8 source unit confirms the preceding with example, but omitted source text is not treated as context evidence. Frozen chapter7 gold remains unchanged."
+  },
+  {
+    "query_id": "T05",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "refusal_observed": false,
+    "reason": "Đúng cú pháp raise ... from None để tắt automatic exception chaining.",
+    "citation_reviews": [
+      {
+        "id": "ff3919a7aecf66d4113ecfab1a1fe6b0",
+        "supports": true,
+        "reason": "Nêu from None tắt automatic exception chaining và ví dụ raise RuntimeError from None."
+      }
+    ],
+    "observed_inline_citations": [
+      "ff3919a7aecf66d4113ecfab1a1fe6b0"
+    ],
+    "unlisted_inline_citations": [],
+    "review_origin": "AI-assisted source/context/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "e8e276a1526f17c16a6e81efdfb6c45a7a6ae0cf555a4c7ada791298980de37f",
+    "strict_gold_context_miss": false,
+    "source_note": ""
+  },
+  {
+    "query_id": "T06",
+    "answer_grade": null,
+    "context_grade": null,
+    "citation_support": [],
+    "abstention_correct": true,
+    "refusal_observed": true,
+    "reason": "Từ chối rõ, mô tả đúng corpus là Python Tutorial, không đoán câu lệnh PRAGMA hoặc đơn vị thời gian; phù hợp absence audit.",
+    "citation_reviews": [],
+    "observed_inline_citations": [],
+    "unlisted_inline_citations": [],
+    "review_origin": "AI-assisted source/context/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "d98b6b3052493f00efd8ecbc463d1e1de69dfce281a9715d341f0dbc45317a87",
+    "strict_gold_context_miss": null,
+    "source_note": ""
+  },
+  {
+    "query_id": "T07",
+    "answer_grade": null,
+    "context_grade": null,
+    "citation_support": [],
+    "abstention_correct": true,
+    "refusal_observed": true,
+    "reason": "Từ chối rõ do thiếu nội dung TypeVar/variance, không tự giải thích bằng kiến thức ngoài nguồn.",
+    "citation_reviews": [],
+    "observed_inline_citations": [],
+    "unlisted_inline_citations": [],
+    "review_origin": "AI-assisted source/context/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "e8d93cd5e8ca39507af1b186ddc472ab91c6c9e2b6aaa09a54ea5766aa1f3342",
+    "strict_gold_context_miss": null,
+    "source_note": ""
+  }
+]

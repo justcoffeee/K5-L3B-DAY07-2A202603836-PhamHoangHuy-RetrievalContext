@@ -1,0 +1,410 @@
+[
+  {
+    "query_id": "D01",
+    "answer_grade": 0,
+    "context_grade": 0,
+    "citation_support": [],
+    "abstention_correct": null,
+    "reason": "Lỗi provider không có mã HTTP; không có final answer được chấp nhận. Giữ lỗi và chấm answer all-case bằng 0; không tự suy diễn đáp án. Chưa có context agent để đánh giá bằng chứng.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "98d707bdefc38435116735795674f662732a7ab9feba136a18ae333831fcdb89",
+    "citation_reviews": [],
+    "observed_inline_citations": [],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [],
+    "context_receipt_unconfirmed_due_to_provider_error": false
+  },
+  {
+    "query_id": "D02",
+    "answer_grade": 0,
+    "context_grade": 0,
+    "citation_support": [],
+    "abstention_correct": null,
+    "reason": "Lỗi provider không có mã HTTP; không có final answer được chấp nhận. Giữ lỗi và chấm answer all-case bằng 0; không tự suy diễn đáp án. Chưa có context agent để đánh giá bằng chứng.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "ebb1a88efd702651f3f442c70a7c47fb134d5f80fe49271ed63e7fd7deef4669",
+    "citation_reviews": [],
+    "observed_inline_citations": [],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [],
+    "context_receipt_unconfirmed_due_to_provider_error": false
+  },
+  {
+    "query_id": "D03",
+    "answer_grade": 0,
+    "context_grade": 0,
+    "citation_support": [],
+    "abstention_correct": null,
+    "reason": "Lỗi provider không có mã HTTP; không có final answer được chấp nhận. Giữ lỗi và chấm answer all-case bằng 0; không tự suy diễn đáp án. Chưa có context agent để đánh giá bằng chứng.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "c6ed3aa1f8b25b01b06e7179840b5d15a34f594c661d1f68b1fc7510c79da07e",
+    "citation_reviews": [],
+    "observed_inline_citations": [],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [],
+    "context_receipt_unconfirmed_due_to_provider_error": false
+  },
+  {
+    "query_id": "D04",
+    "answer_grade": 0,
+    "context_grade": 2,
+    "citation_support": [],
+    "abstention_correct": null,
+    "reason": "Lỗi provider không có mã HTTP; không có final answer được chấp nhận. Giữ lỗi và chấm answer all-case bằng 0; không tự suy diễn đáp án. Context đã chuẩn bị có đủ evidence nhưng request sinh câu trả lời lỗi; không xác nhận model nhận được context.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "4d0ce701771581d3bd90937773aa06aea03d4cade1d5e8b338ac05b4730812a3",
+    "citation_reviews": [],
+    "observed_inline_citations": [],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [],
+    "context_receipt_unconfirmed_due_to_provider_error": true
+  },
+  {
+    "query_id": "D05",
+    "answer_grade": 0,
+    "context_grade": 0,
+    "citation_support": [],
+    "abstention_correct": null,
+    "reason": "Lỗi provider không có mã HTTP; không có final answer được chấp nhận. Giữ lỗi và chấm answer all-case bằng 0; không tự suy diễn đáp án. Chưa có context agent để đánh giá bằng chứng.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "adda8fd526f3ca1493545282487e1f434afddc69b3d0e3757a59e921e028599f",
+    "citation_reviews": [],
+    "observed_inline_citations": [],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [],
+    "context_receipt_unconfirmed_due_to_provider_error": false
+  },
+  {
+    "query_id": "D06",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "reason": "Đủ keyword arguments dư, loại đối số đã khớp tham số hình thức, và kiểu dictionary.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "2836909fa1732f14acd5a4cce7812c39d6fb9a19d4294417f2976923f9a84705",
+    "citation_reviews": [
+      {
+        "id": "a406cc7dac32b6727ecb688a6d3b9286",
+        "supports": true,
+        "reason": "Định nghĩa **name là dictionary chứa keyword arguments chưa khớp formal parameter; cũng hỗ trợ phần bổ sung *name."
+      }
+    ],
+    "observed_inline_citations": [
+      "a406cc7dac32b6727ecb688a6d3b9286"
+    ],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [
+      {
+        "id": "a406cc7dac32b6727ecb688a6d3b9286",
+        "supports": true,
+        "reason": "Định nghĩa **name là dictionary chứa keyword arguments chưa khớp formal parameter; cũng hỗ trợ phần bổ sung *name."
+      }
+    ],
+    "context_receipt_unconfirmed_due_to_provider_error": false
+  },
+  {
+    "query_id": "D07",
+    "answer_grade": 0,
+    "context_grade": 2,
+    "citation_support": [],
+    "abstention_correct": null,
+    "reason": "Lỗi provider không có mã HTTP; không có final answer được chấp nhận. Giữ lỗi và chấm answer all-case bằng 0; không tự suy diễn đáp án. Context đã chuẩn bị có đủ evidence nhưng request sinh câu trả lời lỗi; không xác nhận model nhận được context.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "abd162ded1977feed74fe2691ee6e6aee11d27b923735e8f63968ef0f2aee7b8",
+    "citation_reviews": [],
+    "observed_inline_citations": [],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [],
+    "context_receipt_unconfirmed_due_to_provider_error": true
+  },
+  {
+    "query_id": "D08",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "abstention_correct": null,
+    "reason": "Đủ xóa/trả phần tử cuối và IndexError khi list rỗng.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "30e2de09ac94f370b7b054b052887fcd198df54f94927beef9aff3b427e09283",
+    "citation_reviews": [
+      {
+        "id": "e4976e7c8c03d1c6a37a18f46e14e9dd",
+        "supports": true,
+        "reason": "Nêu pop không index xóa/trả phần tử cuối và IndexError với list rỗng."
+      },
+      {
+        "id": "e8d023727367b0f20a7c3b6060eee5e1",
+        "supports": true,
+        "reason": "Hỗ trợ phần bổ sung list là stack LIFO và pop() không index lấy phần tử đỉnh."
+      }
+    ],
+    "observed_inline_citations": [
+      "e4976e7c8c03d1c6a37a18f46e14e9dd",
+      "e8d023727367b0f20a7c3b6060eee5e1"
+    ],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [
+      {
+        "id": "e4976e7c8c03d1c6a37a18f46e14e9dd",
+        "supports": true,
+        "reason": "Nêu pop không index xóa/trả phần tử cuối và IndexError với list rỗng."
+      },
+      {
+        "id": "e8d023727367b0f20a7c3b6060eee5e1",
+        "supports": true,
+        "reason": "Hỗ trợ phần bổ sung list là stack LIFO và pop() không index lấy phần tử đỉnh."
+      }
+    ],
+    "context_receipt_unconfirmed_due_to_provider_error": false
+  },
+  {
+    "query_id": "D09",
+    "answer_grade": 0,
+    "context_grade": 2,
+    "citation_support": [],
+    "abstention_correct": null,
+    "reason": "Lỗi provider không có mã HTTP; không có final answer được chấp nhận. Giữ lỗi và chấm answer all-case bằng 0; không tự suy diễn đáp án. Context đã chuẩn bị có đủ evidence nhưng request sinh câu trả lời lỗi; không xác nhận model nhận được context.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "ccc42a11fa964111b30666e687210c0e8c526265a0adb5afdd55c4bc43864d34",
+    "citation_reviews": [],
+    "observed_inline_citations": [],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [],
+    "context_receipt_unconfirmed_due_to_provider_error": true
+  },
+  {
+    "query_id": "D10",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "reason": "Đúng zip() để ghép phần tử tương ứng của hai/nhiều sequence.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "5bd6763303e3c776f3ac80427af4a33b9b3287b055405df20dcfae0d06f583e8",
+    "citation_reviews": [
+      {
+        "id": "d0465c0ebf1bcc71b35de11057f991e9",
+        "supports": true,
+        "reason": "Nêu zip ghép entries của hai/nhiều sequence và ví dụ hai danh sách."
+      }
+    ],
+    "observed_inline_citations": [
+      "d0465c0ebf1bcc71b35de11057f991e9"
+    ],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [
+      {
+        "id": "d0465c0ebf1bcc71b35de11057f991e9",
+        "supports": true,
+        "reason": "Nêu zip ghép entries của hai/nhiều sequence và ví dụ hai danh sách."
+      }
+    ],
+    "context_receipt_unconfirmed_due_to_provider_error": false
+  },
+  {
+    "query_id": "D11",
+    "answer_grade": 0,
+    "context_grade": 0,
+    "citation_support": [],
+    "abstention_correct": null,
+    "reason": "Lỗi provider không có mã HTTP; không có final answer được chấp nhận. Giữ lỗi và chấm answer all-case bằng 0; không tự suy diễn đáp án. Chưa có context agent để đánh giá bằng chứng.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "51906bc10650f419ae987fb61f96a9d42e1f843d2060ef083234ae2ea1b204f3",
+    "citation_reviews": [],
+    "observed_inline_citations": [],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [],
+    "context_receipt_unconfirmed_due_to_provider_error": false
+  },
+  {
+    "query_id": "D12",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "reason": "Đúng so sánh modification date của nguồn với bản đã biên dịch.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "2665be3aebcf6b284c9ac9cfce4c56d538895de2098d902cc4edc605124ec8bd",
+    "citation_reviews": [
+      {
+        "id": "4b9311d6dabb880f0d9037d258d191b8",
+        "supports": true,
+        "reason": "Nêu kiểm tra ngày sửa nguồn và compiled version để quyết định biên dịch lại."
+      }
+    ],
+    "observed_inline_citations": [
+      "4b9311d6dabb880f0d9037d258d191b8"
+    ],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [
+      {
+        "id": "4b9311d6dabb880f0d9037d258d191b8",
+        "supports": true,
+        "reason": "Nêu kiểm tra ngày sửa nguồn và compiled version để quyết định biên dịch lại."
+      }
+    ],
+    "context_receipt_unconfirmed_due_to_provider_error": false
+  },
+  {
+    "query_id": "D13",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "reason": "Đủ đọc toàn bộ khi bỏ size/size âm và cảnh báo file lớn hơn bộ nhớ.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "23630032fa3c9515df8f731b8aca40ad3be91887bcd8dbd770491a2e98d8e0b4",
+    "citation_reviews": [
+      {
+        "id": "b2e4e2a1efb032538c84a9e87be3cfb4",
+        "supports": true,
+        "reason": "Nêu text/bytes, trường hợp size omitted/negative, cảnh báo bộ nhớ và nhánh otherwise tối đa size."
+      }
+    ],
+    "observed_inline_citations": [
+      "b2e4e2a1efb032538c84a9e87be3cfb4"
+    ],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [
+      {
+        "id": "b2e4e2a1efb032538c84a9e87be3cfb4",
+        "supports": true,
+        "reason": "Nêu text/bytes, trường hợp size omitted/negative, cảnh báo bộ nhớ và nhánh otherwise tối đa size."
+      }
+    ],
+    "context_receipt_unconfirmed_due_to_provider_error": false
+  },
+  {
+    "query_id": "D14",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "abstention_correct": null,
+    "reason": "Đủ byte offset trong binary và opaque position trong text.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "d34e1589100ed623b598d54d7741397d8bd1119f774c7b4fcf8b1e0ffaf0d043",
+    "citation_reviews": [
+      {
+        "id": "9c4ec9a68dac484801d37366b0214e51",
+        "supports": true,
+        "reason": "Nêu trực tiếp byte position ở binary và opaque number ở text."
+      },
+      {
+        "id": "dbb1c2a57f3bdb25359e5a45739375d9",
+        "supports": true,
+        "reason": "Hỗ trợ riêng phần bổ sung về các offset seek hợp lệ cho text."
+      }
+    ],
+    "observed_inline_citations": [
+      "9c4ec9a68dac484801d37366b0214e51",
+      "dbb1c2a57f3bdb25359e5a45739375d9"
+    ],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [
+      {
+        "id": "9c4ec9a68dac484801d37366b0214e51",
+        "supports": true,
+        "reason": "Nêu trực tiếp byte position ở binary và opaque number ở text."
+      },
+      {
+        "id": "dbb1c2a57f3bdb25359e5a45739375d9",
+        "supports": true,
+        "reason": "Hỗ trợ riêng phần bổ sung về các offset seek hợp lệ cho text."
+      }
+    ],
+    "context_receipt_unconfirmed_due_to_provider_error": false
+  },
+  {
+    "query_id": "D15",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "reason": "Đủ else sau tất cả except và chỉ chạy khi try không phát sinh ngoại lệ.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "39c94571988184cae2a79a892a0b97718467d9993a4082d1d6d2f6acca442427",
+    "citation_reviews": [
+      {
+        "id": "89cb0b58f013c40c3ef13c336fcb8792",
+        "supports": true,
+        "reason": "Hỗ trợ cả vị trí sau tất cả except và điều kiện try không có ngoại lệ."
+      }
+    ],
+    "observed_inline_citations": [
+      "89cb0b58f013c40c3ef13c336fcb8792"
+    ],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [
+      {
+        "id": "89cb0b58f013c40c3ef13c336fcb8792",
+        "supports": true,
+        "reason": "Hỗ trợ cả vị trí sau tất cả except và điều kiện try không có ngoại lệ."
+      }
+    ],
+    "context_receipt_unconfirmed_due_to_provider_error": false
+  },
+  {
+    "query_id": "D16",
+    "answer_grade": null,
+    "context_grade": null,
+    "citation_support": [],
+    "abstention_correct": false,
+    "reason": "Lỗi provider không có mã HTTP; không có final answer được chấp nhận. Giữ lỗi và chấm answer all-case bằng 0; không tự suy diễn đáp án. Lỗi không được tính là từ chối đúng.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "e8a8109c604d71c1a4e2f38b4d3490314bf8025919062258f4fbd22ac6c185e1",
+    "citation_reviews": [],
+    "observed_inline_citations": [],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [],
+    "context_receipt_unconfirmed_due_to_provider_error": true
+  },
+  {
+    "query_id": "D17",
+    "answer_grade": null,
+    "context_grade": null,
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "Đã đọc lời từ chối và context: không bổ sung cơ chế kỹ thuật hoặc đoán ngoại lệ; phù hợp corpus absence audit.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "19c54f9c960b8d96b89c77ce92256ce64aee6432f43fca959442871089ac1c4a",
+    "citation_reviews": [],
+    "observed_inline_citations": [],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [],
+    "context_receipt_unconfirmed_due_to_provider_error": false
+  }
+]

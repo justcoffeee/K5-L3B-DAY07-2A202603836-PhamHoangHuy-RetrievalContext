@@ -1,0 +1,481 @@
+{
+  "stage": "dev_audited_two_context_experiments_pending_user_confirmation",
+  "created_at_utc": "2026-11-16T03:10:40.219108+00:00",
+  "selection_rule_file": "docs/superpowers/plans/2026-11-16-context-experiments.md",
+  "labels": "AI-assisted; not independent human annotation; user confirmation pending",
+  "results": {
+    "baseline_dense": {
+      "label": "baseline_dense",
+      "run": "20261116T024332489435Z",
+      "method": "dense",
+      "review_origin": "AI-assisted, pending user confirmation",
+      "all_case_grounded_answer": {
+        "points": 26,
+        "maximum": 30,
+        "mean_out_of_2": 1.7333333333333334,
+        "grade_counts": {
+          "2": 13,
+          "0": 2
+        }
+      },
+      "all_case_abstention": {
+        "n": 2,
+        "N": 2
+      },
+      "prepared_context": {
+        "grade_counts": {
+          "2": 13,
+          "0": 1,
+          "1": 1
+        },
+        "sufficient_n": 13,
+        "N": 15,
+        "note": "Prepared context; provider failures do not establish receipt. Separate from successful-pipeline metric."
+      },
+      "successful_pipeline_context_evidence": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "observed_citation_validity": {
+        "n": 15,
+        "N": 15
+      },
+      "unlisted_inline_citation_cases": [
+        "D04"
+      ],
+      "successful_case_starter_aggregate": {
+        "cases": 17,
+        "tool_use": {
+          "n": 16,
+          "N": 16
+        },
+        "grounded_answer": {
+          "0": 1,
+          "1": 0,
+          "2": 13,
+          "N": 14,
+          "mean": 1.8571428571428572
+        },
+        "citation_validity": {
+          "n": 14,
+          "N": 14
+        },
+        "answer_citation_coverage": {
+          "n": 13,
+          "N": 13
+        },
+        "abstention": {
+          "n": 2,
+          "N": 2
+        },
+        "false_abstention": {
+          "n": 1,
+          "N": 14
+        },
+        "execution_errors": 1
+      },
+      "errors_by_stage": {
+        "protocol": 1
+      },
+      "statuses": {
+        "answered": 13,
+        "abstain": 3,
+        "error": 1
+      },
+      "known_usage": {
+        "prompt_tokens": 32835,
+        "completion_tokens": 3912,
+        "total_tokens": 36747,
+        "prompt_cache_hit_tokens": 20736,
+        "prompt_cache_miss_tokens": 12099
+      },
+      "requests": 38,
+      "failed_requests_without_usage": 0,
+      "estimated_known_usage_cost_usd_range": [
+        0.004224258,
+        0.008448516
+      ],
+      "review_file_sha256": "f38c622c8af3bb5d4fac8aeadd296cb922a1a4cc69ecfe79672f46423537fa9e"
+    },
+    "baseline_tfidf": {
+      "label": "baseline_tfidf",
+      "run": "20261116T024332489435Z",
+      "method": "tfidf",
+      "review_origin": "AI-assisted, pending user confirmation",
+      "all_case_grounded_answer": {
+        "points": 22,
+        "maximum": 30,
+        "mean_out_of_2": 1.4666666666666666,
+        "grade_counts": {
+          "2": 11,
+          "0": 4
+        }
+      },
+      "all_case_abstention": {
+        "n": 2,
+        "N": 2
+      },
+      "prepared_context": {
+        "grade_counts": {
+          "2": 11,
+          "0": 3,
+          "1": 1
+        },
+        "sufficient_n": 11,
+        "N": 15,
+        "note": "Prepared context; provider failures do not establish receipt. Separate from successful-pipeline metric."
+      },
+      "successful_pipeline_context_evidence": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      },
+      "observed_citation_validity": {
+        "n": 12,
+        "N": 12
+      },
+      "unlisted_inline_citation_cases": [],
+      "successful_case_starter_aggregate": {
+        "cases": 17,
+        "tool_use": {
+          "n": 15,
+          "N": 15
+        },
+        "grounded_answer": {
+          "0": 2,
+          "1": 0,
+          "2": 11,
+          "N": 13,
+          "mean": 1.6923076923076923
+        },
+        "citation_validity": {
+          "n": 12,
+          "N": 12
+        },
+        "answer_citation_coverage": {
+          "n": 11,
+          "N": 11
+        },
+        "abstention": {
+          "n": 2,
+          "N": 2
+        },
+        "false_abstention": {
+          "n": 2,
+          "N": 13
+        },
+        "execution_errors": 2
+      },
+      "errors_by_stage": {
+        "protocol": 2
+      },
+      "statuses": {
+        "answered": 11,
+        "error": 2,
+        "abstain": 4
+      },
+      "known_usage": {
+        "prompt_tokens": 34832,
+        "completion_tokens": 3875,
+        "total_tokens": 38707,
+        "prompt_cache_hit_tokens": 22396,
+        "prompt_cache_miss_tokens": 12436
+      },
+      "requests": 40,
+      "failed_requests_without_usage": 0,
+      "estimated_known_usage_cost_usd_range": [
+        0.004257588,
+        0.008515176
+      ],
+      "review_file_sha256": "28fbc36c9ae9624f93a223507ff903c05e5e534d841c249082bbe570977929f0"
+    },
+    "baseline_hybrid": {
+      "label": "baseline_hybrid",
+      "run": "20261116T024332489435Z",
+      "method": "hybrid",
+      "review_origin": "AI-assisted, pending user confirmation",
+      "all_case_grounded_answer": {
+        "points": 24,
+        "maximum": 30,
+        "mean_out_of_2": 1.6,
+        "grade_counts": {
+          "2": 12,
+          "0": 3
+        }
+      },
+      "all_case_abstention": {
+        "n": 2,
+        "N": 2
+      },
+      "prepared_context": {
+        "grade_counts": {
+          "2": 12,
+          "0": 3
+        },
+        "sufficient_n": 12,
+        "N": 15,
+        "note": "Prepared context; provider failures do not establish receipt. Separate from successful-pipeline metric."
+      },
+      "successful_pipeline_context_evidence": {
+        "n": 12,
+        "N": 15,
+        "rate": 0.8
+      },
+      "observed_citation_validity": {
+        "n": 13,
+        "N": 13
+      },
+      "unlisted_inline_citation_cases": [],
+      "successful_case_starter_aggregate": {
+        "cases": 17,
+        "tool_use": {
+          "n": 14,
+          "N": 14
+        },
+        "grounded_answer": {
+          "0": 0,
+          "1": 0,
+          "2": 12,
+          "N": 12,
+          "mean": 2.0
+        },
+        "citation_validity": {
+          "n": 13,
+          "N": 13
+        },
+        "answer_citation_coverage": {
+          "n": 12,
+          "N": 12
+        },
+        "abstention": {
+          "n": 2,
+          "N": 2
+        },
+        "false_abstention": {
+          "n": 0,
+          "N": 12
+        },
+        "execution_errors": 3
+      },
+      "errors_by_stage": {
+        "protocol": 3
+      },
+      "statuses": {
+        "answered": 12,
+        "error": 3,
+        "abstain": 2
+      },
+      "known_usage": {
+        "prompt_tokens": 33224,
+        "completion_tokens": 3922,
+        "total_tokens": 37146,
+        "prompt_cache_hit_tokens": 23803,
+        "prompt_cache_miss_tokens": 9421
+      },
+      "requests": 39,
+      "failed_requests_without_usage": 0,
+      "estimated_known_usage_cost_usd_range": [
+        0.003837759,
+        0.007675518
+      ],
+      "review_file_sha256": "d124fceb9c7251775867ecb5476b4baa1b06047ee6a82518f6ea3344964fa587"
+    },
+    "I1": {
+      "label": "I1",
+      "run": "20261116T030001129031Z",
+      "method": "dense",
+      "review_origin": "AI-assisted, pending user confirmation",
+      "all_case_grounded_answer": {
+        "points": 28,
+        "maximum": 30,
+        "mean_out_of_2": 1.8666666666666667,
+        "grade_counts": {
+          "2": 14,
+          "0": 1
+        }
+      },
+      "all_case_abstention": {
+        "n": 2,
+        "N": 2
+      },
+      "prepared_context": {
+        "grade_counts": {
+          "2": 14,
+          "0": 1
+        },
+        "sufficient_n": 14,
+        "N": 15,
+        "note": "Prepared context; provider failures do not establish receipt. Separate from successful-pipeline metric."
+      },
+      "successful_pipeline_context_evidence": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "observed_citation_validity": {
+        "n": 18,
+        "N": 18
+      },
+      "unlisted_inline_citation_cases": [],
+      "successful_case_starter_aggregate": {
+        "cases": 17,
+        "tool_use": {
+          "n": 16,
+          "N": 16
+        },
+        "grounded_answer": {
+          "0": 0,
+          "1": 0,
+          "2": 14,
+          "N": 14,
+          "mean": 2.0
+        },
+        "citation_validity": {
+          "n": 18,
+          "N": 18
+        },
+        "answer_citation_coverage": {
+          "n": 14,
+          "N": 14
+        },
+        "abstention": {
+          "n": 2,
+          "N": 2
+        },
+        "false_abstention": {
+          "n": 0,
+          "N": 14
+        },
+        "execution_errors": 1
+      },
+      "errors_by_stage": {
+        "provider": 1
+      },
+      "statuses": {
+        "answered": 14,
+        "error": 1,
+        "abstain": 2
+      },
+      "known_usage": {
+        "prompt_tokens": 36220,
+        "completion_tokens": 4071,
+        "total_tokens": 40291,
+        "prompt_cache_hit_tokens": 20992,
+        "prompt_cache_miss_tokens": 15228
+      },
+      "requests": 35,
+      "failed_requests_without_usage": 1,
+      "estimated_known_usage_cost_usd_range": [
+        0.004789776,
+        0.009579552
+      ],
+      "review_file_sha256": "b5d3a3b5d2e1fc68328e3d74fd59b98755e3201e2ec902c65ba886040abfeab0"
+    },
+    "I2": {
+      "label": "I2",
+      "run": "20261116T030303500415Z",
+      "method": "dense",
+      "review_origin": "AI-assisted, pending user confirmation",
+      "all_case_grounded_answer": {
+        "points": 14,
+        "maximum": 30,
+        "mean_out_of_2": 0.9333333333333333,
+        "grade_counts": {
+          "0": 8,
+          "2": 7
+        }
+      },
+      "all_case_abstention": {
+        "n": 1,
+        "N": 2
+      },
+      "prepared_context": {
+        "grade_counts": {
+          "0": 5,
+          "2": 10
+        },
+        "sufficient_n": 10,
+        "N": 15,
+        "note": "Prepared context; provider failures do not establish receipt. Separate from successful-pipeline metric."
+      },
+      "successful_pipeline_context_evidence": {
+        "n": 7,
+        "N": 15,
+        "rate": 0.4666666666666667
+      },
+      "observed_citation_validity": {
+        "n": 9,
+        "N": 9
+      },
+      "unlisted_inline_citation_cases": [],
+      "successful_case_starter_aggregate": {
+        "cases": 17,
+        "tool_use": {
+          "n": 8,
+          "N": 8
+        },
+        "grounded_answer": {
+          "0": 0,
+          "1": 0,
+          "2": 7,
+          "N": 7,
+          "mean": 2.0
+        },
+        "citation_validity": {
+          "n": 9,
+          "N": 9
+        },
+        "answer_citation_coverage": {
+          "n": 7,
+          "N": 7
+        },
+        "abstention": {
+          "n": 1,
+          "N": 1
+        },
+        "false_abstention": {
+          "n": 0,
+          "N": 7
+        },
+        "execution_errors": 9
+      },
+      "errors_by_stage": {
+        "provider": 9
+      },
+      "statuses": {
+        "error": 9,
+        "answered": 7,
+        "abstain": 1
+      },
+      "known_usage": {
+        "prompt_tokens": 20820,
+        "completion_tokens": 2395,
+        "total_tokens": 23215,
+        "prompt_cache_hit_tokens": 11904,
+        "prompt_cache_miss_tokens": 8916
+      },
+      "requests": 30,
+      "failed_requests_without_usage": 9,
+      "estimated_known_usage_cost_usd_range": [
+        0.002810112,
+        0.005620224
+      ],
+      "review_file_sha256": "d1f8a660909404a241b1d28cf339a7101dedfdd07dffba7fb413d2acc11d469b"
+    }
+  },
+  "dense_candidate_ranking": [
+    "I1",
+    "baseline_dense",
+    "I2"
+  ],
+  "proposed_candidate": "I1",
+  "test_evaluated": false,
+  "limitations": [
+    "One run per configuration; model search rewrites can vary despite temperature=0.",
+    "I1 had 1 provider failure; I2 had 9. Lower I2 score does not isolate context-policy quality.",
+    "Costs cover known usage only; failed requests without usage may have unknown billing.",
+    "Original trace and blank review-template files preserved.",
+    "All-case answer errors score zero; successful-case aggregates use smaller denominators and must not be substituted for overall quality."
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "status": "connection_preflight_blocked_no_heldout_execution",
+  "recorded_at_utc": "2026-11-16T03:34:58.765827+00:00",
+  "user_approval_saved": true,
+  "selected_configuration": "I1 Dense 2000 arrival",
+  "preflight_runs": [
+    {
+      "directory": "20261116T032840548620Z",
+      "status": "preflight_failed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": false,
+          "error_type": "ProviderError",
+          "http_status": null
+        },
+        {
+          "attempt": 2,
+          "ok": false,
+          "error_type": "ProviderError",
+          "http_status": null
+        },
+        {
+          "attempt": 3,
+          "ok": false,
+          "error_type": "ProviderError",
+          "http_status": null
+        },
+        {
+          "attempt": 4,
+          "ok": true
+        }
+      ],
+      "log": "results/test/20261116T032840548620Z/preflight_20261116T032957301020Z.json",
+      "sha256": "764e58e32f511d32b1efc0258a53dbfc9982ac00ed94dd8087d42c48f9276942"
+    },
+    {
+      "directory": "20261116T033151223927Z",
+      "status": "preflight_failed",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ok": true
+        },
+        {
+          "attempt": 2,
+          "ok": false,
+          "error_type": "ProviderError",
+          "http_status": null
+        },
+        {
+          "attempt": 3,
+          "ok": true
+        },
+        {
+          "attempt": 4,
+          "ok": false,
+          "error_type": "ProviderError",
+          "http_status": null
+        }
+      ],
+      "log": "results/test/20261116T033151223927Z/preflight_20261116T033241480293Z.json",
+      "sha256": "9afd941a0ea7cf1b77280337588bed11cf79f3ec87e0e92b66129d93b36ff401"
+    }
+  ],
+  "provider_requests": 13,
+  "failed_provider_requests_without_http_status": 5,
+  "known_usage": {
+    "prompt_tokens": 1725,
+    "completion_tokens": 112,
+    "total_tokens": 1837,
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1213
+  },
+  "test_cases_executed": 0,
+  "test_gold_scored": false,
+  "test_registered": false,
+  "network_check": "Unauthenticated direct TLS/HEAD connection to resolved api.deepseek.com address timed out; no proxy configured. Intermittent successful tool cycles observed, specific root cause unresolved. No network settings modified.",
+  "next_action": "Once connection stabilizes, run python -m src.run_test via the Day06 environment. Existing approval remains valid; do not change selected model/config using test outcomes."
+}

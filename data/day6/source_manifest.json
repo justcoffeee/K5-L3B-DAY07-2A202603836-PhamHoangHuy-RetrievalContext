@@ -1,0 +1,1904 @@
+{
+  "stage": "2_prepared_waiting_for_user_approval",
+  "generated_at_utc": "2026-11-14T02:49:27.833919+00:00",
+  "generator": "python scripts/prepare_corpus.py",
+  "language": "en",
+  "version": "3.14.10",
+  "license": "PSF License Version 2; documentation examples additionally Zero-Clause BSD",
+  "license_snapshot": "data/raw/python-3.14/license.html",
+  "copyright_snapshot": "data/raw/python-3.14/copyright.html",
+  "attribution": "The Python Tutorial, Python Software Foundation and contributors; original copyright/license notices retained in raw snapshots.",
+  "modifications": "Extract main content only; remove navigation/footer/copy controls; NFC and prose whitespace normalization; preserve code indentation; serialize blocks and sequential source units. Source wording is not translated or paraphrased.",
+  "count_rule": {
+    "minimum_characters": 1500,
+    "soft_target_characters": 2400,
+    "unit": "Unicode characters after normalization, including source headings/code and whitespace; excludes HTML markup and injected IDs/fences/repeated headings",
+    "boundaries": "Sequential whole blocks within each chapter; merge short tail; no overlap, padding, repetition or splitting code blocks.",
+    "offsets": "Zero-based character offsets in normalized chapter text, end-exclusive. Two newline separator characters between adjacent units are not duplicated.",
+    "source_unit_not_retrieval_chunk": true
+  },
+  "summary": {
+    "documents": 6,
+    "source_units": 54,
+    "normalized_characters": 139067,
+    "minimum_unit_characters": 2249,
+    "maximum_unit_characters": 4017,
+    "code_blocks": 218,
+    "duplicate_units": 0,
+    "extraction_errors": 0
+  },
+  "sources": [
+    {
+      "source_id": "python-3.14-ch03",
+      "chapter": 3,
+      "url": "https://docs.python.org/3.14/tutorial/introduction.html",
+      "resolved_url": "https://docs.python.org/3.14/tutorial/introduction.html",
+      "local_path": "data/raw/python-3.14/03-introduction.html",
+      "title": "3. An Informal Introduction to Python &#8212; Python 3.14.10 documentation",
+      "accessed_at_utc": "2026-11-14T02:44:25.055810+00:00",
+      "bytes": 71961,
+      "sha256": "19b60b34fc432825d2f3bf6991641f3a95d9be8aa319d41ff73b4b66084606fc",
+      "content_type": "text/html",
+      "last_modified_header": "Sat, 14 Nov 2026 00:42:39 GMT",
+      "license_or_permission": "PSF License Version 2; documentation code examples additionally Zero-Clause BSD; retain notices and acknowledge modifications",
+      "license_url": "https://docs.python.org/3.14/license.html",
+      "stage": "raw_download_only; content units and evidence not yet validated",
+      "normalized_path": "data/processed/chapters/python-3.14-ch03.txt",
+      "normalized_characters": 17028,
+      "normalized_sha256": "9ef86251e2580c548c5b9993b15bfd827b9149504dbc61dfa57ae7a9c55b7808",
+      "source_units": 7,
+      "block_counts": {
+        "heading": 6,
+        "paragraph": 68,
+        "code": 42,
+        "term": 5
+      },
+      "unit_ids": [
+        "python-3.14-ch03-u001",
+        "python-3.14-ch03-u002",
+        "python-3.14-ch03-u003",
+        "python-3.14-ch03-u004",
+        "python-3.14-ch03-u005",
+        "python-3.14-ch03-u006",
+        "python-3.14-ch03-u007"
+      ]
+    },
+    {
+      "source_id": "python-3.14-ch04",
+      "chapter": 4,
+      "url": "https://docs.python.org/3.14/tutorial/controlflow.html",
+      "resolved_url": "https://docs.python.org/3.14/tutorial/controlflow.html",
+      "local_path": "data/raw/python-3.14/04-controlflow.html",
+      "title": "4. More Control Flow Tools &#8212; Python 3.14.10 documentation",
+      "accessed_at_utc": "2026-11-14T02:44:25.115300+00:00",
+      "bytes": 140170,
+      "sha256": "2968ad709e719ac633351cf403906f07c0d3a2d5b27ebd79e907a2c76f195b76",
+      "content_type": "text/html",
+      "last_modified_header": "Sat, 14 Nov 2026 00:42:39 GMT",
+      "license_or_permission": "PSF License Version 2; documentation code examples additionally Zero-Clause BSD; retain notices and acknowledge modifications",
+      "license_url": "https://docs.python.org/3.14/license.html",
+      "stage": "raw_download_only; content units and evidence not yet validated",
+      "normalized_path": "data/processed/chapters/python-3.14-ch04.txt",
+      "normalized_characters": 35858,
+      "normalized_sha256": "30a6cf01116fe5809fda5b42013072aca87b34e23be423151952889c4cd83fe0",
+      "source_units": 14,
+      "block_counts": {
+        "heading": 24,
+        "paragraph": 129,
+        "code": 57
+      },
+      "unit_ids": [
+        "python-3.14-ch04-u001",
+        "python-3.14-ch04-u002",
+        "python-3.14-ch04-u003",
+        "python-3.14-ch04-u004",
+        "python-3.14-ch04-u005",
+        "python-3.14-ch04-u006",
+        "python-3.14-ch04-u007",
+        "python-3.14-ch04-u008",
+        "python-3.14-ch04-u009",
+        "python-3.14-ch04-u010",
+        "python-3.14-ch04-u011",
+        "python-3.14-ch04-u012",
+        "python-3.14-ch04-u013",
+        "python-3.14-ch04-u014"
+      ]
+    },
+    {
+      "source_id": "python-3.14-ch05",
+      "chapter": 5,
+      "url": "https://docs.python.org/3.14/tutorial/datastructures.html",
+      "resolved_url": "https://docs.python.org/3.14/tutorial/datastructures.html",
+      "local_path": "data/raw/python-3.14/05-datastructures.html",
+      "title": "5. Data Structures &#8212; Python 3.14.10 documentation",
+      "accessed_at_utc": "2026-11-14T02:44:25.446034+00:00",
+      "bytes": 101548,
+      "sha256": "352a9fa259805ac18c14101894daac71c12b4522c62c7934db5b5402ec60a001",
+      "content_type": "text/html",
+      "last_modified_header": "Sat, 14 Nov 2026 00:42:39 GMT",
+      "license_or_permission": "PSF License Version 2; documentation code examples additionally Zero-Clause BSD; retain notices and acknowledge modifications",
+      "license_url": "https://docs.python.org/3.14/license.html",
+      "stage": "raw_download_only; content units and evidence not yet validated",
+      "normalized_path": "data/processed/chapters/python-3.14-ch05.txt",
+      "normalized_characters": 22847,
+      "normalized_sha256": "622f34e071afe9b5160b240a4a8e9c125285acb532210440ba12202fe81a4584",
+      "source_units": 9,
+      "block_counts": {
+        "heading": 13,
+        "paragraph": 80,
+        "term": 11,
+        "code": 35
+      },
+      "unit_ids": [
+        "python-3.14-ch05-u001",
+        "python-3.14-ch05-u002",
+        "python-3.14-ch05-u003",
+        "python-3.14-ch05-u004",
+        "python-3.14-ch05-u005",
+        "python-3.14-ch05-u006",
+        "python-3.14-ch05-u007",
+        "python-3.14-ch05-u008",
+        "python-3.14-ch05-u009"
+      ]
+    },
+    {
+      "source_id": "python-3.14-ch06",
+      "chapter": 6,
+      "url": "https://docs.python.org/3.14/tutorial/modules.html",
+      "resolved_url": "https://docs.python.org/3.14/tutorial/modules.html",
+      "local_path": "data/raw/python-3.14/06-modules.html",
+      "title": "6. Modules &#8212; Python 3.14.10 documentation",
+      "accessed_at_utc": "2026-11-14T02:44:25.463672+00:00",
+      "bytes": 71017,
+      "sha256": "c68fa798cd1eefb3bcc817fc5c5525fc9cbb94d4f83cfc2c5fc85424dae9181b",
+      "content_type": "text/html",
+      "last_modified_header": "Sat, 14 Nov 2026 00:42:39 GMT",
+      "license_or_permission": "PSF License Version 2; documentation code examples additionally Zero-Clause BSD; retain notices and acknowledge modifications",
+      "license_url": "https://docs.python.org/3.14/license.html",
+      "stage": "raw_download_only; content units and evidence not yet validated",
+      "normalized_path": "data/processed/chapters/python-3.14-ch06.txt",
+      "normalized_characters": 22953,
+      "normalized_sha256": "9b82b607eb1ed11c1253739231160d0865a7660ac5e606508cf614bba97ce1b2",
+      "source_units": 9,
+      "block_counts": {
+        "heading": 10,
+        "paragraph": 73,
+        "code": 28
+      },
+      "unit_ids": [
+        "python-3.14-ch06-u001",
+        "python-3.14-ch06-u002",
+        "python-3.14-ch06-u003",
+        "python-3.14-ch06-u004",
+        "python-3.14-ch06-u005",
+        "python-3.14-ch06-u006",
+        "python-3.14-ch06-u007",
+        "python-3.14-ch06-u008",
+        "python-3.14-ch06-u009"
+      ]
+    },
+    {
+      "source_id": "python-3.14-ch07",
+      "chapter": 7,
+      "url": "https://docs.python.org/3.14/tutorial/inputoutput.html",
+      "resolved_url": "https://docs.python.org/3.14/tutorial/inputoutput.html",
+      "local_path": "data/raw/python-3.14/07-inputoutput.html",
+      "title": "7. Input and Output &#8212; Python 3.14.10 documentation",
+      "accessed_at_utc": "2026-11-14T02:44:25.575523+00:00",
+      "bytes": 77444,
+      "sha256": "6700317668f5e0953ca1f7d0851b4a5ddbeca4b62b8776a1bf58647fcc659de8",
+      "content_type": "text/html",
+      "last_modified_header": "Sat, 14 Nov 2026 00:42:39 GMT",
+      "license_or_permission": "PSF License Version 2; documentation code examples additionally Zero-Clause BSD; retain notices and acknowledge modifications",
+      "license_url": "https://docs.python.org/3.14/license.html",
+      "stage": "raw_download_only; content units and evidence not yet validated",
+      "normalized_path": "data/processed/chapters/python-3.14-ch07.txt",
+      "normalized_characters": 18544,
+      "normalized_sha256": "a2cd666791b0141556aff4d56fa6832d56af67f8622ecae562cbd9484e9479f2",
+      "source_units": 7,
+      "block_counts": {
+        "heading": 9,
+        "paragraph": 65,
+        "code": 30
+      },
+      "unit_ids": [
+        "python-3.14-ch07-u001",
+        "python-3.14-ch07-u002",
+        "python-3.14-ch07-u003",
+        "python-3.14-ch07-u004",
+        "python-3.14-ch07-u005",
+        "python-3.14-ch07-u006",
+        "python-3.14-ch07-u007"
+      ]
+    },
+    {
+      "source_id": "python-3.14-ch08",
+      "chapter": 8,
+      "url": "https://docs.python.org/3.14/tutorial/errors.html",
+      "resolved_url": "https://docs.python.org/3.14/tutorial/errors.html",
+      "local_path": "data/raw/python-3.14/08-errors.html",
+      "title": "8. Errors and Exceptions &#8212; Python 3.14.10 documentation",
+      "accessed_at_utc": "2026-11-14T02:44:25.914209+00:00",
+      "bytes": 85632,
+      "sha256": "4702fe3966a3617101db42edd7989a8cd571c5389ef019560e37d5dc2ffb85d3",
+      "content_type": "text/html",
+      "last_modified_header": "Sat, 14 Nov 2026 00:42:39 GMT",
+      "license_or_permission": "PSF License Version 2; documentation code examples additionally Zero-Clause BSD; retain notices and acknowledge modifications",
+      "license_url": "https://docs.python.org/3.14/license.html",
+      "stage": "raw_download_only; content units and evidence not yet validated",
+      "normalized_path": "data/processed/chapters/python-3.14-ch08.txt",
+      "normalized_characters": 21837,
+      "normalized_sha256": "37f7c8f42335a2f0e6220fef30093b2f368d6310b82ab103f829f9a511709174",
+      "source_units": 8,
+      "block_counts": {
+        "heading": 11,
+        "paragraph": 59,
+        "code": 26
+      },
+      "unit_ids": [
+        "python-3.14-ch08-u001",
+        "python-3.14-ch08-u002",
+        "python-3.14-ch08-u003",
+        "python-3.14-ch08-u004",
+        "python-3.14-ch08-u005",
+        "python-3.14-ch08-u006",
+        "python-3.14-ch08-u007",
+        "python-3.14-ch08-u008"
+      ]
+    }
+  ],
+  "units": [
+    {
+      "char_start": 0,
+      "char_end": 2490,
+      "first_block": 0,
+      "last_block": 13,
+      "section_ids": [
+        "an-informal-introduction-to-python",
+        "using-python-as-a-calculator",
+        "numbers"
+      ],
+      "heading_path_at_start": [
+        "3. An Informal Introduction to Python"
+      ],
+      "code_blocks": 3,
+      "unit_id": "python-3.14-ch03-u001",
+      "document_id": "python-3.14-ch03",
+      "page": "python-3.14-ch03-u001",
+      "chapter": 3,
+      "source": "https://docs.python.org/3.14/tutorial/introduction.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/introduction.html#an-informal-introduction-to-python",
+        "https://docs.python.org/3.14/tutorial/introduction.html#using-python-as-a-calculator",
+        "https://docs.python.org/3.14/tutorial/introduction.html#numbers"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch03-u001.txt",
+      "characters": 2490,
+      "non_whitespace_characters": 2004,
+      "sha256": "d89c7b3bee520e20a8e22fa4636204095897ba62c0e3f2e363b1a2bf754f05b6",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 2492,
+      "char_end": 4904,
+      "first_block": 14,
+      "last_block": 30,
+      "section_ids": [
+        "numbers",
+        "text"
+      ],
+      "heading_path_at_start": [
+        "3. An Informal Introduction to Python",
+        "3.1. Using Python as a Calculator",
+        "3.1.1. Numbers"
+      ],
+      "code_blocks": 7,
+      "unit_id": "python-3.14-ch03-u002",
+      "document_id": "python-3.14-ch03",
+      "page": "python-3.14-ch03-u002",
+      "chapter": 3,
+      "source": "https://docs.python.org/3.14/tutorial/introduction.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/introduction.html#numbers",
+        "https://docs.python.org/3.14/tutorial/introduction.html#text"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch03-u002.txt",
+      "characters": 2412,
+      "non_whitespace_characters": 1959,
+      "sha256": "2b88c6d618f43b45d5504080cf6317fa9c55de0c010baf0086e197675f1c93ec",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 4906,
+      "char_end": 7398,
+      "first_block": 31,
+      "last_block": 45,
+      "section_ids": [
+        "text"
+      ],
+      "heading_path_at_start": [
+        "3. An Informal Introduction to Python",
+        "3.1. Using Python as a Calculator",
+        "3.1.2. Text"
+      ],
+      "code_blocks": 7,
+      "unit_id": "python-3.14-ch03-u003",
+      "document_id": "python-3.14-ch03",
+      "page": "python-3.14-ch03-u003",
+      "chapter": 3,
+      "source": "https://docs.python.org/3.14/tutorial/introduction.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/introduction.html#text"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch03-u003.txt",
+      "characters": 2492,
+      "non_whitespace_characters": 1942,
+      "sha256": "c7374aa4700cdbe694688e645f7605b6e1c5047786728444194473c31d6d5d38",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 7400,
+      "char_end": 9876,
+      "first_block": 46,
+      "last_block": 64,
+      "section_ids": [
+        "text"
+      ],
+      "heading_path_at_start": [
+        "3. An Informal Introduction to Python",
+        "3.1. Using Python as a Calculator",
+        "3.1.2. Text"
+      ],
+      "code_blocks": 8,
+      "unit_id": "python-3.14-ch03-u004",
+      "document_id": "python-3.14-ch03",
+      "page": "python-3.14-ch03-u004",
+      "chapter": 3,
+      "source": "https://docs.python.org/3.14/tutorial/introduction.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/introduction.html#text"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch03-u004.txt",
+      "characters": 2476,
+      "non_whitespace_characters": 1993,
+      "sha256": "650299cb6f2bbe1e1b1354c54b7f5e446eac32641c7fd27ff703aca1bb37f194",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 9878,
+      "char_end": 12332,
+      "first_block": 65,
+      "last_block": 93,
+      "section_ids": [
+        "text",
+        "lists"
+      ],
+      "heading_path_at_start": [
+        "3. An Informal Introduction to Python",
+        "3.1. Using Python as a Calculator",
+        "3.1.2. Text"
+      ],
+      "code_blocks": 8,
+      "unit_id": "python-3.14-ch03-u005",
+      "document_id": "python-3.14-ch03",
+      "page": "python-3.14-ch03-u005",
+      "chapter": 3,
+      "source": "https://docs.python.org/3.14/tutorial/introduction.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/introduction.html#text",
+        "https://docs.python.org/3.14/tutorial/introduction.html#lists"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch03-u005.txt",
+      "characters": 2454,
+      "non_whitespace_characters": 2005,
+      "sha256": "76495ba163fc0849d53de1cd4216157505234824251f3f18c5b8d5669df310f5",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 12334,
+      "char_end": 14777,
+      "first_block": 94,
+      "last_block": 109,
+      "section_ids": [
+        "lists",
+        "first-steps-towards-programming"
+      ],
+      "heading_path_at_start": [
+        "3. An Informal Introduction to Python",
+        "3.1. Using Python as a Calculator",
+        "3.1.3. Lists"
+      ],
+      "code_blocks": 7,
+      "unit_id": "python-3.14-ch03-u006",
+      "document_id": "python-3.14-ch03",
+      "page": "python-3.14-ch03-u006",
+      "chapter": 3,
+      "source": "https://docs.python.org/3.14/tutorial/introduction.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/introduction.html#lists",
+        "https://docs.python.org/3.14/tutorial/introduction.html#first-steps-towards-programming"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch03-u006.txt",
+      "characters": 2443,
+      "non_whitespace_characters": 1975,
+      "sha256": "2e79072660b4dabe19476f2fa8f9c3e7e9716488f92fcac70e4a374bd53c6897",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 14779,
+      "char_end": 17028,
+      "first_block": 110,
+      "last_block": 120,
+      "section_ids": [
+        "first-steps-towards-programming"
+      ],
+      "heading_path_at_start": [
+        "3. An Informal Introduction to Python",
+        "3.2. First Steps Towards Programming"
+      ],
+      "code_blocks": 2,
+      "unit_id": "python-3.14-ch03-u007",
+      "document_id": "python-3.14-ch03",
+      "page": "python-3.14-ch03-u007",
+      "chapter": 3,
+      "source": "https://docs.python.org/3.14/tutorial/introduction.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/introduction.html#first-steps-towards-programming"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch03-u007.txt",
+      "characters": 2249,
+      "non_whitespace_characters": 1834,
+      "sha256": "ff4968fac583b907ad072a99c9634c3ff60d98587026e224593618242532acec",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 0,
+      "char_end": 2685,
+      "first_block": 0,
+      "last_block": 15,
+      "section_ids": [
+        "more-control-flow-tools",
+        "if-statements",
+        "for-statements",
+        "the-range-function"
+      ],
+      "heading_path_at_start": [
+        "4. More Control Flow Tools"
+      ],
+      "code_blocks": 4,
+      "unit_id": "python-3.14-ch04-u001",
+      "document_id": "python-3.14-ch04",
+      "page": "python-3.14-ch04-u001",
+      "chapter": 4,
+      "source": "https://docs.python.org/3.14/tutorial/controlflow.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/controlflow.html#more-control-flow-tools",
+        "https://docs.python.org/3.14/tutorial/controlflow.html#if-statements",
+        "https://docs.python.org/3.14/tutorial/controlflow.html#for-statements",
+        "https://docs.python.org/3.14/tutorial/controlflow.html#the-range-function"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch04-u001.txt",
+      "characters": 2685,
+      "non_whitespace_characters": 2163,
+      "sha256": "a87c9fe1c3aa9605348969bde14fc76e58f12f18238ebdaf9dc9cf8524c821fb",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 2687,
+      "char_end": 5119,
+      "first_block": 16,
+      "last_block": 34,
+      "section_ids": [
+        "the-range-function",
+        "break-and-continue-statements",
+        "else-clauses-on-loops"
+      ],
+      "heading_path_at_start": [
+        "4. More Control Flow Tools",
+        "4.3. The range() Function"
+      ],
+      "code_blocks": 6,
+      "unit_id": "python-3.14-ch04-u002",
+      "document_id": "python-3.14-ch04",
+      "page": "python-3.14-ch04-u002",
+      "chapter": 4,
+      "source": "https://docs.python.org/3.14/tutorial/controlflow.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/controlflow.html#the-range-function",
+        "https://docs.python.org/3.14/tutorial/controlflow.html#break-and-continue-statements",
+        "https://docs.python.org/3.14/tutorial/controlflow.html#else-clauses-on-loops"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch04-u002.txt",
+      "characters": 2432,
+      "non_whitespace_characters": 1901,
+      "sha256": "d9d90d1ac71c887835268dee6cd7072af3e40678da3d0639509c09c14b597304",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 5121,
+      "char_end": 7539,
+      "first_block": 35,
+      "last_block": 48,
+      "section_ids": [
+        "else-clauses-on-loops",
+        "pass-statements"
+      ],
+      "heading_path_at_start": [
+        "4. More Control Flow Tools",
+        "4.5. else Clauses on Loops"
+      ],
+      "code_blocks": 4,
+      "unit_id": "python-3.14-ch04-u003",
+      "document_id": "python-3.14-ch04",
+      "page": "python-3.14-ch04-u003",
+      "chapter": 4,
+      "source": "https://docs.python.org/3.14/tutorial/controlflow.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/controlflow.html#else-clauses-on-loops",
+        "https://docs.python.org/3.14/tutorial/controlflow.html#pass-statements"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch04-u003.txt",
+      "characters": 2418,
+      "non_whitespace_characters": 1896,
+      "sha256": "962475073e942d0f1d332fd3065c60f162ccb9908f2ed29185bcd664523a6471",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 7541,
+      "char_end": 10315,
+      "first_block": 49,
+      "last_block": 61,
+      "section_ids": [
+        "match-statements"
+      ],
+      "heading_path_at_start": [
+        "4. More Control Flow Tools",
+        "4.7. match Statements"
+      ],
+      "code_blocks": 4,
+      "unit_id": "python-3.14-ch04-u004",
+      "document_id": "python-3.14-ch04",
+      "page": "python-3.14-ch04-u004",
+      "chapter": 4,
+      "source": "https://docs.python.org/3.14/tutorial/controlflow.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/controlflow.html#match-statements"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch04-u004.txt",
+      "characters": 2774,
+      "non_whitespace_characters": 2087,
+      "sha256": "c663e435d84ffa88db3b1ec3888a20ae8efcc86fc62e16dba2b349f0b6587e07",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 10317,
+      "char_end": 12740,
+      "first_block": 62,
+      "last_block": 75,
+      "section_ids": [
+        "match-statements"
+      ],
+      "heading_path_at_start": [
+        "4. More Control Flow Tools",
+        "4.7. match Statements"
+      ],
+      "code_blocks": 4,
+      "unit_id": "python-3.14-ch04-u005",
+      "document_id": "python-3.14-ch04",
+      "page": "python-3.14-ch04-u005",
+      "chapter": 4,
+      "source": "https://docs.python.org/3.14/tutorial/controlflow.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/controlflow.html#match-statements"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch04-u005.txt",
+      "characters": 2423,
+      "non_whitespace_characters": 1916,
+      "sha256": "6bf47b8e069b50f1f7205411f0ea6b481a0e38c04051b81637d1c9d6fb6a402e",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 12742,
+      "char_end": 15167,
+      "first_block": 76,
+      "last_block": 84,
+      "section_ids": [
+        "match-statements",
+        "defining-functions"
+      ],
+      "heading_path_at_start": [
+        "4. More Control Flow Tools",
+        "4.7. match Statements"
+      ],
+      "code_blocks": 2,
+      "unit_id": "python-3.14-ch04-u006",
+      "document_id": "python-3.14-ch04",
+      "page": "python-3.14-ch04-u006",
+      "chapter": 4,
+      "source": "https://docs.python.org/3.14/tutorial/controlflow.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/controlflow.html#match-statements",
+        "https://docs.python.org/3.14/tutorial/controlflow.html#defining-functions"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch04-u006.txt",
+      "characters": 2425,
+      "non_whitespace_characters": 1938,
+      "sha256": "7e148e638dc3c63a640c7bbff4bf102322df2bdeba3aab8d8d0ba4cb7419d4d3",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 15169,
+      "char_end": 17833,
+      "first_block": 85,
+      "last_block": 94,
+      "section_ids": [
+        "defining-functions"
+      ],
+      "heading_path_at_start": [
+        "4. More Control Flow Tools",
+        "4.8. Defining Functions"
+      ],
+      "code_blocks": 3,
+      "unit_id": "python-3.14-ch04-u007",
+      "document_id": "python-3.14-ch04",
+      "page": "python-3.14-ch04-u007",
+      "chapter": 4,
+      "source": "https://docs.python.org/3.14/tutorial/controlflow.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/controlflow.html#defining-functions"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch04-u007.txt",
+      "characters": 2664,
+      "non_whitespace_characters": 2123,
+      "sha256": "ebc9a69d13fbc3cac880cf5dcde96645aba5e3c3225d5e781ad1a3e5f139eecd",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 17835,
+      "char_end": 20308,
+      "first_block": 95,
+      "last_block": 117,
+      "section_ids": [
+        "more-on-defining-functions",
+        "default-argument-values",
+        "keyword-arguments"
+      ],
+      "heading_path_at_start": [
+        "4. More Control Flow Tools",
+        "4.9. More on Defining Functions"
+      ],
+      "code_blocks": 6,
+      "unit_id": "python-3.14-ch04-u008",
+      "document_id": "python-3.14-ch04",
+      "page": "python-3.14-ch04-u008",
+      "chapter": 4,
+      "source": "https://docs.python.org/3.14/tutorial/controlflow.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/controlflow.html#more-on-defining-functions",
+        "https://docs.python.org/3.14/tutorial/controlflow.html#default-argument-values",
+        "https://docs.python.org/3.14/tutorial/controlflow.html#keyword-arguments"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch04-u008.txt",
+      "characters": 2473,
+      "non_whitespace_characters": 1942,
+      "sha256": "d8d2456926734dbcdde87414547b8c20f5975d726aa2618ce40bb3cbaa528e6d",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 20310,
+      "char_end": 22730,
+      "first_block": 118,
+      "last_block": 127,
+      "section_ids": [
+        "keyword-arguments"
+      ],
+      "heading_path_at_start": [
+        "4. More Control Flow Tools",
+        "4.9. More on Defining Functions",
+        "4.9.2. Keyword Arguments"
+      ],
+      "code_blocks": 5,
+      "unit_id": "python-3.14-ch04-u009",
+      "document_id": "python-3.14-ch04",
+      "page": "python-3.14-ch04-u009",
+      "chapter": 4,
+      "source": "https://docs.python.org/3.14/tutorial/controlflow.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/controlflow.html#keyword-arguments"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch04-u009.txt",
+      "characters": 2420,
+      "non_whitespace_characters": 1875,
+      "sha256": "b6efbcadbb7ea1f5d951dc25ddaeb7d827e5b5ef2f95b826a4d754c188fdf4eb",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 22732,
+      "char_end": 25380,
+      "first_block": 128,
+      "last_block": 144,
+      "section_ids": [
+        "keyword-arguments",
+        "special-parameters",
+        "positional-or-keyword-arguments",
+        "positional-only-parameters",
+        "keyword-only-arguments",
+        "function-examples"
+      ],
+      "heading_path_at_start": [
+        "4. More Control Flow Tools",
+        "4.9. More on Defining Functions",
+        "4.9.2. Keyword Arguments"
+      ],
+      "code_blocks": 3,
+      "unit_id": "python-3.14-ch04-u010",
+      "document_id": "python-3.14-ch04",
+      "page": "python-3.14-ch04-u010",
+      "chapter": 4,
+      "source": "https://docs.python.org/3.14/tutorial/controlflow.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/controlflow.html#keyword-arguments",
+        "https://docs.python.org/3.14/tutorial/controlflow.html#special-parameters",
+        "https://docs.python.org/3.14/tutorial/controlflow.html#positional-or-keyword-arguments",
+        "https://docs.python.org/3.14/tutorial/controlflow.html#positional-only-parameters",
+        "https://docs.python.org/3.14/tutorial/controlflow.html#keyword-only-arguments",
+        "https://docs.python.org/3.14/tutorial/controlflow.html#function-examples"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch04-u010.txt",
+      "characters": 2648,
+      "non_whitespace_characters": 2120,
+      "sha256": "55392f5e21ff437d16001db6ee268958b387e2eb36e8342c99999a181bf33a1c",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 25382,
+      "char_end": 27829,
+      "first_block": 145,
+      "last_block": 162,
+      "section_ids": [
+        "function-examples",
+        "recap"
+      ],
+      "heading_path_at_start": [
+        "4. More Control Flow Tools",
+        "4.9. More on Defining Functions",
+        "4.9.3. Special parameters",
+        "4.9.3.4. Function Examples"
+      ],
+      "code_blocks": 8,
+      "unit_id": "python-3.14-ch04-u011",
+      "document_id": "python-3.14-ch04",
+      "page": "python-3.14-ch04-u011",
+      "chapter": 4,
+      "source": "https://docs.python.org/3.14/tutorial/controlflow.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/controlflow.html#function-examples",
+        "https://docs.python.org/3.14/tutorial/controlflow.html#recap"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch04-u011.txt",
+      "characters": 2447,
+      "non_whitespace_characters": 2050,
+      "sha256": "9e23f7f28da6ffbf8deb24513d2d6976be2967a8a4327ae8d2f7aabdd1d0c7a9",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 27831,
+      "char_end": 30499,
+      "first_block": 163,
+      "last_block": 176,
+      "section_ids": [
+        "recap",
+        "arbitrary-argument-lists",
+        "unpacking-argument-lists"
+      ],
+      "heading_path_at_start": [
+        "4. More Control Flow Tools",
+        "4.9. More on Defining Functions",
+        "4.9.3. Special parameters",
+        "4.9.3.5. Recap"
+      ],
+      "code_blocks": 4,
+      "unit_id": "python-3.14-ch04-u012",
+      "document_id": "python-3.14-ch04",
+      "page": "python-3.14-ch04-u012",
+      "chapter": 4,
+      "source": "https://docs.python.org/3.14/tutorial/controlflow.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/controlflow.html#recap",
+        "https://docs.python.org/3.14/tutorial/controlflow.html#arbitrary-argument-lists",
+        "https://docs.python.org/3.14/tutorial/controlflow.html#unpacking-argument-lists"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch04-u012.txt",
+      "characters": 2668,
+      "non_whitespace_characters": 2212,
+      "sha256": "a744c86b87996d41411dbddfebb361e8f83db338058c31ba9c6353e327d46577",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 30501,
+      "char_end": 33424,
+      "first_block": 177,
+      "last_block": 191,
+      "section_ids": [
+        "lambda-expressions",
+        "documentation-strings",
+        "function-annotations"
+      ],
+      "heading_path_at_start": [
+        "4. More Control Flow Tools",
+        "4.9. More on Defining Functions",
+        "4.9.6. Lambda Expressions"
+      ],
+      "code_blocks": 3,
+      "unit_id": "python-3.14-ch04-u013",
+      "document_id": "python-3.14-ch04",
+      "page": "python-3.14-ch04-u013",
+      "chapter": 4,
+      "source": "https://docs.python.org/3.14/tutorial/controlflow.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/controlflow.html#lambda-expressions",
+        "https://docs.python.org/3.14/tutorial/controlflow.html#documentation-strings",
+        "https://docs.python.org/3.14/tutorial/controlflow.html#function-annotations"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch04-u013.txt",
+      "characters": 2923,
+      "non_whitespace_characters": 2413,
+      "sha256": "8fc2a487c3cdf4a6fc340bc09fe467bef9b8962f61f88e6b3a6e159c14e418a0",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 33426,
+      "char_end": 35858,
+      "first_block": 192,
+      "last_block": 209,
+      "section_ids": [
+        "function-annotations",
+        "intermezzo-coding-style"
+      ],
+      "heading_path_at_start": [
+        "4. More Control Flow Tools",
+        "4.9. More on Defining Functions",
+        "4.9.8. Function Annotations"
+      ],
+      "code_blocks": 1,
+      "unit_id": "python-3.14-ch04-u014",
+      "document_id": "python-3.14-ch04",
+      "page": "python-3.14-ch04-u014",
+      "chapter": 4,
+      "source": "https://docs.python.org/3.14/tutorial/controlflow.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/controlflow.html#function-annotations",
+        "https://docs.python.org/3.14/tutorial/controlflow.html#intermezzo-coding-style"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch04-u014.txt",
+      "characters": 2432,
+      "non_whitespace_characters": 2010,
+      "sha256": "9b9294e2af1f4aeaaa6d74cce1a038c49f50f61bef2ddf33e03bbafb461f53fa",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 0,
+      "char_end": 2571,
+      "first_block": 0,
+      "last_block": 28,
+      "section_ids": [
+        "data-structures",
+        "more-on-lists"
+      ],
+      "heading_path_at_start": [
+        "5. Data Structures"
+      ],
+      "code_blocks": 1,
+      "unit_id": "python-3.14-ch05-u001",
+      "document_id": "python-3.14-ch05",
+      "page": "python-3.14-ch05-u001",
+      "chapter": 5,
+      "source": "https://docs.python.org/3.14/tutorial/datastructures.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/datastructures.html#data-structures",
+        "https://docs.python.org/3.14/tutorial/datastructures.html#more-on-lists"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch05-u001.txt",
+      "characters": 2571,
+      "non_whitespace_characters": 2140,
+      "sha256": "3b2048485cd93dd1c75f1ec747a378d46f212c00e043d38065c2945292602450",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 2573,
+      "char_end": 5002,
+      "first_block": 29,
+      "last_block": 39,
+      "section_ids": [
+        "more-on-lists",
+        "using-lists-as-stacks",
+        "using-lists-as-queues",
+        "list-comprehensions"
+      ],
+      "heading_path_at_start": [
+        "5. Data Structures",
+        "5.1. More on Lists"
+      ],
+      "code_blocks": 2,
+      "unit_id": "python-3.14-ch05-u002",
+      "document_id": "python-3.14-ch05",
+      "page": "python-3.14-ch05-u002",
+      "chapter": 5,
+      "source": "https://docs.python.org/3.14/tutorial/datastructures.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/datastructures.html#more-on-lists",
+        "https://docs.python.org/3.14/tutorial/datastructures.html#using-lists-as-stacks",
+        "https://docs.python.org/3.14/tutorial/datastructures.html#using-lists-as-queues",
+        "https://docs.python.org/3.14/tutorial/datastructures.html#list-comprehensions"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch05-u002.txt",
+      "characters": 2429,
+      "non_whitespace_characters": 1943,
+      "sha256": "c7fce1706f1f0f6f40ac0f9edf6d31daf24dc9a6d935d7ed73ad9a609c3ecd4b",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 5004,
+      "char_end": 7469,
+      "first_block": 40,
+      "last_block": 54,
+      "section_ids": [
+        "list-comprehensions"
+      ],
+      "heading_path_at_start": [
+        "5. Data Structures",
+        "5.1. More on Lists",
+        "5.1.3. List Comprehensions"
+      ],
+      "code_blocks": 6,
+      "unit_id": "python-3.14-ch05-u003",
+      "document_id": "python-3.14-ch05",
+      "page": "python-3.14-ch05-u003",
+      "chapter": 5,
+      "source": "https://docs.python.org/3.14/tutorial/datastructures.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/datastructures.html#list-comprehensions"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch05-u003.txt",
+      "characters": 2465,
+      "non_whitespace_characters": 1943,
+      "sha256": "eb3e3099dd374b1dd1d75c4d6d73da99de9560a0d718ddd667707f53ec29a184",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 7471,
+      "char_end": 10101,
+      "first_block": 55,
+      "last_block": 76,
+      "section_ids": [
+        "list-comprehensions",
+        "nested-list-comprehensions",
+        "the-del-statement",
+        "tuples-and-sequences"
+      ],
+      "heading_path_at_start": [
+        "5. Data Structures",
+        "5.1. More on Lists",
+        "5.1.3. List Comprehensions"
+      ],
+      "code_blocks": 8,
+      "unit_id": "python-3.14-ch05-u004",
+      "document_id": "python-3.14-ch05",
+      "page": "python-3.14-ch05-u004",
+      "chapter": 5,
+      "source": "https://docs.python.org/3.14/tutorial/datastructures.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/datastructures.html#list-comprehensions",
+        "https://docs.python.org/3.14/tutorial/datastructures.html#nested-list-comprehensions",
+        "https://docs.python.org/3.14/tutorial/datastructures.html#the-del-statement",
+        "https://docs.python.org/3.14/tutorial/datastructures.html#tuples-and-sequences"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch05-u004.txt",
+      "characters": 2630,
+      "non_whitespace_characters": 2104,
+      "sha256": "ab9e0b1292f44d1b00797dff3d32e5d1b2238bb723b652aa806455236e69984c",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 10103,
+      "char_end": 12522,
+      "first_block": 77,
+      "last_block": 85,
+      "section_ids": [
+        "tuples-and-sequences"
+      ],
+      "heading_path_at_start": [
+        "5. Data Structures",
+        "5.3. Tuples and Sequences"
+      ],
+      "code_blocks": 3,
+      "unit_id": "python-3.14-ch05-u005",
+      "document_id": "python-3.14-ch05",
+      "page": "python-3.14-ch05-u005",
+      "chapter": 5,
+      "source": "https://docs.python.org/3.14/tutorial/datastructures.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/datastructures.html#tuples-and-sequences"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch05-u005.txt",
+      "characters": 2419,
+      "non_whitespace_characters": 1990,
+      "sha256": "76705dac460ed6e3b41fa8bce3375e8bf34c3a20c13112f15607257b5c12ec13",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 12524,
+      "char_end": 15281,
+      "first_block": 86,
+      "last_block": 96,
+      "section_ids": [
+        "sets",
+        "dictionaries"
+      ],
+      "heading_path_at_start": [
+        "5. Data Structures",
+        "5.4. Sets"
+      ],
+      "code_blocks": 2,
+      "unit_id": "python-3.14-ch05-u006",
+      "document_id": "python-3.14-ch05",
+      "page": "python-3.14-ch05-u006",
+      "chapter": 5,
+      "source": "https://docs.python.org/3.14/tutorial/datastructures.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/datastructures.html#sets",
+        "https://docs.python.org/3.14/tutorial/datastructures.html#dictionaries"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch05-u006.txt",
+      "characters": 2757,
+      "non_whitespace_characters": 2115,
+      "sha256": "627f62b1b2c75ac728ceff65c53de631fc5ba9b647dcc9cef740dcf13240efd7",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 15283,
+      "char_end": 17700,
+      "first_block": 97,
+      "last_block": 112,
+      "section_ids": [
+        "dictionaries",
+        "looping-techniques"
+      ],
+      "heading_path_at_start": [
+        "5. Data Structures",
+        "5.5. Dictionaries"
+      ],
+      "code_blocks": 6,
+      "unit_id": "python-3.14-ch05-u007",
+      "document_id": "python-3.14-ch05",
+      "page": "python-3.14-ch05-u007",
+      "chapter": 5,
+      "source": "https://docs.python.org/3.14/tutorial/datastructures.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/datastructures.html#dictionaries",
+        "https://docs.python.org/3.14/tutorial/datastructures.html#looping-techniques"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch05-u007.txt",
+      "characters": 2417,
+      "non_whitespace_characters": 2000,
+      "sha256": "d2923d776824684827682b2fa58bb197d542ffa14f5bc1a7c7ee7fdf0c912eef",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 17702,
+      "char_end": 20349,
+      "first_block": 113,
+      "last_block": 127,
+      "section_ids": [
+        "looping-techniques",
+        "more-on-conditions"
+      ],
+      "heading_path_at_start": [
+        "5. Data Structures",
+        "5.6. Looping Techniques"
+      ],
+      "code_blocks": 5,
+      "unit_id": "python-3.14-ch05-u008",
+      "document_id": "python-3.14-ch05",
+      "page": "python-3.14-ch05-u008",
+      "chapter": 5,
+      "source": "https://docs.python.org/3.14/tutorial/datastructures.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/datastructures.html#looping-techniques",
+        "https://docs.python.org/3.14/tutorial/datastructures.html#more-on-conditions"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch05-u008.txt",
+      "characters": 2647,
+      "non_whitespace_characters": 2157,
+      "sha256": "eb144d4c28f65c6f7ad9f5a7ea9fa66fc2764a0f2dd794a9a25319f08270b99c",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 20351,
+      "char_end": 22847,
+      "first_block": 128,
+      "last_block": 138,
+      "section_ids": [
+        "more-on-conditions",
+        "comparing-sequences-and-other-types"
+      ],
+      "heading_path_at_start": [
+        "5. Data Structures",
+        "5.7. More on Conditions"
+      ],
+      "code_blocks": 2,
+      "unit_id": "python-3.14-ch05-u009",
+      "document_id": "python-3.14-ch05",
+      "page": "python-3.14-ch05-u009",
+      "chapter": 5,
+      "source": "https://docs.python.org/3.14/tutorial/datastructures.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/datastructures.html#more-on-conditions",
+        "https://docs.python.org/3.14/tutorial/datastructures.html#comparing-sequences-and-other-types"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch05-u009.txt",
+      "characters": 2496,
+      "non_whitespace_characters": 2014,
+      "sha256": "bd86e8809a26caa5240bb56740be3e57fa4768f24becca5072776a865901cc9c",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 0,
+      "char_end": 2631,
+      "first_block": 0,
+      "last_block": 12,
+      "section_ids": [
+        "modules",
+        "more-on-modules"
+      ],
+      "heading_path_at_start": [
+        "6. Modules"
+      ],
+      "code_blocks": 4,
+      "unit_id": "python-3.14-ch06-u001",
+      "document_id": "python-3.14-ch06",
+      "page": "python-3.14-ch06-u001",
+      "chapter": 6,
+      "source": "https://docs.python.org/3.14/tutorial/modules.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/modules.html#modules",
+        "https://docs.python.org/3.14/tutorial/modules.html#more-on-modules"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch06-u001.txt",
+      "characters": 2631,
+      "non_whitespace_characters": 2074,
+      "sha256": "2804aeafef65c404dec2cbd02e61a19bb13d8f9f6789eec815cbdcf9377f2a29",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 2633,
+      "char_end": 5120,
+      "first_block": 13,
+      "last_block": 28,
+      "section_ids": [
+        "more-on-modules"
+      ],
+      "heading_path_at_start": [
+        "6. Modules",
+        "6.1. More on Modules"
+      ],
+      "code_blocks": 4,
+      "unit_id": "python-3.14-ch06-u002",
+      "document_id": "python-3.14-ch06",
+      "page": "python-3.14-ch06-u002",
+      "chapter": 6,
+      "source": "https://docs.python.org/3.14/tutorial/modules.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/modules.html#more-on-modules"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch06-u002.txt",
+      "characters": 2487,
+      "non_whitespace_characters": 2022,
+      "sha256": "cdee8dc11b20dae50836bdae6fbfb2ddbd7e4f32890c9b2fea4609a5946d1622",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 5122,
+      "char_end": 7808,
+      "first_block": 29,
+      "last_block": 49,
+      "section_ids": [
+        "executing-modules-as-scripts",
+        "the-module-search-path",
+        "compiled-python-files"
+      ],
+      "heading_path_at_start": [
+        "6. Modules",
+        "6.1. More on Modules",
+        "6.1.1. Executing modules as scripts"
+      ],
+      "code_blocks": 4,
+      "unit_id": "python-3.14-ch06-u003",
+      "document_id": "python-3.14-ch06",
+      "page": "python-3.14-ch06-u003",
+      "chapter": 6,
+      "source": "https://docs.python.org/3.14/tutorial/modules.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/modules.html#executing-modules-as-scripts",
+        "https://docs.python.org/3.14/tutorial/modules.html#the-module-search-path",
+        "https://docs.python.org/3.14/tutorial/modules.html#compiled-python-files"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch06-u003.txt",
+      "characters": 2686,
+      "non_whitespace_characters": 2224,
+      "sha256": "055d07d81f4d347b6a5175fc48a40fb1e5b108cad5ee5e5e13c7a9891475c855",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 7810,
+      "char_end": 10289,
+      "first_block": 50,
+      "last_block": 60,
+      "section_ids": [
+        "compiled-python-files",
+        "standard-modules"
+      ],
+      "heading_path_at_start": [
+        "6. Modules",
+        "6.1. More on Modules",
+        "6.1.3. “Compiled” Python files"
+      ],
+      "code_blocks": 1,
+      "unit_id": "python-3.14-ch06-u004",
+      "document_id": "python-3.14-ch06",
+      "page": "python-3.14-ch06-u004",
+      "chapter": 6,
+      "source": "https://docs.python.org/3.14/tutorial/modules.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/modules.html#compiled-python-files",
+        "https://docs.python.org/3.14/tutorial/modules.html#standard-modules"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch06-u004.txt",
+      "characters": 2479,
+      "non_whitespace_characters": 2055,
+      "sha256": "e742a3a2f305926ab9859aa7d99f5c8546c97adb2fcb6d4fc2c848a2755671ff",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 10291,
+      "char_end": 12762,
+      "first_block": 61,
+      "last_block": 69,
+      "section_ids": [
+        "standard-modules",
+        "the-dir-function"
+      ],
+      "heading_path_at_start": [
+        "6. Modules",
+        "6.2. Standard Modules"
+      ],
+      "code_blocks": 3,
+      "unit_id": "python-3.14-ch06-u005",
+      "document_id": "python-3.14-ch06",
+      "page": "python-3.14-ch06-u005",
+      "chapter": 6,
+      "source": "https://docs.python.org/3.14/tutorial/modules.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/modules.html#standard-modules",
+        "https://docs.python.org/3.14/tutorial/modules.html#the-dir-function"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch06-u005.txt",
+      "characters": 2471,
+      "non_whitespace_characters": 2192,
+      "sha256": "73d08fdb0911c35374b19969d1dff62285db6acfb55acfdb25643dc0a0b4cd62",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 12764,
+      "char_end": 15249,
+      "first_block": 70,
+      "last_block": 72,
+      "section_ids": [
+        "the-dir-function",
+        "packages"
+      ],
+      "heading_path_at_start": [
+        "6. Modules",
+        "6.3. The dir() Function"
+      ],
+      "code_blocks": 1,
+      "unit_id": "python-3.14-ch06-u006",
+      "document_id": "python-3.14-ch06",
+      "page": "python-3.14-ch06-u006",
+      "chapter": 6,
+      "source": "https://docs.python.org/3.14/tutorial/modules.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/modules.html#the-dir-function",
+        "https://docs.python.org/3.14/tutorial/modules.html#packages"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch06-u006.txt",
+      "characters": 2485,
+      "non_whitespace_characters": 2225,
+      "sha256": "6d9b8f99a677c7251b736ae858adc895d5000e22ae2c252a25821c198a4ad083",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 15251,
+      "char_end": 17669,
+      "first_block": 73,
+      "last_block": 82,
+      "section_ids": [
+        "packages"
+      ],
+      "heading_path_at_start": [
+        "6. Modules",
+        "6.4. Packages"
+      ],
+      "code_blocks": 4,
+      "unit_id": "python-3.14-ch06-u007",
+      "document_id": "python-3.14-ch06",
+      "page": "python-3.14-ch06-u007",
+      "chapter": 6,
+      "source": "https://docs.python.org/3.14/tutorial/modules.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/modules.html#packages"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch06-u007.txt",
+      "characters": 2418,
+      "non_whitespace_characters": 1751,
+      "sha256": "61d22a91a42bb073e65c8a0bd5792d5be9c57ce9ab3ff015f5c39e8aaaeb70f6",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 17671,
+      "char_end": 20252,
+      "first_block": 83,
+      "last_block": 96,
+      "section_ids": [
+        "packages",
+        "importing-from-a-package"
+      ],
+      "heading_path_at_start": [
+        "6. Modules",
+        "6.4. Packages"
+      ],
+      "code_blocks": 4,
+      "unit_id": "python-3.14-ch06-u008",
+      "document_id": "python-3.14-ch06",
+      "page": "python-3.14-ch06-u008",
+      "chapter": 6,
+      "source": "https://docs.python.org/3.14/tutorial/modules.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/modules.html#packages",
+        "https://docs.python.org/3.14/tutorial/modules.html#importing-from-a-package"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch06-u008.txt",
+      "characters": 2581,
+      "non_whitespace_characters": 2153,
+      "sha256": "3a55b116f02002cac29f4a893063a782a61015aefefffabe8a5c445cd7fd6564",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 20254,
+      "char_end": 22953,
+      "first_block": 97,
+      "last_block": 110,
+      "section_ids": [
+        "importing-from-a-package",
+        "intra-package-references"
+      ],
+      "heading_path_at_start": [
+        "6. Modules",
+        "6.4. Packages",
+        "6.4.1. Importing * From a Package"
+      ],
+      "code_blocks": 3,
+      "unit_id": "python-3.14-ch06-u009",
+      "document_id": "python-3.14-ch06",
+      "page": "python-3.14-ch06-u009",
+      "chapter": 6,
+      "source": "https://docs.python.org/3.14/tutorial/modules.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/modules.html#importing-from-a-package",
+        "https://docs.python.org/3.14/tutorial/modules.html#intra-package-references"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch06-u009.txt",
+      "characters": 2699,
+      "non_whitespace_characters": 2245,
+      "sha256": "53b0b4eec916ad5ebd4e46936587cca2a6cde9772ce65a06320345d22b343919",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 0,
+      "char_end": 2800,
+      "first_block": 0,
+      "last_block": 12,
+      "section_ids": [
+        "input-and-output",
+        "fancier-output-formatting"
+      ],
+      "heading_path_at_start": [
+        "7. Input and Output"
+      ],
+      "code_blocks": 2,
+      "unit_id": "python-3.14-ch07-u001",
+      "document_id": "python-3.14-ch07",
+      "page": "python-3.14-ch07-u001",
+      "chapter": 7,
+      "source": "https://docs.python.org/3.14/tutorial/inputoutput.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/inputoutput.html#input-and-output",
+        "https://docs.python.org/3.14/tutorial/inputoutput.html#fancier-output-formatting"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch07-u001.txt",
+      "characters": 2800,
+      "non_whitespace_characters": 2340,
+      "sha256": "cd7851c973b6700a809fce53c565f8caf852826fcfbc825ce1665e5aae2e5729",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 2802,
+      "char_end": 5267,
+      "first_block": 13,
+      "last_block": 25,
+      "section_ids": [
+        "fancier-output-formatting",
+        "formatted-string-literals"
+      ],
+      "heading_path_at_start": [
+        "7. Input and Output",
+        "7.1. Fancier Output Formatting"
+      ],
+      "code_blocks": 5,
+      "unit_id": "python-3.14-ch07-u002",
+      "document_id": "python-3.14-ch07",
+      "page": "python-3.14-ch07-u002",
+      "chapter": 7,
+      "source": "https://docs.python.org/3.14/tutorial/inputoutput.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/inputoutput.html#fancier-output-formatting",
+        "https://docs.python.org/3.14/tutorial/inputoutput.html#formatted-string-literals"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch07-u002.txt",
+      "characters": 2465,
+      "non_whitespace_characters": 2016,
+      "sha256": "93f435ba571c0219d81e7f3514b1cb76b02f3b9cc9b42af90a49f7f9253b3d16",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 5269,
+      "char_end": 7771,
+      "first_block": 26,
+      "last_block": 42,
+      "section_ids": [
+        "formatted-string-literals",
+        "the-string-format-method"
+      ],
+      "heading_path_at_start": [
+        "7. Input and Output",
+        "7.1. Fancier Output Formatting",
+        "7.1.1. Formatted String Literals"
+      ],
+      "code_blocks": 7,
+      "unit_id": "python-3.14-ch07-u003",
+      "document_id": "python-3.14-ch07",
+      "page": "python-3.14-ch07-u003",
+      "chapter": 7,
+      "source": "https://docs.python.org/3.14/tutorial/inputoutput.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/inputoutput.html#formatted-string-literals",
+        "https://docs.python.org/3.14/tutorial/inputoutput.html#the-string-format-method"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch07-u003.txt",
+      "characters": 2502,
+      "non_whitespace_characters": 2062,
+      "sha256": "210360c762f42ac081c008ce3fe5e1c59c1a3cbaea88057c73021b4049a9c312",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 7773,
+      "char_end": 10636,
+      "first_block": 43,
+      "last_block": 59,
+      "section_ids": [
+        "the-string-format-method",
+        "manual-string-formatting",
+        "old-string-formatting",
+        "reading-and-writing-files"
+      ],
+      "heading_path_at_start": [
+        "7. Input and Output",
+        "7.1. Fancier Output Formatting",
+        "7.1.2. The String format() Method"
+      ],
+      "code_blocks": 5,
+      "unit_id": "python-3.14-ch07-u004",
+      "document_id": "python-3.14-ch07",
+      "page": "python-3.14-ch07-u004",
+      "chapter": 7,
+      "source": "https://docs.python.org/3.14/tutorial/inputoutput.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/inputoutput.html#the-string-format-method",
+        "https://docs.python.org/3.14/tutorial/inputoutput.html#manual-string-formatting",
+        "https://docs.python.org/3.14/tutorial/inputoutput.html#old-string-formatting",
+        "https://docs.python.org/3.14/tutorial/inputoutput.html#reading-and-writing-files"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch07-u004.txt",
+      "characters": 2863,
+      "non_whitespace_characters": 2285,
+      "sha256": "eccad0247dfbcaa50cb151d203edf78d8c78cfcf2a7dbea3be8ede47d51ac05b",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 10638,
+      "char_end": 13380,
+      "first_block": 60,
+      "last_block": 71,
+      "section_ids": [
+        "reading-and-writing-files",
+        "methods-of-file-objects"
+      ],
+      "heading_path_at_start": [
+        "7. Input and Output",
+        "7.2. Reading and Writing Files"
+      ],
+      "code_blocks": 2,
+      "unit_id": "python-3.14-ch07-u005",
+      "document_id": "python-3.14-ch07",
+      "page": "python-3.14-ch07-u005",
+      "chapter": 7,
+      "source": "https://docs.python.org/3.14/tutorial/inputoutput.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/inputoutput.html#reading-and-writing-files",
+        "https://docs.python.org/3.14/tutorial/inputoutput.html#methods-of-file-objects"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch07-u005.txt",
+      "characters": 2742,
+      "non_whitespace_characters": 2259,
+      "sha256": "7f57fbd4f5582e1a186a74a88fe6e9623d06be101df2e583e85a3a94de5db0cc",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 13382,
+      "char_end": 15860,
+      "first_block": 72,
+      "last_block": 85,
+      "section_ids": [
+        "methods-of-file-objects"
+      ],
+      "heading_path_at_start": [
+        "7. Input and Output",
+        "7.2. Reading and Writing Files",
+        "7.2.1. Methods of File Objects"
+      ],
+      "code_blocks": 6,
+      "unit_id": "python-3.14-ch07-u006",
+      "document_id": "python-3.14-ch07",
+      "page": "python-3.14-ch07-u006",
+      "chapter": 7,
+      "source": "https://docs.python.org/3.14/tutorial/inputoutput.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/inputoutput.html#methods-of-file-objects"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch07-u006.txt",
+      "characters": 2478,
+      "non_whitespace_characters": 2010,
+      "sha256": "2a9a2f951ae812589696dd6b0b7bff88501982b520f83a3e3ae5476555386448",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 15862,
+      "char_end": 18544,
+      "first_block": 86,
+      "last_block": 103,
+      "section_ids": [
+        "methods-of-file-objects",
+        "saving-structured-data-with-json"
+      ],
+      "heading_path_at_start": [
+        "7. Input and Output",
+        "7.2. Reading and Writing Files",
+        "7.2.1. Methods of File Objects"
+      ],
+      "code_blocks": 3,
+      "unit_id": "python-3.14-ch07-u007",
+      "document_id": "python-3.14-ch07",
+      "page": "python-3.14-ch07-u007",
+      "chapter": 7,
+      "source": "https://docs.python.org/3.14/tutorial/inputoutput.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/inputoutput.html#methods-of-file-objects",
+        "https://docs.python.org/3.14/tutorial/inputoutput.html#saving-structured-data-with-json"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch07-u007.txt",
+      "characters": 2682,
+      "non_whitespace_characters": 2229,
+      "sha256": "98a8e601fc9ebe43f8307a71b252d6b6f591a589f5234a642ad5110f466ef9d8",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 0,
+      "char_end": 2428,
+      "first_block": 0,
+      "last_block": 11,
+      "section_ids": [
+        "errors-and-exceptions",
+        "syntax-errors",
+        "exceptions"
+      ],
+      "heading_path_at_start": [
+        "8. Errors and Exceptions"
+      ],
+      "code_blocks": 2,
+      "unit_id": "python-3.14-ch08-u001",
+      "document_id": "python-3.14-ch08",
+      "page": "python-3.14-ch08-u001",
+      "chapter": 8,
+      "source": "https://docs.python.org/3.14/tutorial/errors.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/errors.html#errors-and-exceptions",
+        "https://docs.python.org/3.14/tutorial/errors.html#syntax-errors",
+        "https://docs.python.org/3.14/tutorial/errors.html#exceptions"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch08-u001.txt",
+      "characters": 2428,
+      "non_whitespace_characters": 1960,
+      "sha256": "2ab3fd9f19951d1e321e65bf439d80a338853044dab70e574560136a1a37b16a",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 2430,
+      "char_end": 4967,
+      "first_block": 12,
+      "last_block": 25,
+      "section_ids": [
+        "exceptions",
+        "handling-exceptions"
+      ],
+      "heading_path_at_start": [
+        "8. Errors and Exceptions",
+        "8.2. Exceptions"
+      ],
+      "code_blocks": 3,
+      "unit_id": "python-3.14-ch08-u002",
+      "document_id": "python-3.14-ch08",
+      "page": "python-3.14-ch08-u002",
+      "chapter": 8,
+      "source": "https://docs.python.org/3.14/tutorial/errors.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/errors.html#exceptions",
+        "https://docs.python.org/3.14/tutorial/errors.html#handling-exceptions"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch08-u002.txt",
+      "characters": 2537,
+      "non_whitespace_characters": 2026,
+      "sha256": "98ccc5db86f1b4f2aa47274c72177c81fd38045badb905d53bda76a763cc796d",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 4969,
+      "char_end": 7534,
+      "first_block": 26,
+      "last_block": 35,
+      "section_ids": [
+        "handling-exceptions"
+      ],
+      "heading_path_at_start": [
+        "8. Errors and Exceptions",
+        "8.3. Handling Exceptions"
+      ],
+      "code_blocks": 2,
+      "unit_id": "python-3.14-ch08-u003",
+      "document_id": "python-3.14-ch08",
+      "page": "python-3.14-ch08-u003",
+      "chapter": 8,
+      "source": "https://docs.python.org/3.14/tutorial/errors.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/errors.html#handling-exceptions"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch08-u003.txt",
+      "characters": 2565,
+      "non_whitespace_characters": 2059,
+      "sha256": "5fd36d707b1a66398dd4b6b6c2221fa5999e95c6471fdf3a31984132bebd5d83",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 7536,
+      "char_end": 10177,
+      "first_block": 36,
+      "last_block": 49,
+      "section_ids": [
+        "handling-exceptions",
+        "raising-exceptions",
+        "exception-chaining"
+      ],
+      "heading_path_at_start": [
+        "8. Errors and Exceptions",
+        "8.3. Handling Exceptions"
+      ],
+      "code_blocks": 6,
+      "unit_id": "python-3.14-ch08-u004",
+      "document_id": "python-3.14-ch08",
+      "page": "python-3.14-ch08-u004",
+      "chapter": 8,
+      "source": "https://docs.python.org/3.14/tutorial/errors.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/errors.html#handling-exceptions",
+        "https://docs.python.org/3.14/tutorial/errors.html#raising-exceptions",
+        "https://docs.python.org/3.14/tutorial/errors.html#exception-chaining"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch08-u004.txt",
+      "characters": 2641,
+      "non_whitespace_characters": 2149,
+      "sha256": "c20a0465d80a22926a7447ebf71288f84acf173c36e126d8225edea6b8aa9146",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 10179,
+      "char_end": 12760,
+      "first_block": 50,
+      "last_block": 65,
+      "section_ids": [
+        "exception-chaining",
+        "user-defined-exceptions",
+        "defining-clean-up-actions"
+      ],
+      "heading_path_at_start": [
+        "8. Errors and Exceptions",
+        "8.5. Exception Chaining"
+      ],
+      "code_blocks": 4,
+      "unit_id": "python-3.14-ch08-u005",
+      "document_id": "python-3.14-ch08",
+      "page": "python-3.14-ch08-u005",
+      "chapter": 8,
+      "source": "https://docs.python.org/3.14/tutorial/errors.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/errors.html#exception-chaining",
+        "https://docs.python.org/3.14/tutorial/errors.html#user-defined-exceptions",
+        "https://docs.python.org/3.14/tutorial/errors.html#defining-clean-up-actions"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch08-u005.txt",
+      "characters": 2581,
+      "non_whitespace_characters": 2129,
+      "sha256": "b99350e3038e7d9dfe55d26c0bb8dfb26d5b6db22cb2878332eeaf83304afa97",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 12762,
+      "char_end": 15409,
+      "first_block": 66,
+      "last_block": 78,
+      "section_ids": [
+        "defining-clean-up-actions",
+        "predefined-clean-up-actions"
+      ],
+      "heading_path_at_start": [
+        "8. Errors and Exceptions",
+        "8.7. Defining Clean-up Actions"
+      ],
+      "code_blocks": 2,
+      "unit_id": "python-3.14-ch08-u006",
+      "document_id": "python-3.14-ch08",
+      "page": "python-3.14-ch08-u006",
+      "chapter": 8,
+      "source": "https://docs.python.org/3.14/tutorial/errors.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/errors.html#defining-clean-up-actions",
+        "https://docs.python.org/3.14/tutorial/errors.html#predefined-clean-up-actions"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch08-u006.txt",
+      "characters": 2647,
+      "non_whitespace_characters": 2128,
+      "sha256": "cec731aa3cabe9acf0701653119d3b0ec5685f33bca47eefa94913846b29d5d4",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 15411,
+      "char_end": 17818,
+      "first_block": 79,
+      "last_block": 87,
+      "section_ids": [
+        "predefined-clean-up-actions",
+        "raising-and-handling-multiple-unrelated-exceptions"
+      ],
+      "heading_path_at_start": [
+        "8. Errors and Exceptions",
+        "8.8. Predefined Clean-up Actions"
+      ],
+      "code_blocks": 3,
+      "unit_id": "python-3.14-ch08-u007",
+      "document_id": "python-3.14-ch08",
+      "page": "python-3.14-ch08-u007",
+      "chapter": 8,
+      "source": "https://docs.python.org/3.14/tutorial/errors.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/errors.html#predefined-clean-up-actions",
+        "https://docs.python.org/3.14/tutorial/errors.html#raising-and-handling-multiple-unrelated-exceptions"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch08-u007.txt",
+      "characters": 2407,
+      "non_whitespace_characters": 1959,
+      "sha256": "cd0a526ca87aff4846a065e7ba35def47e5076e681dd0ee497973b8688a427ea",
+      "language": "en",
+      "version": "3.14.10"
+    },
+    {
+      "char_start": 17820,
+      "char_end": 21837,
+      "first_block": 88,
+      "last_block": 95,
+      "section_ids": [
+        "raising-and-handling-multiple-unrelated-exceptions",
+        "enriching-exceptions-with-notes"
+      ],
+      "heading_path_at_start": [
+        "8. Errors and Exceptions",
+        "8.9. Raising and Handling Multiple Unrelated Exceptions"
+      ],
+      "code_blocks": 4,
+      "unit_id": "python-3.14-ch08-u008",
+      "document_id": "python-3.14-ch08",
+      "page": "python-3.14-ch08-u008",
+      "chapter": 8,
+      "source": "https://docs.python.org/3.14/tutorial/errors.html",
+      "section_urls": [
+        "https://docs.python.org/3.14/tutorial/errors.html#raising-and-handling-multiple-unrelated-exceptions",
+        "https://docs.python.org/3.14/tutorial/errors.html#enriching-exceptions-with-notes"
+      ],
+      "local_path": "data/processed/units/python-3.14-ch08-u008.txt",
+      "characters": 4017,
+      "non_whitespace_characters": 2967,
+      "sha256": "1449903f86d61991a3752d84378b912fa3be3cc24810fbff6af04a619aa6beb9",
+      "language": "en",
+      "version": "3.14.10"
+    }
+  ]
+}

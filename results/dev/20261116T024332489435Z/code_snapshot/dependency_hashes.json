@@ -1,0 +1,12 @@
+{
+  "starter/baseline.py": "cf51d4f4dd5412270d73b51cb117eef5329695fc8fd8eb637de050b3d6488c36",
+  "day6/starter/src/chunking.py": "787715e39e317198d99476069b17e0119f7b24b18fae540830ec60df5f408732",
+  "day6/starter/src/embeddings.py": "ad20bee8d292216b65e0f72ce073e08817cd0e0a5377d994600813164f52eeaa",
+  "day6/starter/src/evaluation.py": "d217bbacd7fe63a717102182ef0179c20abda49bc8ddff1b6f53b15498e3b146",
+  "day6/starter/src/ingestion.py": "b11314ef30e80f39dd536669dba38ab0c1faa327189b87defcec4e3c91672235",
+  "day6/starter/src/models.py": "0e177318d75586228a23e79abe328cc30772c1f86f1e9512f8cdfb452772458c",
+  "day6/starter/src/run.py": "5329bcabc3a63963618bd4264eaf80b1eb740d8543d16effb6576e7fe939d103",
+  "day6/starter/src/store.py": "a6dc980a43f603e62258b0284201ad88e05953ef8374d8b7bf3716e66ddddfaa",
+  "day6/starter/src/__init__.py": "9d51e4a4713565f1b69bb8f3a0d8ac2c6c8730961e738a65f7a7a4ebd2a593a8",
+  "day6/requirements-lock.txt": "a4429b50a90015758bfd01bb470ff458bd30598ea8952884f40d90d63dfd7b74"
+}

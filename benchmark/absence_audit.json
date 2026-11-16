@@ -1,0 +1,262 @@
+[
+  {
+    "id": "D16",
+    "reason": "Corpus không có phần giải thích asyncio hoặc TaskGroup. Các mục vòng lặp/ngoại lệ không quy định ngữ nghĩa hủy task bất đồng bộ.",
+    "term_matches": {
+      "asyncio": [],
+      "TaskGroup": []
+    },
+    "matching_source_units": [],
+    "related_section_chunks": [
+      {
+        "chunk_id": "04c317e2d8bb1d0fccdb9392592c38b4",
+        "page": "python-3.14-ch06-u004",
+        "text": ">>> import sys\n>>> sys.ps1\n'>>> '\n>>> sys.ps2\n'... '\n>>> sys.ps1 = 'C> '\nC> print('Yuck!')\nYuck!\nC>\n\nThese two variables are only defined if the interpreter is in interactive mode."
+      },
+      {
+        "chunk_id": "55ab02113921f02167c7115ad6365b55",
+        "page": "python-3.14-ch06-u004",
+        "text": "Python comes with a library of standard modules, described in a separate document, the Python Library Reference (“Library Reference” hereafter). Some modules are built into the interpreter; these provide access to operations that are not part of the core of the language but are nevertheless built in, either for efficiency or to provide access to operating system primitives such as system calls. The set of such modules is a configuration option which also depends on the underlying platform. For "
+      },
+      {
+        "chunk_id": "9bec85ca037cda1228cdac801e450728",
+        "page": "python-3.14-ch06-u004",
+        "text": "example, the winreg module is only provided on Windows systems. One particular module deserves some attention: sys, which is built into every Python interpreter. The variables sys.ps1 and sys.ps2 define the strings used as primary and secondary prompts:"
+      },
+      {
+        "chunk_id": "b9959379727249420f75c9e50f3c4ab4",
+        "page": "python-3.14-ch06-u004",
+        "text": "6.2. Standard Modules"
+      },
+      {
+        "chunk_id": "f15fac779cea2933d2cb46cd184d9aef",
+        "page": "python-3.14-ch06-u005",
+        "text": "The variable sys.path is a list of strings that determines the interpreter’s search path for modules. It is initialized to a default path taken from the environment variable PYTHONPATH, or from a built-in default if PYTHONPATH is not set. You can modify it using standard list operations:\n\n>>> import sys\n>>> sys.path.append('/ufs/guido/lib/python')"
+      }
+    ],
+    "human_review": "pending"
+  },
+  {
+    "id": "D17",
+    "reason": "dataclasses chỉ được nhắc làm ví dụ lớp có thứ tự thuộc tính trong match; frozen xuất hiện trong tên built-in frozenset. Không có hướng dẫn frozen=True hoặc ngoại lệ khi gán.",
+    "term_matches": {
+      "dataclass": [
+        {
+          "page": "python-3.14-ch04-u004",
+          "occurrences": 1
+        }
+      ],
+      "frozen": [
+        {
+          "page": "python-3.14-ch06-u006",
+          "occurrences": 1
+        }
+      ],
+      "FrozenInstanceError": []
+    },
+    "matching_source_units": [
+      {
+        "page": "python-3.14-ch04-u004",
+        "text": "4.7. match Statements\n\nA match statement takes an expression and compares its value to successive patterns given as one or more case blocks. This is superficially similar to a switch statement in C, Java or JavaScript (and many other languages), but it’s more similar to pattern matching in languages like Rust or Haskell. Only the first pattern that matches gets executed and it can also extract components (sequence elements or object attributes) from the value into variables. If no case matches, none of the branches is executed.\n\nThe simplest form compares a subject value against one or more literals:\n\ndef http_error(status):\n    match status:\n        case 400:\n            return \"Bad request\"\n        case 404:\n            return \"Not found\"\n        case 418:\n            return \"I'm a teapot\"\n        case _:\n            return \"Something's wrong with the internet\"\n\nNote the last block: the “variable name” _ acts as a wildcard and never fails to match.\n\nYou can combine several literals in a single pattern using | (“or”):\n\ncase 401 | 403 | 404:\n    return \"Not allowed\"\n\nPatterns can look like unpacking assignments, and can be used to bind variables:\n\n# point is an (x, y) tuple\nmatch point:\n    case (0, 0):\n        print(\"Origin\")\n    case (0, y):\n        print(f\"Y={y}\")\n    case (x, 0):\n        print(f\"X={x}\")\n    case (x, y):\n        print(f\"X={x}, Y={y}\")\n    case _:\n        raise ValueError(\"Not a point\")\n\nStudy that one carefully! The first pattern has two literals, and can be thought of as an extension of the literal pattern shown above. But the next two patterns combine a literal and a variable, and the variable binds a value from the subject (point). The fourth pattern captures two values, which makes it conceptually similar to the unpacking assignment (x, y) = point.\n\nIf you are using classes to structure your data you can use the class name followed by an argument list resembling a constructor, but with the ability to capture attributes into variables:\n\nclass Point:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n\ndef where_is(point):\n    match point:\n        case Point(x=0, y=0):\n            print(\"Origin\")\n        case Point(x=0, y=y):\n            print(f\"Y={y}\")\n        case Point(x=x, y=0):\n            print(f\"X={x}\")\n        case Point():\n            print(\"Somewhere else\")\n        case _:\n            print(\"Not a point\")\n\nYou can use positional parameters with some builtin classes that provide an ordering for their attributes (e.g. dataclasses). You can also define a specific position for attributes in patterns by setting the __match_args__ special attribute in your classes. If it’s set to (“x”, “y”), the following patterns are all equivalent (and all bind the y attribute to the var variable):"
+      },
+      {
+        "page": "python-3.14-ch06-u006",
+        "text": ">>> import builtins\n>>> dir(builtins)\n['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException',\n 'BlockingIOError', 'BrokenPipeError', 'BufferError', 'BytesWarning',\n 'ChildProcessError', 'ConnectionAbortedError', 'ConnectionError',\n 'ConnectionRefusedError', 'ConnectionResetError', 'DeprecationWarning',\n 'EOFError', 'Ellipsis', 'EnvironmentError', 'Exception', 'False',\n 'FileExistsError', 'FileNotFoundError', 'FloatingPointError',\n 'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError',\n 'ImportWarning', 'IndentationError', 'IndexError', 'InterruptedError',\n 'IsADirectoryError', 'KeyError', 'KeyboardInterrupt', 'LookupError',\n 'MemoryError', 'NameError', 'None', 'NotADirectoryError', 'NotImplemented',\n 'NotImplementedError', 'OSError', 'OverflowError',\n 'PendingDeprecationWarning', 'PermissionError', 'ProcessLookupError',\n 'ReferenceError', 'ResourceWarning', 'RuntimeError', 'RuntimeWarning',\n 'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError',\n 'SystemExit', 'TabError', 'TimeoutError', 'True', 'TypeError',\n 'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError',\n 'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 'UserWarning',\n 'ValueError', 'Warning', 'ZeroDivisionError', '_', '__build_class__',\n '__debug__', '__doc__', '__import__', '__name__', '__package__', 'abs',\n 'all', 'any', 'ascii', 'bin', 'bool', 'bytearray', 'bytes', 'callable',\n 'chr', 'classmethod', 'compile', 'complex', 'copyright', 'credits',\n 'delattr', 'dict', 'dir', 'divmod', 'enumerate', 'eval', 'exec', 'exit',\n 'filter', 'float', 'format', 'frozenset', 'getattr', 'globals', 'hasattr',\n 'hash', 'help', 'hex', 'id', 'input', 'int', 'isinstance', 'issubclass',\n 'iter', 'len', 'license', 'list', 'locals', 'map', 'max', 'memoryview',\n 'min', 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print', 'property',\n 'quit', 'range', 'repr', 'reversed', 'round', 'set', 'setattr', 'slice',\n 'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars',\n 'zip']\n\n6.4. Packages\n\nPackages are a way of structuring Python’s module namespace by using “dotted module names”. For example, the module name A.B designates a submodule named B in a package named A. Just like the use of modules saves the authors of different modules from having to worry about each other’s global variable names, the use of dotted module names saves the authors of multi-module packages like NumPy or Pillow from having to worry about each other’s module names."
+      }
+    ],
+    "related_section_chunks": [
+      {
+        "chunk_id": "0d6804121036afcd6e8e21963c26719f",
+        "page": "python-3.14-ch04-u004",
+        "text": "Study that one carefully! The first pattern has two literals, and can be thought of as an extension of the literal pattern shown above. But the next two patterns combine a literal and a variable, and the variable binds a value from the subject (point). The fourth pattern captures two values, which makes it conceptually similar to the unpacking assignment (x, y) = point."
+      },
+      {
+        "chunk_id": "28fdea834a02762e5234cf6034ebf6e9",
+        "page": "python-3.14-ch04-u006",
+        "text": "Patterns may use named constants. These must be dotted names to prevent them from being interpreted as capture variables:\n\nfrom enum import Enum\nclass Color(Enum):\n    RED = 'red'\n    GREEN = 'green'\n    BLUE = 'blue'\n\ncolor = Color(input(\"Enter your choice of 'red', 'blue' or 'green': \"))\n\nmatch color:\n    case Color.RED:\n        print(\"I see red!\")\n    case Color.GREEN:\n        print(\"Grass is green\")\n    case Color.BLUE:\n        print(\"I'm feeling the blues :(\")"
+      },
+      {
+        "chunk_id": "2fe51b9924227e5a6d7229a2b7366f2e",
+        "page": "python-3.14-ch04-u005",
+        "text": "Like unpacking assignments, tuple and list patterns have exactly the same meaning and actually match arbitrary sequences. An important exception is that they don’t match iterators or strings.\n\nSequence patterns support extended unpacking: [x, y, *rest] and (x, y, *rest) work similar to unpacking assignments. The name after * may also be _, so (x, y, *_) matches a sequence of at least two items without binding the remaining items."
+      },
+      {
+        "chunk_id": "313f30b4b03c84f44202b2dc3fa70949",
+        "page": "python-3.14-ch04-u004",
+        "text": "If you are using classes to structure your data you can use the class name followed by an argument list resembling a constructor, but with the ability to capture attributes into variables:"
+      },
+      {
+        "chunk_id": "372f972263ae4bec70b6fab290f7f81c",
+        "page": "python-3.14-ch04-u005",
+        "text": "class Point:\n    __match_args__ = ('x', 'y')\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n\nmatch points:\n    case []:\n        print(\"No points\")\n    case [Point(0, 0)]:\n        print(\"The origin\")\n    case [Point(x, y)]:\n        print(f\"Single point {x}, {y}\")\n    case [Point(0, y1), Point(0, y2)]:\n        print(f\"Two on the Y axis at {y1}, {y2}\")\n    case _:\n        print(\"Something else\")"
+      },
+      {
+        "chunk_id": "45123d055f5c4d3179b3e28ce8a5ba4a",
+        "page": "python-3.14-ch04-u004",
+        "text": "class Point:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n\ndef where_is(point):\n    match point:\n        case Point(x=0, y=0):\n            print(\"Origin\")\n        case Point(x=0, y=y):\n            print(f\"Y={y}\")\n        case Point(x=x, y=0):\n            print(f\"X={x}\")\n        case Point():\n            print(\"Somewhere else\")\n        case _:\n            print(\"Not a point\")"
+      },
+      {
+        "chunk_id": "5771c8104a4a5ff37e8c911d2a08349b",
+        "page": "python-3.14-ch04-u005",
+        "text": "Mapping patterns: {\"bandwidth\": b, \"latency\": l} captures the \"bandwidth\" and \"latency\" values from a dictionary. Unlike sequence patterns, extra keys are ignored. An unpacking like **rest is also supported. (But **_ would be redundant, so it is not allowed.)\n\nSubpatterns may be captured using the as keyword:\n\ncase (Point(x1, y1), Point(x2, y2) as p2): ...\n\nwill capture the second element of the input as p2 (as long as the input is a sequence of two points)"
+      },
+      {
+        "chunk_id": "7258644c88fc05301dd1d6ebf3a48c64",
+        "page": "python-3.14-ch04-u005",
+        "text": "Patterns can be arbitrarily nested. For example, if we have a short list of Points, with __match_args__ added, we could match it like this:"
+      },
+      {
+        "chunk_id": "742ee5bf3a9a08d3b8fff7972041c473",
+        "page": "python-3.14-ch04-u004",
+        "text": "case 401 | 403 | 404:\n    return \"Not allowed\"\n\nPatterns can look like unpacking assignments, and can be used to bind variables:\n\n# point is an (x, y) tuple\nmatch point:\n    case (0, 0):\n        print(\"Origin\")\n    case (0, y):\n        print(f\"Y={y}\")\n    case (x, 0):\n        print(f\"X={x}\")\n    case (x, y):\n        print(f\"X={x}, Y={y}\")\n    case _:\n        raise ValueError(\"Not a point\")"
+      },
+      {
+        "chunk_id": "7ad7ac97c1b32b4fbac294e15bf291a1",
+        "page": "python-3.14-ch04-u005",
+        "text": "Point(1, var)\nPoint(1, y=var)\nPoint(x=1, y=var)\nPoint(y=var, x=1)\n\nA recommended way to read patterns is to look at them as an extended form of what you would put on the left of an assignment, to understand which variables would be set to what. Only the standalone names (like var above) are assigned to by a match statement. Dotted names (like foo.bar), attribute names (the x= and y= above) or class names (recognized by the “(…)” next to them like Point above) are never assigned to."
+      },
+      {
+        "chunk_id": "82cdb0dd374820f6165fc998ea251023",
+        "page": "python-3.14-ch04-u004",
+        "text": "is executed."
+      },
+      {
+        "chunk_id": "88d5d7ba40e370965885e222e1120ec0",
+        "page": "python-3.14-ch04-u004",
+        "text": "A match statement takes an expression and compares its value to successive patterns given as one or more case blocks. This is superficially similar to a switch statement in C, Java or JavaScript (and many other languages), but it’s more similar to pattern matching in languages like Rust or Haskell. Only the first pattern that matches gets executed and it can also extract components (sequence elements or object attributes) from the value into variables. If no case matches, none of the branches "
+      },
+      {
+        "chunk_id": "8bcfe87ce513325a3e396ed575145b58",
+        "page": "python-3.14-ch04-u006",
+        "text": "For a more detailed explanation and additional examples, you can look into PEP 636 which is written in a tutorial format."
+      },
+      {
+        "chunk_id": "9e8203ef2627c783c324db7ba6c6da8e",
+        "page": "python-3.14-ch04-u004",
+        "text": "You can use positional parameters with some builtin classes that provide an ordering for their attributes (e.g. dataclasses). You can also define a specific position for attributes in patterns by setting the __match_args__ special attribute in your classes. If it’s set to (“x”, “y”), the following patterns are all equivalent (and all bind the y attribute to the var variable):"
+      },
+      {
+        "chunk_id": "ae7a193f26ffc7117a42c23077b561ed",
+        "page": "python-3.14-ch04-u004",
+        "text": "4.7. match Statements"
+      },
+      {
+        "chunk_id": "b8e52cd743fc843227e2e170e71d51f1",
+        "page": "python-3.14-ch04-u005",
+        "text": "We can add an if clause to a pattern, known as a “guard”. If the guard is false, match goes on to try the next case block. Note that value capture happens before the guard is evaluated:\n\nmatch point:\n    case Point(x, y) if x == y:\n        print(f\"Y=X at {x}\")\n    case Point(x, y):\n        print(f\"Not on the diagonal\")\n\nSeveral other key features of this statement:"
+      },
+      {
+        "chunk_id": "c2b72ceceb4c8dd36b3cecab2bb4689e",
+        "page": "python-3.14-ch04-u004",
+        "text": "The simplest form compares a subject value against one or more literals:\n\ndef http_error(status):\n    match status:\n        case 400:\n            return \"Bad request\"\n        case 404:\n            return \"Not found\"\n        case 418:\n            return \"I'm a teapot\"\n        case _:\n            return \"Something's wrong with the internet\"\n\nNote the last block: the “variable name” _ acts as a wildcard and never fails to match.\n\nYou can combine several literals in a single pattern using | (“or”):"
+      },
+      {
+        "chunk_id": "dd97c0b80010ae536285c6ce2eef77c4",
+        "page": "python-3.14-ch04-u005",
+        "text": "Most literals are compared by equality, however the singletons True, False and None are compared by identity."
+      }
+    ],
+    "human_review": "pending"
+  },
+  {
+    "id": "T06",
+    "reason": "database.sqlite chỉ là tên file trong ví dụ open() và exception chaining. Không có API sqlite3, PRAGMA hay thiết lập busy_timeout.",
+    "term_matches": {
+      "sqlite": [
+        {
+          "page": "python-3.14-ch08-u004",
+          "occurrences": 3
+        },
+        {
+          "page": "python-3.14-ch08-u005",
+          "occurrences": 1
+        }
+      ],
+      "sqlite3": [],
+      "PRAGMA": [],
+      "busy_timeout": []
+    },
+    "matching_source_units": [
+      {
+        "page": "python-3.14-ch08-u004",
+        "text": "for arg in sys.argv[1:]:\n    try:\n        f = open(arg, 'r')\n    except OSError:\n        print('cannot open', arg)\n    else:\n        print(arg, 'has', len(f.readlines()), 'lines')\n        f.close()\n\nThe use of the else clause is better than adding additional code to the try clause because it avoids accidentally catching an exception that wasn’t raised by the code being protected by the try … except statement.\n\nException handlers do not handle only exceptions that occur immediately in the try clause, but also those that occur inside functions that are called (even indirectly) in the try clause. For example:\n\n>>> def this_fails():\n...     x = 1/0\n...\n>>> try:\n...     this_fails()\n... except ZeroDivisionError as err:\n...     print('Handling run-time error:', err)\n...\nHandling run-time error: division by zero\n\n8.4. Raising Exceptions\n\nThe raise statement allows the programmer to force a specified exception to occur. For example:\n\n>>> raise NameError('HiThere')\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n    raise NameError('HiThere')\nNameError: HiThere\n\nThe sole argument to raise indicates the exception to be raised. This must be either an exception instance or an exception class (a class that derives from BaseException, such as Exception or one of its subclasses). If an exception class is passed, it will be implicitly instantiated by calling its constructor with no arguments:\n\nraise ValueError  # shorthand for 'raise ValueError()'\n\nIf you need to determine whether an exception was raised but don’t intend to handle it, a simpler form of the raise statement allows you to re-raise the exception:\n\n>>> try:\n...     raise NameError('HiThere')\n... except NameError:\n...     print('An exception flew by!')\n...     raise\n...\nAn exception flew by!\nTraceback (most recent call last):\n  File \"<stdin>\", line 2, in <module>\n    raise NameError('HiThere')\nNameError: HiThere\n\n8.5. Exception Chaining\n\nIf an unhandled exception occurs inside an except section, it will have the exception being handled attached to it and included in the error message:\n\n>>> try:\n...     open(\"database.sqlite\")\n... except OSError:\n...     raise RuntimeError(\"unable to handle error\")\n...\nTraceback (most recent call last):\n  File \"<stdin>\", line 2, in <module>\n    open(\"database.sqlite\")\n    ~~~~^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'database.sqlite'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 4, in <module>\n    raise RuntimeError(\"unable to handle error\")\nRuntimeError: unable to handle error"
+      },
+      {
+        "page": "python-3.14-ch08-u005",
+        "text": "To indicate that an exception is a direct consequence of another, the raise statement allows an optional from clause:\n\n# exc must be exception instance or None.\nraise RuntimeError from exc\n\nThis can be useful when you are transforming exceptions. For example:\n\n>>> def func():\n...     raise ConnectionError\n...\n>>> try:\n...     func()\n... except ConnectionError as exc:\n...     raise RuntimeError('Failed to open database') from exc\n...\nTraceback (most recent call last):\n  File \"<stdin>\", line 2, in <module>\n    func()\n    ~~~~^^\n  File \"<stdin>\", line 2, in func\nConnectionError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 4, in <module>\n    raise RuntimeError('Failed to open database') from exc\nRuntimeError: Failed to open database\n\nIt also allows disabling automatic exception chaining using the from None idiom:\n\n>>> try:\n...     open('database.sqlite')\n... except OSError:\n...     raise RuntimeError from None\n...\nTraceback (most recent call last):\n  File \"<stdin>\", line 4, in <module>\n    raise RuntimeError from None\nRuntimeError\n\nFor more information about chaining mechanics, see Built-in Exceptions.\n\n8.6. User-defined Exceptions\n\nPrograms may name their own exceptions by creating a new exception class (see Classes for more about Python classes). Exceptions should typically be derived from the Exception class, either directly or indirectly.\n\nException classes can be defined which do anything any other class can do, but are usually kept simple, often only offering a number of attributes that allow information about the error to be extracted by handlers for the exception.\n\nMost exceptions are defined with names that end in “Error”, similar to the naming of the standard exceptions.\n\nMany standard modules define their own exceptions to report errors that may occur in functions they define.\n\n8.7. Defining Clean-up Actions\n\nThe try statement has another optional clause which is intended to define clean-up actions that must be executed under all circumstances. For example:\n\n>>> try:\n...     raise KeyboardInterrupt\n... finally:\n...     print('Goodbye, world!')\n...\nGoodbye, world!\nTraceback (most recent call last):\n  File \"<stdin>\", line 2, in <module>\n    raise KeyboardInterrupt\nKeyboardInterrupt\n\nIf a finally clause is present, the finally clause will execute as the last task before the try statement completes. The finally clause runs whether or not the try statement produces an exception. The following points discuss more complex cases when an exception occurs:"
+      }
+    ],
+    "related_section_chunks": [
+      {
+        "chunk_id": "22301843e855f993ff0daa2a245506d0",
+        "page": "python-3.14-ch08-u005",
+        "text": "    raise RuntimeError('Failed to open database') from exc\nRuntimeError: Failed to open database"
+      },
+      {
+        "chunk_id": "7e516c73a05353d6c6d2c6de2cd846fa",
+        "page": "python-3.14-ch08-u005",
+        "text": "To indicate that an exception is a direct consequence of another, the raise statement allows an optional from clause:\n\n# exc must be exception instance or None.\nraise RuntimeError from exc\n\nThis can be useful when you are transforming exceptions. For example:"
+      },
+      {
+        "chunk_id": "94d4436a71893266c146e4c70ca5245b",
+        "page": "python-3.14-ch08-u004",
+        "text": "8.5. Exception Chaining\n\nIf an unhandled exception occurs inside an except section, it will have the exception being handled attached to it and included in the error message:"
+      },
+      {
+        "chunk_id": "a8b6469463b12ad87ff7d90ca0a42005",
+        "page": "python-3.14-ch08-u004",
+        "text": ">>> try:\n...     open(\"database.sqlite\")\n... except OSError:\n...     raise RuntimeError(\"unable to handle error\")\n...\nTraceback (most recent call last):\n  File \"<stdin>\", line 2, in <module>\n    open(\"database.sqlite\")\n    ~~~~^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'database.sqlite'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 4, in <module>\n"
+      },
+      {
+        "chunk_id": "b00e786b48302c20d28e3e2fc67475bc",
+        "page": "python-3.14-ch08-u005",
+        "text": ">>> def func():\n...     raise ConnectionError\n...\n>>> try:\n...     func()\n... except ConnectionError as exc:\n...     raise RuntimeError('Failed to open database') from exc\n...\nTraceback (most recent call last):\n  File \"<stdin>\", line 2, in <module>\n    func()\n    ~~~~^^\n  File \"<stdin>\", line 2, in func\nConnectionError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 4, in <module>\n"
+      },
+      {
+        "chunk_id": "e3d848621456f36c8ebdfe1562ebce46",
+        "page": "python-3.14-ch08-u004",
+        "text": "    raise RuntimeError(\"unable to handle error\")\nRuntimeError: unable to handle error"
+      },
+      {
+        "chunk_id": "ff3919a7aecf66d4113ecfab1a1fe6b0",
+        "page": "python-3.14-ch08-u005",
+        "text": "It also allows disabling automatic exception chaining using the from None idiom:\n\n>>> try:\n...     open('database.sqlite')\n... except OSError:\n...     raise RuntimeError from None\n...\nTraceback (most recent call last):\n  File \"<stdin>\", line 4, in <module>\n    raise RuntimeError from None\nRuntimeError\n\nFor more information about chaining mechanics, see Built-in Exceptions."
+      }
+    ],
+    "human_review": "pending"
+  },
+  {
+    "id": "T07",
+    "reason": "Mục function annotations chỉ giới thiệu metadata, __annotations__ và cú pháp :/->. Không giải thích TypeVar, generic variance hoặc hai cờ được hỏi.",
+    "term_matches": {
+      "typing.TypeVar": [],
+      "TypeVar": [],
+      "covariant": [],
+      "contravariant": []
+    },
+    "matching_source_units": [],
+    "related_section_chunks": [
+      {
+        "chunk_id": "176e9a3e798bd064c819c6f7a35171da",
+        "page": "python-3.14-ch04-u013",
+        "text": "argument, and the return value annotated:"
+      },
+      {
+        "chunk_id": "4c24ad0965a754d5ef4f9a0e19983020",
+        "page": "python-3.14-ch04-u013",
+        "text": "Annotations are stored in the __annotations__ attribute of the function as a dictionary and have no effect on any other part of the function. Parameter annotations are defined by a colon after the parameter name, followed by an expression evaluating to the value of the annotation. Return annotations are defined by a literal ->, followed by an expression, between the parameter list and the colon denoting the end of the def statement. The following example has a required argument, an optional "
+      },
+      {
+        "chunk_id": "5cbbb45c40ed3b05f985d43e9c6dd93a",
+        "page": "python-3.14-ch04-u013",
+        "text": "4.9.8. Function Annotations\n\nFunction annotations are completely optional metadata information about the types used by user-defined functions (see PEP 3107 and PEP 484 for more information)."
+      },
+      {
+        "chunk_id": "8e5da4330627111c96bc69c6c6cc63e5",
+        "page": "python-3.14-ch04-u014",
+        "text": ">>> def f(ham: str, eggs: str = 'eggs') -> str:\n...     print(\"Annotations:\", f.__annotations__)\n...     print(\"Arguments:\", ham, eggs)\n...     return ham + ' and ' + eggs\n...\n>>> f('spam')\nAnnotations: {'ham': <class 'str'>, 'return': <class 'str'>, 'eggs': <class 'str'>}\nArguments: spam eggs\n'spam and eggs'"
+      }
+    ],
+    "human_review": "pending"
+  }
+]

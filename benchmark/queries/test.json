@@ -1,0 +1,37 @@
+[
+  {
+    "id": "T01",
+    "split": "test",
+    "question": "Chuỗi literal dùng ba dấu nháy có giữ ký tự xuống dòng không? Theo ví dụ trong tài liệu, làm sao tránh đưa newline đầu tiên vào chuỗi?"
+  },
+  {
+    "id": "T02",
+    "split": "test",
+    "question": "Để buộc tham số của hàm chỉ được truyền bằng tên, cần đặt ký hiệu nào và ở vị trí nào trong danh sách tham số?"
+  },
+  {
+    "id": "T03",
+    "split": "test",
+    "question": "Nếu cần xóa phần tử theo index hoặc xóa một slice của list mà không lấy giá trị trả về, tài liệu hướng dẫn dùng câu lệnh nào? Nó khác pop() ở điểm gì?"
+  },
+  {
+    "id": "T04",
+    "split": "test",
+    "question": "Vì sao nên mở file bằng with? Nếu trong khối with phát sinh exception thì file có được đóng không?"
+  },
+  {
+    "id": "T05",
+    "split": "test",
+    "question": "Khi raise một ngoại lệ mới trong except, cú pháp nào được tài liệu dùng để tắt automatic exception chaining?"
+  },
+  {
+    "id": "T06",
+    "split": "test",
+    "question": "Theo corpus này, cấu hình sqlite3 PRAGMA busy_timeout bằng câu lệnh nào và thời gian chờ có đơn vị gì?"
+  },
+  {
+    "id": "T07",
+    "split": "test",
+    "question": "Chỉ dựa trên các tài liệu này, covariant=True và contravariant=True của typing.TypeVar khác nhau thế nào khi khai báo kiểu generic?"
+  }
+]

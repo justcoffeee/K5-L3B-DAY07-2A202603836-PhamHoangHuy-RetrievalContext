@@ -1,0 +1,487 @@
+[
+  {
+    "query_id": "D01",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "reason": "Đúng tiền tố r và ý nghĩa giữ nguyên escape; ví dụ/giới hạn dấu backslash có trong nguồn.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "df4122fa5c78693a0845f12423f92fcb4fff12e4bfedf9fbd3f207e4af6fef0f",
+    "citation_reviews": [
+      {
+        "id": "5046e99636180b57c2960fedf1d3566c",
+        "supports": true,
+        "reason": "Đoạn raw strings nêu tiền tố r, ví dụ Windows path, escape và giới hạn backslash cuối."
+      }
+    ],
+    "observed_inline_citations": [
+      "5046e99636180b57c2960fedf1d3566c"
+    ],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [
+      {
+        "id": "5046e99636180b57c2960fedf1d3566c",
+        "supports": true,
+        "reason": "Đoạn raw strings nêu tiền tố r, ví dụ Windows path, escape và giới hạn backslash cuối."
+      }
+    ]
+  },
+  {
+    "query_id": "D02",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "reason": "Đủ cả -1 là ký tự cuối, -2 áp cuối và -0 bằng 0.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "10d82688cdbf098503ef32f18a7642a7b26d78432468fb894c85cbdb58c7de10",
+    "citation_reviews": [
+      {
+        "id": "07eab24fdef0d6f3c82bb56fb67407ce",
+        "supports": true,
+        "reason": "Ví dụ word[-1]/[-2] và câu -0 giống 0 hỗ trợ đủ điều kiện."
+      }
+    ],
+    "observed_inline_citations": [
+      "07eab24fdef0d6f3c82bb56fb67407ce"
+    ],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [
+      {
+        "id": "07eab24fdef0d6f3c82bb56fb67407ce",
+        "supports": true,
+        "reason": "Ví dụ word[-1]/[-2] và câu -0 giống 0 hỗ trợ đủ điều kiện."
+      }
+    ]
+  },
+  {
+    "query_id": "D03",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "reason": "Đúng toàn bộ danh sách [5, 6, 7, 8, 9].",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "a8cc069d262cce8a3ed9ce5549217efde5796b3d34837b054943ac67471b2773",
+    "citation_reviews": [
+      {
+        "id": "5b0389b2014ead261047a7ea77039951",
+        "supports": true,
+        "reason": "Ví dụ nguyên văn list(range(5,10)) và danh sách kết quả."
+      }
+    ],
+    "observed_inline_citations": [
+      "5b0389b2014ead261047a7ea77039951"
+    ],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [
+      {
+        "id": "5b0389b2014ead261047a7ea77039951",
+        "supports": true,
+        "reason": "Ví dụ nguyên văn list(range(5,10)) và danh sách kết quả."
+      }
+    ]
+  },
+  {
+    "query_id": "D04",
+    "answer_grade": 0,
+    "context_grade": 0,
+    "citation_support": [],
+    "abstention_correct": null,
+    "reason": "False refusal: context chỉ có loop else, thiếu quy tắc innermost dù các lượt tìm đã tìm thấy.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "9c335e1bc8cd3cfd4dcd0ef58b71343ca5b4acd1b87be628c6bb0c582db6a58a",
+    "citation_reviews": [],
+    "observed_inline_citations": [
+      "e09df3f01953e055de669d3402d7ddac"
+    ],
+    "unlisted_inline_citations": [
+      "e09df3f01953e055de669d3402d7ddac"
+    ],
+    "observed_citation_reviews": [
+      {
+        "id": "e09df3f01953e055de669d3402d7ddac",
+        "supports": true,
+        "reason": "Hỗ trợ mô tả giới hạn của context là loop else/break; không chứng minh đáp án về innermost. Đây vẫn là false refusal."
+      }
+    ]
+  },
+  {
+    "query_id": "D05",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "reason": "Xác định đúng *args được đóng gói thành tuple.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "96e72e318642f81d53e876118b15eebed8af15a9487c9b333e21a3917a9cfb8c",
+    "citation_reviews": [
+      {
+        "id": "72ba98c7f88046b6519961423f685ff5",
+        "supports": true,
+        "reason": "Arbitrary Argument Lists nêu arguments wrapped up in tuple và ví dụ *args."
+      }
+    ],
+    "observed_inline_citations": [
+      "72ba98c7f88046b6519961423f685ff5"
+    ],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [
+      {
+        "id": "72ba98c7f88046b6519961423f685ff5",
+        "supports": true,
+        "reason": "Arbitrary Argument Lists nêu arguments wrapped up in tuple và ví dụ *args."
+      }
+    ]
+  },
+  {
+    "query_id": "D06",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "reason": "Đủ keyword arguments dư, loại đối số đã khớp tham số hình thức, và kiểu dictionary.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "4ea57f201f035642aafbc82594aa6f0d2e5818efa9da74d54514e8707553cb39",
+    "citation_reviews": [
+      {
+        "id": "a406cc7dac32b6727ecb688a6d3b9286",
+        "supports": true,
+        "reason": "Định nghĩa **name là dictionary chứa keyword arguments chưa khớp formal parameter; cũng hỗ trợ phần bổ sung *name."
+      }
+    ],
+    "observed_inline_citations": [
+      "a406cc7dac32b6727ecb688a6d3b9286"
+    ],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [
+      {
+        "id": "a406cc7dac32b6727ecb688a6d3b9286",
+        "supports": true,
+        "reason": "Định nghĩa **name là dictionary chứa keyword arguments chưa khớp formal parameter; cũng hỗ trợ phần bổ sung *name."
+      }
+    ]
+  },
+  {
+    "query_id": "D07",
+    "answer_grade": 0,
+    "context_grade": 1,
+    "citation_support": [],
+    "abstention_correct": null,
+    "reason": "Context có tuple tổng quát (mức 1) nhưng không singleton; phản hồi từ chối kèm citations bị lỗi protocol, chấm all-case 0.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "242573f602771876fb6c98f4e0d257585d944774485b8c560946445f463cc811",
+    "citation_reviews": [],
+    "observed_inline_citations": [],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": []
+  },
+  {
+    "query_id": "D08",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "reason": "Đủ xóa/trả phần tử cuối và IndexError khi list rỗng.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "f3c0b1b9eaf4f294473523bde3bf956f049bed82d7c5e2dc1d6e72016584b7c5",
+    "citation_reviews": [
+      {
+        "id": "e4976e7c8c03d1c6a37a18f46e14e9dd",
+        "supports": true,
+        "reason": "Nêu pop không index xóa/trả phần tử cuối và IndexError với list rỗng."
+      }
+    ],
+    "observed_inline_citations": [
+      "e4976e7c8c03d1c6a37a18f46e14e9dd"
+    ],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [
+      {
+        "id": "e4976e7c8c03d1c6a37a18f46e14e9dd",
+        "supports": true,
+        "reason": "Nêu pop không index xóa/trả phần tử cuối và IndexError với list rỗng."
+      }
+    ]
+  },
+  {
+    "query_id": "D09",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "reason": "Đúng items() và lấy đồng thời key/value.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "0a87cca95390b112c25bd4dced3d30fb6facdde22e0cbc20aff9cbf86ebb4cd2",
+    "citation_reviews": [
+      {
+        "id": "fa52d5bbb11517433573b8febe0a1876",
+        "supports": true,
+        "reason": "Nêu items() lấy key/value đồng thời, có ví dụ for k,v."
+      }
+    ],
+    "observed_inline_citations": [
+      "fa52d5bbb11517433573b8febe0a1876"
+    ],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [
+      {
+        "id": "fa52d5bbb11517433573b8febe0a1876",
+        "supports": true,
+        "reason": "Nêu items() lấy key/value đồng thời, có ví dụ for k,v."
+      }
+    ]
+  },
+  {
+    "query_id": "D10",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "reason": "Đúng zip() để ghép phần tử tương ứng của hai/nhiều sequence.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "197824d3e9a8c15cc57a6effc295ee6ee2e9dde9e1c4d3e0371b1aa425f3db95",
+    "citation_reviews": [
+      {
+        "id": "d0465c0ebf1bcc71b35de11057f991e9",
+        "supports": true,
+        "reason": "Nêu zip ghép entries của hai/nhiều sequence và ví dụ hai danh sách."
+      }
+    ],
+    "observed_inline_citations": [
+      "d0465c0ebf1bcc71b35de11057f991e9"
+    ],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [
+      {
+        "id": "d0465c0ebf1bcc71b35de11057f991e9",
+        "supports": true,
+        "reason": "Nêu zip ghép entries của hai/nhiều sequence và ví dụ hai danh sách."
+      }
+    ]
+  },
+  {
+    "query_id": "D11",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "reason": "Đủ tên hiện tại gồm biến/module/hàm và không tự liệt kê các built-in.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "97dca7249eb5fdad5ad0edd32a3fb7c38b09bc884a914a858adfc838f5a0e842",
+    "citation_reviews": [
+      {
+        "id": "653c279748bae8969296f00bc2941191",
+        "supports": true,
+        "reason": "Nêu tên hiện tại, mọi loại tên và loại trừ built-in; ví dụ dir()."
+      }
+    ],
+    "observed_inline_citations": [
+      "653c279748bae8969296f00bc2941191"
+    ],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [
+      {
+        "id": "653c279748bae8969296f00bc2941191",
+        "supports": true,
+        "reason": "Nêu tên hiện tại, mọi loại tên và loại trừ built-in; ví dụ dir()."
+      }
+    ]
+  },
+  {
+    "query_id": "D12",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "reason": "Đúng so sánh modification date của nguồn với bản đã biên dịch.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "661d5ce32a9fbf0722670a96bc7d6adaa506f0ebb8d2861ec8ac0ff420e987c0",
+    "citation_reviews": [
+      {
+        "id": "4b9311d6dabb880f0d9037d258d191b8",
+        "supports": true,
+        "reason": "Nêu kiểm tra ngày sửa nguồn và compiled version để quyết định biên dịch lại."
+      }
+    ],
+    "observed_inline_citations": [
+      "4b9311d6dabb880f0d9037d258d191b8"
+    ],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [
+      {
+        "id": "4b9311d6dabb880f0d9037d258d191b8",
+        "supports": true,
+        "reason": "Nêu kiểm tra ngày sửa nguồn và compiled version để quyết định biên dịch lại."
+      }
+    ]
+  },
+  {
+    "query_id": "D13",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "reason": "Đủ đọc toàn bộ khi bỏ size/size âm và cảnh báo file lớn hơn bộ nhớ.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "6dd5412fffe8090649004594de523b3c448d7d280e05f43e68e80917e7a8dfa1",
+    "citation_reviews": [
+      {
+        "id": "b2e4e2a1efb032538c84a9e87be3cfb4",
+        "supports": true,
+        "reason": "Nêu text/bytes, trường hợp size omitted/negative, cảnh báo bộ nhớ và nhánh otherwise tối đa size."
+      }
+    ],
+    "observed_inline_citations": [
+      "b2e4e2a1efb032538c84a9e87be3cfb4"
+    ],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [
+      {
+        "id": "b2e4e2a1efb032538c84a9e87be3cfb4",
+        "supports": true,
+        "reason": "Nêu text/bytes, trường hợp size omitted/negative, cảnh báo bộ nhớ và nhánh otherwise tối đa size."
+      }
+    ]
+  },
+  {
+    "query_id": "D14",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "abstention_correct": null,
+    "reason": "Đủ byte offset trong binary và opaque position trong text.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "1b456e5443478170835c5ece44e74c703a5d9ca855d106511d30446fc32e98a5",
+    "citation_reviews": [
+      {
+        "id": "9c4ec9a68dac484801d37366b0214e51",
+        "supports": true,
+        "reason": "Nêu trực tiếp byte position ở binary và opaque number ở text."
+      },
+      {
+        "id": "dbb1c2a57f3bdb25359e5a45739375d9",
+        "supports": true,
+        "reason": "Hỗ trợ riêng phần bổ sung về các offset seek hợp lệ cho text."
+      }
+    ],
+    "observed_inline_citations": [
+      "9c4ec9a68dac484801d37366b0214e51",
+      "dbb1c2a57f3bdb25359e5a45739375d9"
+    ],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [
+      {
+        "id": "9c4ec9a68dac484801d37366b0214e51",
+        "supports": true,
+        "reason": "Nêu trực tiếp byte position ở binary và opaque number ở text."
+      },
+      {
+        "id": "dbb1c2a57f3bdb25359e5a45739375d9",
+        "supports": true,
+        "reason": "Hỗ trợ riêng phần bổ sung về các offset seek hợp lệ cho text."
+      }
+    ]
+  },
+  {
+    "query_id": "D15",
+    "answer_grade": 2,
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "abstention_correct": null,
+    "reason": "Đủ else sau tất cả except và chỉ chạy khi try không phát sinh ngoại lệ.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "559c20b6db6ca70711fac294264ca87749c00b5067b1f837e8ee424197fb6dc2",
+    "citation_reviews": [
+      {
+        "id": "89cb0b58f013c40c3ef13c336fcb8792",
+        "supports": true,
+        "reason": "Hỗ trợ cả vị trí sau tất cả except và điều kiện try không có ngoại lệ."
+      }
+    ],
+    "observed_inline_citations": [
+      "89cb0b58f013c40c3ef13c336fcb8792"
+    ],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": [
+      {
+        "id": "89cb0b58f013c40c3ef13c336fcb8792",
+        "supports": true,
+        "reason": "Hỗ trợ cả vị trí sau tất cả except và điều kiện try không có ngoại lệ."
+      }
+    ]
+  },
+  {
+    "query_id": "D16",
+    "answer_grade": null,
+    "context_grade": null,
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "Đã đọc câu từ chối: giới hạn ở tài liệu/context, không nêu cơ chế kỹ thuật hay đoán ngoại lệ ngoài corpus; đúng theo absence audit của benchmark.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "ae536f6646b74dae1881fa24eccf561db5a8d5cc7143aed312e2277bce860ba8",
+    "citation_reviews": [],
+    "observed_inline_citations": [],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": []
+  },
+  {
+    "query_id": "D17",
+    "answer_grade": null,
+    "context_grade": null,
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "Đã đọc câu từ chối: giới hạn ở tài liệu/context, không nêu cơ chế kỹ thuật hay đoán ngoại lệ ngoài corpus; đúng theo absence audit của benchmark.",
+    "review_origin": "AI-assisted source/answer inspection by Codex; not independent human annotation",
+    "user_confirmation": "pending",
+    "trace_sha256": "bad5858fc3af71371c60b6ddfb5162ef72037b38f2795671a8010bde9dec8e2e",
+    "citation_reviews": [],
+    "observed_inline_citations": [],
+    "unlisted_inline_citations": [],
+    "observed_citation_reviews": []
+  }
+]

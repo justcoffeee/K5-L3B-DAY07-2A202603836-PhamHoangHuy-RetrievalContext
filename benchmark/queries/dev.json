@@ -1,0 +1,87 @@
+[
+  {
+    "id": "D01",
+    "split": "dev",
+    "question": "Muốn viết đường dẫn Windows mà các ký tự như \\n và \\t không bị hiểu là xuống dòng hoặc tab, tiền tố chuỗi nào được tài liệu hướng dẫn?"
+  },
+  {
+    "id": "D02",
+    "split": "dev",
+    "question": "Khi đánh chỉ số chuỗi từ phía cuối, -1 và -2 chỉ ký tự nào? Vì sao không bắt đầu bằng -0?"
+  },
+  {
+    "id": "D03",
+    "split": "dev",
+    "question": "Ví dụ list(range(5, 10)) trong tài liệu cho ra danh sách nào?"
+  },
+  {
+    "id": "D04",
+    "split": "dev",
+    "question": "Nếu có vòng lặp for lồng trong while, break nằm trong for sẽ thoát vòng nào theo quy tắc của tài liệu?"
+  },
+  {
+    "id": "D05",
+    "split": "dev",
+    "question": "Các đối số bổ sung được gom bởi *args trong định nghĩa hàm có kiểu cấu trúc dữ liệu gì?"
+  },
+  {
+    "id": "D06",
+    "split": "dev",
+    "question": "Tham số **name nhận những đối số nào và lưu trong kiểu dữ liệu gì?"
+  },
+  {
+    "id": "D07",
+    "split": "dev",
+    "question": "Muốn tạo tuple chỉ chứa chuỗi hello thì chỉ viết ngoặc quanh giá trị có đủ không? Cú pháp cần thêm gì?"
+  },
+  {
+    "id": "D08",
+    "split": "dev",
+    "question": "a.pop() không truyền index sẽ xóa và trả về phần tử nào? Điều gì xảy ra nếu a rỗng?"
+  },
+  {
+    "id": "D09",
+    "split": "dev",
+    "question": "Khi duyệt dictionary, dùng phương thức nào để lấy đồng thời khóa và giá trị tương ứng?"
+  },
+  {
+    "id": "D10",
+    "split": "dev",
+    "question": "Có hai sequence cần duyệt đồng thời thành từng cặp phần tử tương ứng. Tài liệu giới thiệu hàm nào?"
+  },
+  {
+    "id": "D11",
+    "split": "dev",
+    "question": "dir() không truyền đối số liệt kê những tên nào? Nó có tự liệt kê tên hàm và biến built-in không?"
+  },
+  {
+    "id": "D12",
+    "split": "dev",
+    "question": "Python dựa vào thông tin nào của file nguồn để quyết định module đã biên dịch có lỗi thời và cần biên dịch lại?"
+  },
+  {
+    "id": "D13",
+    "split": "dev",
+    "question": "Với file vừa mở để đọc và đang ở đầu file, bỏ size hoặc truyền size âm cho f.read(size) sẽ đọc bao nhiêu? Rủi ro bộ nhớ được tài liệu nhắc là gì?"
+  },
+  {
+    "id": "D14",
+    "split": "dev",
+    "question": "Giá trị f.tell() trong binary mode và text mode có ý nghĩa khác nhau thế nào?"
+  },
+  {
+    "id": "D15",
+    "split": "dev",
+    "question": "Trong try...except, khối else phải đặt sau phần nào và được dùng khi nào?"
+  },
+  {
+    "id": "D16",
+    "split": "dev",
+    "question": "Chỉ dựa trên tài liệu đã cung cấp, khi một task trong asyncio.TaskGroup lỗi, các task còn lại được hủy và chờ kết thúc như thế nào?"
+  },
+  {
+    "id": "D17",
+    "split": "dev",
+    "question": "Tài liệu đã cung cấp hướng dẫn dùng @dataclass(frozen=True) để ngăn gán lại thuộc tính như thế nào và phát sinh ngoại lệ gì khi cố gán?"
+  }
+]

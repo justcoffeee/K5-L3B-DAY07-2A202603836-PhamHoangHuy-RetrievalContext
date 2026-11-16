@@ -1,0 +1,16 @@
+{
+  "status": "user_confirmed_AI_assisted_dev_reviews",
+  "message": "mình duyệt nhé",
+  "scope": "85 AI-assisted dev reviews and I1 candidate; authorize connection check then baseline/I1 held-out evaluation",
+  "recorded_at_utc": "2026-11-16T03:28:03.202982+00:00",
+  "origin": "AI-assisted reviews confirmed by user, not independent blind human annotation",
+  "review_count": 85,
+  "review_file_sha256": {
+    "results/dev/20261116T024332489435Z/dense/reviews_ai_assisted.json": "f38c622c8af3bb5d4fac8aeadd296cb922a1a4cc69ecfe79672f46423537fa9e",
+    "results/dev/20261116T024332489435Z/tfidf/reviews_ai_assisted.json": "28fbc36c9ae9624f93a223507ff903c05e5e534d841c249082bbe570977929f0",
+    "results/dev/20261116T024332489435Z/hybrid/reviews_ai_assisted.json": "d124fceb9c7251775867ecb5476b4baa1b06047ee6a82518f6ea3344964fa587",
+    "results/dev/20261116T030001129031Z/dense/reviews_ai_assisted.json": "b5d3a3b5d2e1fc68328e3d74fd59b98755e3201e2ec902c65ba886040abfeab0",
+    "results/dev/20261116T030303500415Z/dense/reviews_ai_assisted.json": "d1f8a660909404a241b1d28cf339a7101dedfdd07dffba7fb413d2acc11d469b"
+  },
+  "comparison_sha256": "3e442c30a3e7910f30803cc2ce78358491eea7451119ea462b53b4ca95f2a63c"
+}

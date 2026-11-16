@@ -1,0 +1,403 @@
+{
+  "ok": false,
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": false,
+      "error_type": "ProviderError",
+      "http_status": null
+    },
+    {
+      "attempt": 2,
+      "ok": false,
+      "error_type": "ProviderError",
+      "http_status": null
+    },
+    {
+      "attempt": 3,
+      "ok": false,
+      "error_type": "ProviderError",
+      "http_status": null
+    },
+    {
+      "attempt": 4,
+      "ok": true
+    }
+  ],
+  "model_calls": [
+    {
+      "attempt": 1,
+      "request": {
+        "model": "deepseek-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Call connection_probe once, then reply with exactly its marker, no other text. This is a protocol probe, not retrieval."
+          },
+          {
+            "role": "user",
+            "content": "Run the connection probe."
+          }
+        ],
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "connection_probe",
+              "description": "Return a local connection test marker.",
+              "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "additionalProperties": false
+              }
+            }
+          }
+        ],
+        "tool_choice": {
+          "type": "function",
+          "function": {
+            "name": "connection_probe"
+          }
+        },
+        "thinking": {
+          "type": "disabled"
+        },
+        "max_tokens": 640,
+        "stream": false,
+        "temperature": 0
+      },
+      "status": "error",
+      "error": "transport_or_response",
+      "elapsed_seconds": 24.14275639999687
+    },
+    {
+      "attempt": 1,
+      "request": {
+        "model": "deepseek-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Call connection_probe once, then reply with exactly its marker, no other text. This is a protocol probe, not retrieval."
+          },
+          {
+            "role": "user",
+            "content": "Run the connection probe."
+          }
+        ],
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "connection_probe",
+              "description": "Return a local connection test marker.",
+              "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "additionalProperties": false
+              }
+            }
+          }
+        ],
+        "tool_choice": {
+          "type": "function",
+          "function": {
+            "name": "connection_probe"
+          }
+        },
+        "thinking": {
+          "type": "disabled"
+        },
+        "max_tokens": 640,
+        "stream": false,
+        "temperature": 0
+      },
+      "status": "error",
+      "error": "transport_or_response",
+      "elapsed_seconds": 21.0448069999984
+    },
+    {
+      "attempt": 1,
+      "request": {
+        "model": "deepseek-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Call connection_probe once, then reply with exactly its marker, no other text. This is a protocol probe, not retrieval."
+          },
+          {
+            "role": "user",
+            "content": "Run the connection probe."
+          }
+        ],
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "connection_probe",
+              "description": "Return a local connection test marker.",
+              "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "additionalProperties": false
+              }
+            }
+          }
+        ],
+        "tool_choice": {
+          "type": "function",
+          "function": {
+            "name": "connection_probe"
+          }
+        },
+        "thinking": {
+          "type": "disabled"
+        },
+        "max_tokens": 640,
+        "stream": false,
+        "temperature": 0
+      },
+      "served_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 294,
+        "completion_tokens": 17,
+        "total_tokens": 311,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 294
+      },
+      "status": "ok",
+      "finish_reason": "tool_calls",
+      "response": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_Adp7XGIke4ItAE4bXaL14089",
+            "type": "function",
+            "function": {
+              "name": "connection_probe",
+              "arguments": "{}"
+            }
+          }
+        ]
+      },
+      "elapsed_seconds": 7.593231300001207
+    },
+    {
+      "attempt": 1,
+      "request": {
+        "model": "deepseek-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Call connection_probe once, then reply with exactly its marker, no other text. This is a protocol probe, not retrieval."
+          },
+          {
+            "role": "user",
+            "content": "Run the connection probe."
+          },
+          {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "index": 0,
+                "id": "call_00_Adp7XGIke4ItAE4bXaL14089",
+                "type": "function",
+                "function": {
+                  "name": "connection_probe",
+                  "arguments": "{}"
+                }
+              }
+            ]
+          },
+          {
+            "role": "tool",
+            "tool_call_id": "call_00_Adp7XGIke4ItAE4bXaL14089",
+            "content": "{\"marker\": \"PROBE_3ee18db2f593\"}"
+          }
+        ],
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "connection_probe",
+              "description": "Return a local connection test marker.",
+              "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "additionalProperties": false
+              }
+            }
+          }
+        ],
+        "tool_choice": "none",
+        "thinking": {
+          "type": "disabled"
+        },
+        "max_tokens": 640,
+        "stream": false,
+        "temperature": 0
+      },
+      "status": "error",
+      "error": "transport_or_response",
+      "elapsed_seconds": 21.044182999998156
+    },
+    {
+      "attempt": 1,
+      "request": {
+        "model": "deepseek-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Call connection_probe once, then reply with exactly its marker, no other text. This is a protocol probe, not retrieval."
+          },
+          {
+            "role": "user",
+            "content": "Run the connection probe."
+          }
+        ],
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "connection_probe",
+              "description": "Return a local connection test marker.",
+              "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "additionalProperties": false
+              }
+            }
+          }
+        ],
+        "tool_choice": {
+          "type": "function",
+          "function": {
+            "name": "connection_probe"
+          }
+        },
+        "thinking": {
+          "type": "disabled"
+        },
+        "max_tokens": 640,
+        "stream": false,
+        "temperature": 0
+      },
+      "served_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 294,
+        "completion_tokens": 17,
+        "total_tokens": 311,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 166
+      },
+      "status": "ok",
+      "finish_reason": "tool_calls",
+      "response": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_zVmNfWedQxxZcgowttIi2472",
+            "type": "function",
+            "function": {
+              "name": "connection_probe",
+              "arguments": "{}"
+            }
+          }
+        ]
+      },
+      "elapsed_seconds": 2.1599910000004456
+    },
+    {
+      "attempt": 1,
+      "request": {
+        "model": "deepseek-flash",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Call connection_probe once, then reply with exactly its marker, no other text. This is a protocol probe, not retrieval."
+          },
+          {
+            "role": "user",
+            "content": "Run the connection probe."
+          },
+          {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "index": 0,
+                "id": "call_00_zVmNfWedQxxZcgowttIi2472",
+                "type": "function",
+                "function": {
+                  "name": "connection_probe",
+                  "arguments": "{}"
+                }
+              }
+            ]
+          },
+          {
+            "role": "tool",
+            "tool_call_id": "call_00_zVmNfWedQxxZcgowttIi2472",
+            "content": "{\"marker\": \"PROBE_d03466ed0352\"}"
+          }
+        ],
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "connection_probe",
+              "description": "Return a local connection test marker.",
+              "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "additionalProperties": false
+              }
+            }
+          }
+        ],
+        "tool_choice": "none",
+        "thinking": {
+          "type": "disabled"
+        },
+        "max_tokens": 640,
+        "stream": false,
+        "temperature": 0
+      },
+      "served_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 84,
+        "completion_tokens": 8,
+        "total_tokens": 92,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 84
+      },
+      "status": "ok",
+      "finish_reason": "stop",
+      "response": {
+        "role": "assistant",
+        "content": "PROBE_d03466ed0352"
+      },
+      "elapsed_seconds": 0.7307912000032957
+    }
+  ],
+  "scope": "Connection probes only; no held-out data or gold"
+}

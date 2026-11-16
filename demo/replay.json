@@ -1,0 +1,163 @@
+[
+  {
+    "mode": "REPLAY — recorded real model run; no new inference or benchmark score",
+    "demo_case": "answer",
+    "query_id": "T02",
+    "trace_file": "results/test/20261116T034326996108Z/I1/T02.json",
+    "trace_sha256_verified": true,
+    "question": "Để buộc tham số của hàm chỉ được truyền bằng tên, cần đặt ký hiệu nào và ở vị trí nào trong danh sách tham số?",
+    "status": "answered",
+    "tool_calls": [
+      {
+        "query": "keyword-only arguments asterisk in function parameter list",
+        "result_ids": [
+          "e5a6879e3f04a49ee60f47f27e202599",
+          "e0314b602ac6d5516855f20afe6c1d66",
+          "152e1f92cf8f8f2c493ff147cb500c70"
+        ],
+        "context_ids": [
+          "e5a6879e3f04a49ee60f47f27e202599",
+          "e0314b602ac6d5516855f20afe6c1d66",
+          "152e1f92cf8f8f2c493ff147cb500c70"
+        ]
+      },
+      {
+        "query": "special parameters positional-only slash keyword-only star",
+        "result_ids": [
+          "9c89ce2d2796738d7eb4e68b96abbe5e",
+          "45e90d114fd1b35f211963d0fc411e5b",
+          "0c84ed11800c5d3e61ce631b3d780982"
+        ],
+        "context_ids": [
+          "e5a6879e3f04a49ee60f47f27e202599",
+          "e0314b602ac6d5516855f20afe6c1d66",
+          "152e1f92cf8f8f2c493ff147cb500c70",
+          "9c89ce2d2796738d7eb4e68b96abbe5e"
+        ]
+      }
+    ],
+    "context": "[e5a6879e3f04a49ee60f47f27e202599 | https://docs.python.org/3.14/tutorial/controlflow.html | page python-3.14-ch04-u010]\n4.9.3.3. Keyword-Only Arguments\n\nTo mark parameters as keyword-only, indicating the parameters must be passed by keyword argument, place an * in the arguments list just before the first keyword-only parameter.\n\n[e0314b602ac6d5516855f20afe6c1d66 | https://docs.python.org/3.14/tutorial/controlflow.html | page python-3.14-ch04-u012]\nNormally, these variadic arguments will be last in the list of formal parameters, because they scoop up all remaining input arguments that are passed to the function. Any formal parameters which occur after the *args parameter are ‘keyword-only’ arguments, meaning that they can only be used as keywords rather than positional arguments.\n\n[152e1f92cf8f8f2c493ff147cb500c70 | https://docs.python.org/3.14/tutorial/controlflow.html | page python-3.14-ch04-u011]\n>>> pos_only_arg(1)\n1\n\n>>> pos_only_arg(arg=1)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: pos_only_arg() got some positional-only arguments passed as keyword arguments: 'arg'\n\nThe third function kwd_only_arg only allows keyword arguments as indicated by a * in the function definition:\n\n[9c89ce2d2796738d7eb4e68b96abbe5e | https://docs.python.org/3.14/tutorial/controlflow.html | page python-3.14-ch04-u010]\n4.9.3.2. Positional-Only Parameters\n\nLooking at this in a bit more detail, it is possible to mark certain parameters as positional-only. If positional-only, the parameters’ order matters, and the parameters cannot be passed by keyword. Positional-only parameters are placed before a / (forward-slash). The / is used to logically separate the positional-only parameters from the rest of the parameters. If there is no / in the function definition, there are no positional-only parameters.",
+    "answer": "Đặt dấu * (dấu hoa thị) trong danh sách tham số, ngay trước tham số chỉ-truyền-bằng-tên (keyword-only) đầu tiên — điều này cho biết các tham số đó phải được truyền bằng keyword argument [e5a6879e3f04a49ee60f47f27e202599]. Tương tự, mọi tham số hình thức nằm sau tham số *args cũng là 'keyword-only', tức chỉ dùng được như keyword chứ không phải positional argument [e0314b602ac6d5516855f20afe6c1d66]. Ví dụ, hàm kwd_only_arg chỉ cho phép keyword arguments như được chỉ ra bởi dấu * trong định nghĩa hàm [152e1f92cf8f8f2c493ff147cb500c70].",
+    "citations": [
+      "e5a6879e3f04a49ee60f47f27e202599",
+      "e0314b602ac6d5516855f20afe6c1d66",
+      "152e1f92cf8f8f2c493ff147cb500c70"
+    ],
+    "confirmed_review": {
+      "answer_grade": 2,
+      "context_grade": 2,
+      "abstention_correct": null,
+      "reason": "Đúng dấu * ngay trước tham số keyword-only đầu tiên; phần bổ sung sau *args có evidence."
+    },
+    "new_api_cost_usd": 0
+  },
+  {
+    "mode": "REPLAY — recorded real model run; no new inference or benchmark score",
+    "demo_case": "abstain",
+    "query_id": "T06",
+    "trace_file": "results/test/20261116T034326996108Z/I1/T06.json",
+    "trace_sha256_verified": true,
+    "question": "Theo corpus này, cấu hình sqlite3 PRAGMA busy_timeout bằng câu lệnh nào và thời gian chờ có đơn vị gì?",
+    "status": "abstain",
+    "tool_calls": [
+      {
+        "query": "sqlite3 PRAGMA busy_timeout milliseconds",
+        "result_ids": [
+          "a8b6469463b12ad87ff7d90ca0a42005",
+          "f56f1b83badcd52d685382d45a8001a6",
+          "9126cd3fef32cc3e468d8edc25111ce4"
+        ],
+        "context_ids": [
+          "a8b6469463b12ad87ff7d90ca0a42005",
+          "f56f1b83badcd52d685382d45a8001a6",
+          "9126cd3fef32cc3e468d8edc25111ce4"
+        ]
+      },
+      {
+        "query": "sqlite3 connection timeout busy handler",
+        "result_ids": [
+          "a8b6469463b12ad87ff7d90ca0a42005",
+          "ff3919a7aecf66d4113ecfab1a1fe6b0",
+          "f56f1b83badcd52d685382d45a8001a6"
+        ],
+        "context_ids": [
+          "a8b6469463b12ad87ff7d90ca0a42005",
+          "f56f1b83badcd52d685382d45a8001a6",
+          "9126cd3fef32cc3e468d8edc25111ce4",
+          "ff3919a7aecf66d4113ecfab1a1fe6b0"
+        ]
+      }
+    ],
+    "context": "[a8b6469463b12ad87ff7d90ca0a42005 | https://docs.python.org/3.14/tutorial/errors.html | page python-3.14-ch08-u004]\n>>> try:\n...     open(\"database.sqlite\")\n... except OSError:\n...     raise RuntimeError(\"unable to handle error\")\n...\nTraceback (most recent call last):\n  File \"<stdin>\", line 2, in <module>\n    open(\"database.sqlite\")\n    ~~~~^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'database.sqlite'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 4, in <module>\n\n\n[f56f1b83badcd52d685382d45a8001a6 | https://docs.python.org/3.14/tutorial/modules.html | page python-3.14-ch06-u006]\n 'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError',\n 'SystemExit', 'TabError', 'TimeoutError', 'True', 'TypeError',\n 'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError',\n 'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 'UserWarning',\n 'ValueError', 'Warning', 'ZeroDivisionError', '_', '__build_class__',\n '__debug__', '__doc__', '__import__', '__name__', '__package__', 'abs',\n 'all', 'any', 'ascii', 'bin', 'bool', 'bytearray', 'bytes', 'callable',\n\n\n[9126cd3fef32cc3e468d8edc25111ce4 | https://docs.python.org/3.14/tutorial/errors.html | page python-3.14-ch08-u008]\n      | RecursionError: 4\n      +------------------------------------\n>>>\n\n[ff3919a7aecf66d4113ecfab1a1fe6b0 | https://docs.python.org/3.14/tutorial/errors.html | page python-3.14-ch08-u005]\nIt also allows disabling automatic exception chaining using the from None idiom:\n\n>>> try:\n...     open('database.sqlite')\n... except OSError:\n...     raise RuntimeError from None\n...\nTraceback (most recent call last):\n  File \"<stdin>\", line 4, in <module>\n    raise RuntimeError from None\nRuntimeError\n\nFor more information about chaining mechanics, see Built-in Exceptions.",
+    "answer": "Không đủ bằng chứng trong tài liệu để trả lời: corpus được cung cấp chỉ chứa nội dung Python Tutorial (ví dụ về xử lý ngoại lệ và danh sách tên built-in), không có tài liệu nào về module sqlite3 hay PRAGMA busy_timeout, nên không thể xác định câu lệnh cấu hình cũng như đơn vị thời gian chờ.",
+    "citations": [],
+    "confirmed_review": {
+      "answer_grade": null,
+      "context_grade": null,
+      "abstention_correct": true,
+      "reason": "Từ chối rõ, mô tả đúng corpus là Python Tutorial, không đoán câu lệnh PRAGMA hoặc đơn vị thời gian; phù hợp absence audit."
+    },
+    "new_api_cost_usd": 0
+  },
+  {
+    "mode": "REPLAY — recorded real model run; no new inference or benchmark score",
+    "demo_case": "error",
+    "query_id": "D07",
+    "trace_file": "results/dev/20261116T024332489435Z/dense/D07.json",
+    "trace_sha256_verified": true,
+    "question": "Muốn tạo tuple chỉ chứa chuỗi hello thì chỉ viết ngoặc quanh giá trị có đủ không? Cú pháp cần thêm gì?",
+    "status": "error",
+    "tool_calls": [
+      {
+        "query": "tuple with one item single element trailing comma",
+        "result_ids": [
+          "178fb9b1e55df551dfbf80471cced12a",
+          "a14a0c62dbc9ade9275bb1cfd18bbc57",
+          "251bd803e4ae5442e342a474a44971ae"
+        ],
+        "context_ids": [
+          "178fb9b1e55df551dfbf80471cced12a",
+          "251bd803e4ae5442e342a474a44971ae"
+        ]
+      },
+      {
+        "query": "tuples parentheses special case singleton",
+        "result_ids": [
+          "a14a0c62dbc9ade9275bb1cfd18bbc57",
+          "271c4db72dfc9ab3cc659e83ef58fa06",
+          "178fb9b1e55df551dfbf80471cced12a"
+        ],
+        "context_ids": [
+          "178fb9b1e55df551dfbf80471cced12a",
+          "251bd803e4ae5442e342a474a44971ae"
+        ]
+      },
+      {
+        "query": "constructing tuple containing one item empty tuple parentheses",
+        "result_ids": [
+          "a14a0c62dbc9ade9275bb1cfd18bbc57",
+          "271c4db72dfc9ab3cc659e83ef58fa06",
+          "178fb9b1e55df551dfbf80471cced12a"
+        ],
+        "context_ids": [
+          "178fb9b1e55df551dfbf80471cced12a",
+          "251bd803e4ae5442e342a474a44971ae"
+        ]
+      }
+    ],
+    "context": "[178fb9b1e55df551dfbf80471cced12a | https://docs.python.org/3.14/tutorial/datastructures.html | page python-3.14-ch05-u005]\n>>> t = 12345, 54321, 'hello!'\n>>> t[0]\n12345\n>>> t\n(12345, 54321, 'hello!')\n>>> # Tuples may be nested:\n>>> u = t, (1, 2, 3, 4, 5)\n>>> u\n((12345, 54321, 'hello!'), (1, 2, 3, 4, 5))\n>>> # Tuples are immutable:\n>>> t[0] = 88888\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: 'tuple' object does not support item assignment\n>>> # but they can contain mutable objects:\n>>> v = ([1, 2, 3], [3, 2, 1])\n>>> v\n([1, 2, 3], [3, 2, 1])\n\n[251bd803e4ae5442e342a474a44971ae | https://docs.python.org/3.14/tutorial/datastructures.html | page python-3.14-ch05-u005]\nA tuple consists of a number of values separated by commas, for instance:",
+    "answer": "",
+    "citations": [],
+    "confirmed_review": {
+      "answer_grade": 0,
+      "context_grade": 1,
+      "abstention_correct": null,
+      "reason": "Context có tuple tổng quát (mức 1) nhưng không singleton; phản hồi từ chối kèm citations bị lỗi protocol, chấm all-case 0."
+    },
+    "new_api_cost_usd": 0,
+    "error_stage": "protocol",
+    "error_type": "ValueError",
+    "rejected_model_output": "{\"answer\":\"Không đủ bằng chứng trong tài liệu để trả lời câu hỏi này: context hiện có chỉ nêu định nghĩa chung rằng tuple gồm các giá trị phân tách bằng dấu phẩy và ví dụ về tuple nhiều phần tử, không đề cập trường hợp tuple một phần tử hay việc có cần thêm dấu phẩy sau giá trị khi đặt trong ngoặc hay không [251bd803e4ae5442e342a474a44971ae].\",\"citations\":[\"251bd803e4ae5442e342a474a44971ae\"],\"abstain\":true}",
+    "explanation": "Real earlier protocol error: refusal returned nonempty citations. Kept as error, not a correct refusal or a new failure."
+  }
+]

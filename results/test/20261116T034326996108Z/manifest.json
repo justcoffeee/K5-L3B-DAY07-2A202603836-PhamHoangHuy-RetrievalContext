@@ -1,0 +1,69 @@
+{
+  "status": "complete",
+  "started_at_utc": "2026-11-16T03:43:26.996330+00:00",
+  "approval_sha256": "408c0eab5a0daea4d360c0cd645a07ec33a56a19cd418ae4a5ea1579a86ee916",
+  "runtime_sha256": {
+    "src/__init__.py": "96303971a0e5ad95fcb04ad3afd84a607495132b8e2611369372dd127f7b1fd6",
+    "src/agent.py": "6491a53522d1cb582eca4b915c443c3252ed74f467115ab4688a77860eb1611e",
+    "src/provider.py": "f26bdf9bc3ff4155af3ba83d82711423193529071583d7bb2efb2309923b8a6f",
+    "src/retrieval.py": "18d54f8f27834ba3ee249a5cb443339b9e8ad4171173b467260a2d32327df1d5",
+    "src/run_dev.py": "16ac9f8e5dc7b32b0dd29b9e4c1d3dc54d7e2c28301cbbdd3c239f608a38fba1",
+    "src/run_test.py": "e70edc8480dfc43f1708ad814df9fb39e54264ac0874da541cc3a9430dc13546",
+    "starter/baseline.py": "cf51d4f4dd5412270d73b51cb117eef5329695fc8fd8eb637de050b3d6488c36",
+    "day6/starter/src/__init__.py": "9d51e4a4713565f1b69bb8f3a0d8ac2c6c8730961e738a65f7a7a4ebd2a593a8",
+    "day6/starter/src/chunking.py": "787715e39e317198d99476069b17e0119f7b24b18fae540830ec60df5f408732",
+    "day6/starter/src/embeddings.py": "ad20bee8d292216b65e0f72ce073e08817cd0e0a5377d994600813164f52eeaa",
+    "day6/starter/src/evaluation.py": "d217bbacd7fe63a717102182ef0179c20abda49bc8ddff1b6f53b15498e3b146",
+    "day6/starter/src/ingestion.py": "b11314ef30e80f39dd536669dba38ab0c1faa327189b87defcec4e3c91672235",
+    "day6/starter/src/models.py": "0e177318d75586228a23e79abe328cc30772c1f86f1e9512f8cdfb452772458c",
+    "day6/starter/src/run.py": "5329bcabc3a63963618bd4264eaf80b1eb740d8543d16effb6576e7fe939d103",
+    "day6/starter/src/store.py": "a6dc980a43f603e62258b0284201ad88e05953ef8374d8b7bf3716e66ddddfaa",
+    "day6/requirements-lock.txt": "a4429b50a90015758bfd01bb470ff458bd30598ea8952884f40d90d63dfd7b74"
+  },
+  "query_sha256": "2ba928ca3d4c902af5589ea4236025a5fe288b56f7c92372e050f3cfcae6e39a",
+  "test_gold_sha256": "85e40d3f53a685733c507226edc69721c340f26d8002a7745602722b308fb836",
+  "corpus_sha256": "6edf14e08f47e467b4c2fbc8bca3bc50901a4b91e1bcc712f36be00df137f804",
+  "index_sha256": "61968c94682cb220246ddb305411b40018b96a2d44f1191f58740959c5f383df",
+  "configurations": {
+    "baseline": {
+      "method": "dense",
+      "budget_chars": 800,
+      "context_policy": "arrival"
+    },
+    "I1": {
+      "method": "dense",
+      "budget_chars": 2000,
+      "context_policy": "arrival"
+    }
+  },
+  "top_k": 3,
+  "max_searches": 3,
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "temperature": 0,
+  "test_evaluated": true,
+  "semantic_review": "AI-assisted completed; pending user confirmation",
+  "failed_cases_replaced": false,
+  "trace_count": 14,
+  "completed_at_utc": "2026-11-16T03:47:29.945263+00:00",
+  "review_files_sha256": {
+    "baseline/reviews_ai_assisted.json": "f92abd65cbebda0bb99323911006b3fad85afb18e15a950ec00e3c063e5f3aac",
+    "I1/reviews_ai_assisted.json": "d0f5be4359036dba498d717536084254850c0c173ad705a392b896846465af9d"
+  },
+  "trace_files_sha256": {
+    "baseline/T01.json": "bb63fe732566d320b4ca7ed5ee3e3986cdd86002b3ecb64d4241db0f898c5432",
+    "baseline/T02.json": "df030c4725677a58d693fda906987a60f4913f686a4d3a870775d16723444392",
+    "baseline/T03.json": "078d646ec4d80fc1e1bc7ecffd4ce4e88ee46cf398ad187c408ca61fe9029f01",
+    "baseline/T04.json": "b31d16b6c9753ae0dc5d7b43d5f3b3e7364134073555772f55e15f1fcb35fb60",
+    "baseline/T05.json": "0578e35265b5bf59746a0daa863e95ccfc903798c482e1d560c43dbb622c4479",
+    "baseline/T06.json": "7e9dd84978fa748cb84e215527e1f723925933ac7ffb9043eb691097d158686d",
+    "baseline/T07.json": "df3bd4fa150a0e2067f350b0b345326181eabbffac21358d197fabd22b0d13c0",
+    "I1/T01.json": "92cfe9aae2439bffc6dbef9464b3bd6bf4ae5067c9674f63969af0c31eacdc3e",
+    "I1/T02.json": "ad7179f0e2c88a90f542f4af7556376d0f47ea4f6159621671d50e1f880e2224",
+    "I1/T03.json": "2ded64289901ac7bac70a376b3b6a54b73d4a5b201bdd6101b91ac864706f1c2",
+    "I1/T04.json": "0d264006b9be9642585c1488eafb35d3b9942767bf15ad919db97468ed4bc4da",
+    "I1/T05.json": "e8e276a1526f17c16a6e81efdfb6c45a7a6ae0cf555a4c7ada791298980de37f",
+    "I1/T06.json": "d98b6b3052493f00efd8ecbc463d1e1de69dfce281a9715d341f0dbc45317a87",
+    "I1/T07.json": "e8d93cd5e8ca39507af1b186ddc472ab91c6c9e2b6aaa09a54ea5766aa1f3342"
+  }
+}

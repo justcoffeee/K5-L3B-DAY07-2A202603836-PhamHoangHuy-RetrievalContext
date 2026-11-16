@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "created_at_utc": "2026-11-16T02:26:58.656181+00:00",
+  "status": "approved_frozen_before_dev",
+  "authoring": "AI-assisted; user review pending, not independent human annotation",
+  "counts": {
+    "dev": {
+      "answerable": 15,
+      "unanswerable": 2,
+      "total": 17
+    },
+    "test": {
+      "answerable": 5,
+      "unanswerable": 2,
+      "total": 7
+    }
+  },
+  "corpus_file": "data/day6/chunks.json",
+  "corpus_sha256": "6edf14e08f47e467b4c2fbc8bca3bc50901a4b91e1bcc712f36be00df137f804",
+  "index_sha256": "61968c94682cb220246ddb305411b40018b96a2d44f1191f58740959c5f383df",
+  "files_sha256": {
+    "dev.json": "5e6079f330c7c2a097b7c3b58ddbdb8ae20cc36b8da9805407e4819d037244f8",
+    "test.json": "85e40d3f53a685733c507226edc69721c340f26d8002a7745602722b308fb836",
+    "queries/dev.json": "3117c6f72677861df48a6fe9896dbac14b42e942329e5f94714222aa702a149c",
+    "queries/test.json": "2ba928ca3d4c902af5589ea4236025a5fe288b56f7c92372e050f3cfcae6e39a",
+    "absence_audit.json": "908bfbbd5d9eb45925b6569fef57fbb31b053ab338e3de27ec4e492d70cdbf5e"
+  },
+  "evidence_policy": "Each gold item is one sufficient alternative; exact evidence substring in a source/page-matching chunk. No multi-hop cases. Added source and chunk_id are provenance.",
+  "heldout_policy": "Use dev only to tune. Freeze selection rule and configuration before test. Test is newly authored versus Day06; authors inspected gold to label it, but no retrieval/model outputs have been used to tune against it. No automatic blind-test guarantee.",
+  "metrics_denominators": {
+    "dev_retrieval": 15,
+    "test_retrieval": 5,
+    "dev_abstention": 2,
+    "test_abstention": 2
+  },
+  "model_input": "queries/{split}.json only, plus fixed corpus-only retrieval tools; never pass gold, expected_answer, answerable, absence_reason, review or annotation fields.",
+  "results": "No ranking, context, agent output or score generated.",
+  "user_confirmation": {
+    "scope": "Step 2 benchmark accepted by user; AI-assisted labels confirmed, not independent blind annotation",
+    "message": "mình xác nhận bước 2 nhé, bước 3 chạy model nào vậy",
+    "recorded_at_utc": "2026-11-16T02:42:54.464278+00:00"
+  }
+}

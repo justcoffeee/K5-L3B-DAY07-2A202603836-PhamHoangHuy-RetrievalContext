@@ -1,3 +1,27 @@
+# Bản cá nhân — Phạm Hoàng Huy · 2A202603836 · K5-L3B
+
+Agentic RAG trên Python Tutorial, tiếp nối Day06: 411 chunks, E5/pgvector, DeepSeek Flash; so sánh Dense, TF-IDF và Hybrid RRF, hai thử nghiệm context và một lượt held-out sau khi chọn trên dev. Phạm vi cơ bản, không thực hiện bonus đa phương thức 100 trang.
+
+**Bản chính để kiểm tra/nộp:**
+
+- [Báo cáo cá nhân](report/individual/2A202603836_PhamHoangHuy.md).
+- [Demo replay có nguồn / từ chối / lỗi](DEMO.md), không gọi API mới.
+- [Cách chạy](RUN_STUDENT.md), [phụ thuộc/tái lập](REPRODUCIBILITY.md), [checklist nộp](SUBMISSION_CHECKLIST.md).
+- [So sánh dev và hai cải tiến](results/dev_review/context_experiments_20261116/README.md), [kết quả test](results/test/20261116T034326996108Z/README.md).
+
+Nhãn test AI-assisted đã được học viên xác nhận: baseline 9/10, I1 10/10 cho 5 câu có đáp án; valid refusal 1/2 và 2/2. Đây không phải điểm toàn bài hoặc chấm blind bởi người độc lập. Xác nhận 85 nhãn dev và 14 nhãn test được lưu riêng trong [configs](configs/). Các bản review gốc còn chữ pending là trạng thái khi soạn, không thay thế bản xác nhận mới. Gold/test trace không bị sửa để tăng điểm.
+
+Kiểm tra không cần key, Docker hoặc mạng:
+
+```powershell
+python -m unittest discover -s tests -v
+python scripts/demo.py --case all
+```
+
+Không commit `.env`, key, model cache hoặc database volume. Hướng dẫn của đề gốc được giữ ở phần dưới; báo cáo chính là file mang MSSV/họ tên, không phải các template trống.
+
+---
+
 # Day 7 — Agentic RAG
 
 **Bài cá nhân · Python 3.11+ · tiếp nối Day 6**

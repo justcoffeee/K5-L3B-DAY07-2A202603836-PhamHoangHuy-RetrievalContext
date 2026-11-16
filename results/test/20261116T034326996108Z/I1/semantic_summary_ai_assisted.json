@@ -1,0 +1,69 @@
+{
+  "configuration": "I1",
+  "review_status": "AI-assisted pending user confirmation",
+  "cases": 7,
+  "grounded_answer": {
+    "points": 10,
+    "maximum": 10,
+    "mean_out_of_2": 2.0
+  },
+  "context_grades": {
+    "2": 5
+  },
+  "semantic_context_evidence": {
+    "n": 5,
+    "N": 5
+  },
+  "strict_frozen_gold_context_evidence": {
+    "n": 4,
+    "N": 5,
+    "rate": 0.8
+  },
+  "agent_metrics": {
+    "cases": 7,
+    "tool_use": {
+      "n": 7,
+      "N": 7
+    },
+    "grounded_answer": {
+      "0": 0,
+      "1": 0,
+      "2": 5,
+      "N": 5,
+      "mean": 2.0
+    },
+    "citation_validity": {
+      "n": 10,
+      "N": 10
+    },
+    "answer_citation_coverage": {
+      "n": 5,
+      "N": 5
+    },
+    "abstention": {
+      "n": 2,
+      "N": 2
+    },
+    "false_abstention": {
+      "n": 0,
+      "N": 5
+    },
+    "execution_errors": 0
+  },
+  "provider_retry_attempts": 2,
+  "case_errors": 0,
+  "known_usage": {
+    "prompt_tokens": 16141,
+    "completion_tokens": 2117,
+    "total_tokens": 18258,
+    "prompt_cache_hit_tokens": 9600,
+    "prompt_cache_miss_tokens": 6541
+  },
+  "known_usage_cost_usd_estimate": [
+    0.00228015,
+    0.0045603
+  ],
+  "unknown_usage_requests": 2,
+  "metric_note": "Grounded/context grades are semantic AI-assisted assessment. Strict gold hit remains unchanged; no post-test relabeling. Refusal requires no unsupported corpus-wide claims.",
+  "review_file_sha256": "d0f5be4359036dba498d717536084254850c0c173ad705a392b896846465af9d"
+}

@@ -1,0 +1,94 @@
+{
+  "label": "baseline_dense",
+  "run": "20261116T024332489435Z",
+  "method": "dense",
+  "review_origin": "AI-assisted, pending user confirmation",
+  "all_case_grounded_answer": {
+    "points": 26,
+    "maximum": 30,
+    "mean_out_of_2": 1.7333333333333334,
+    "grade_counts": {
+      "2": 13,
+      "0": 2
+    }
+  },
+  "all_case_abstention": {
+    "n": 2,
+    "N": 2
+  },
+  "prepared_context": {
+    "grade_counts": {
+      "2": 13,
+      "0": 1,
+      "1": 1
+    },
+    "sufficient_n": 13,
+    "N": 15,
+    "note": "Prepared context; provider failures do not establish receipt. Separate from successful-pipeline metric."
+  },
+  "successful_pipeline_context_evidence": {
+    "n": 13,
+    "N": 15,
+    "rate": 0.8666666666666667
+  },
+  "observed_citation_validity": {
+    "n": 15,
+    "N": 15
+  },
+  "unlisted_inline_citation_cases": [
+    "D04"
+  ],
+  "successful_case_starter_aggregate": {
+    "cases": 17,
+    "tool_use": {
+      "n": 16,
+      "N": 16
+    },
+    "grounded_answer": {
+      "0": 1,
+      "1": 0,
+      "2": 13,
+      "N": 14,
+      "mean": 1.8571428571428572
+    },
+    "citation_validity": {
+      "n": 14,
+      "N": 14
+    },
+    "answer_citation_coverage": {
+      "n": 13,
+      "N": 13
+    },
+    "abstention": {
+      "n": 2,
+      "N": 2
+    },
+    "false_abstention": {
+      "n": 1,
+      "N": 14
+    },
+    "execution_errors": 1
+  },
+  "errors_by_stage": {
+    "protocol": 1
+  },
+  "statuses": {
+    "answered": 13,
+    "abstain": 3,
+    "error": 1
+  },
+  "known_usage": {
+    "prompt_tokens": 32835,
+    "completion_tokens": 3912,
+    "total_tokens": 36747,
+    "prompt_cache_hit_tokens": 20736,
+    "prompt_cache_miss_tokens": 12099
+  },
+  "requests": 38,
+  "failed_requests_without_usage": 0,
+  "estimated_known_usage_cost_usd_range": [
+    0.004224258,
+    0.008448516
+  ],
+  "review_file_sha256": "f38c622c8af3bb5d4fac8aeadd296cb922a1a4cc69ecfe79672f46423537fa9e"
+}

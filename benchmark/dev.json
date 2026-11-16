@@ -1,0 +1,381 @@
+[
+  {
+    "id": "D01",
+    "split": "dev",
+    "question": "Muốn viết đường dẫn Windows mà các ký tự như \\n và \\t không bị hiểu là xuống dòng hoặc tab, tiền tố chuỗi nào được tài liệu hướng dẫn?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Đặt tiền tố r trước dấu nháy để tạo raw string.",
+    "gold": [
+      {
+        "source_id": "python-3.14-ch03",
+        "source": "https://docs.python.org/3.14/tutorial/introduction.html",
+        "page": "python-3.14-ch03-u003",
+        "evidence": "If you don’t want characters prefaced by \\ to be interpreted as special characters, you can use raw strings by adding an r before the first quote:",
+        "chunk_id": "5046e99636180b57c2960fedf1d3566c"
+      }
+    ],
+    "annotation": {
+      "origin": "AI-assisted; source checked against exported chunks",
+      "human_review": "pending"
+    }
+  },
+  {
+    "id": "D02",
+    "split": "dev",
+    "question": "Khi đánh chỉ số chuỗi từ phía cuối, -1 và -2 chỉ ký tự nào? Vì sao không bắt đầu bằng -0?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "-1 chỉ ký tự cuối, -2 chỉ ký tự áp cuối; -0 bằng 0 nên chỉ số âm bắt đầu từ -1.",
+    "gold": [
+      {
+        "source_id": "python-3.14-ch03",
+        "source": "https://docs.python.org/3.14/tutorial/introduction.html",
+        "page": "python-3.14-ch03-u004",
+        "evidence": ">>> word[-1]  # last character\n'n'\n>>> word[-2]  # second-last character\n'o'\n>>> word[-6]\n'P'\n\nNote that since -0 is the same as 0, negative indices start from -1.\n\nIn addition to indexing, slicing is also supported. While indexing is used to obtain individual characters, slicing allows you to obtain a substring:\n\n>>> word[0:2]  # characters from position 0 (included) to 2 (excluded)\n'Py'\n>>> word[2:5]  # characters from position 2 (included) to 5 (excluded)\n'tho'",
+        "chunk_id": "07eab24fdef0d6f3c82bb56fb67407ce"
+      }
+    ],
+    "annotation": {
+      "origin": "AI-assisted; source checked against exported chunks",
+      "human_review": "pending"
+    }
+  },
+  {
+    "id": "D03",
+    "split": "dev",
+    "question": "Ví dụ list(range(5, 10)) trong tài liệu cho ra danh sách nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "[5, 6, 7, 8, 9]; cận 10 không được lấy.",
+    "gold": [
+      {
+        "source_id": "python-3.14-ch04",
+        "source": "https://docs.python.org/3.14/tutorial/controlflow.html",
+        "page": "python-3.14-ch04-u002",
+        "evidence": ">>> list(range(5, 10))\n[5, 6, 7, 8, 9]",
+        "chunk_id": "5b0389b2014ead261047a7ea77039951"
+      }
+    ],
+    "annotation": {
+      "origin": "AI-assisted; source checked against exported chunks",
+      "human_review": "pending"
+    }
+  },
+  {
+    "id": "D04",
+    "split": "dev",
+    "question": "Nếu có vòng lặp for lồng trong while, break nằm trong for sẽ thoát vòng nào theo quy tắc của tài liệu?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Thoát vòng for ở trong cùng bao quanh break, không tự động thoát cả vòng while bên ngoài.",
+    "gold": [
+      {
+        "source_id": "python-3.14-ch04",
+        "source": "https://docs.python.org/3.14/tutorial/controlflow.html",
+        "page": "python-3.14-ch04-u002",
+        "evidence": "The break statement breaks out of the innermost enclosing for or while loop:",
+        "chunk_id": "6f16320109f4a36189eb5033ecbb89b2"
+      }
+    ],
+    "annotation": {
+      "origin": "AI-assisted; source checked against exported chunks",
+      "human_review": "pending"
+    }
+  },
+  {
+    "id": "D05",
+    "split": "dev",
+    "question": "Các đối số bổ sung được gom bởi *args trong định nghĩa hàm có kiểu cấu trúc dữ liệu gì?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Một tuple chứa các đối số vị trí bổ sung.",
+    "gold": [
+      {
+        "source_id": "python-3.14-ch04",
+        "source": "https://docs.python.org/3.14/tutorial/controlflow.html",
+        "page": "python-3.14-ch04-u012",
+        "evidence": "Finally, the least frequently used option is to specify that a function can be called with an arbitrary number of arguments. These arguments will be wrapped up in a tuple (see Tuples and Sequences).",
+        "chunk_id": "72ba98c7f88046b6519961423f685ff5"
+      }
+    ],
+    "annotation": {
+      "origin": "AI-assisted; source checked against exported chunks",
+      "human_review": "pending"
+    }
+  },
+  {
+    "id": "D06",
+    "split": "dev",
+    "question": "Tham số **name nhận những đối số nào và lưu trong kiểu dữ liệu gì?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Nhận các keyword arguments không ứng với tham số hình thức đã khai báo và lưu thành dictionary.",
+    "gold": [
+      {
+        "source_id": "python-3.14-ch04",
+        "source": "https://docs.python.org/3.14/tutorial/controlflow.html",
+        "page": "python-3.14-ch04-u009",
+        "evidence": "When a final formal parameter of the form **name is present, it receives a dictionary (see Mapping Types — dict) containing all keyword arguments except for those corresponding to a formal parameter.",
+        "chunk_id": "a406cc7dac32b6727ecb688a6d3b9286"
+      }
+    ],
+    "annotation": {
+      "origin": "AI-assisted; source checked against exported chunks",
+      "human_review": "pending"
+    }
+  },
+  {
+    "id": "D07",
+    "split": "dev",
+    "question": "Muốn tạo tuple chỉ chứa chuỗi hello thì chỉ viết ngoặc quanh giá trị có đủ không? Cú pháp cần thêm gì?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Không đủ; phải có dấu phẩy sau giá trị, ví dụ ('hello',) hoặc 'hello',.",
+    "gold": [
+      {
+        "source_id": "python-3.14-ch05",
+        "source": "https://docs.python.org/3.14/tutorial/datastructures.html",
+        "page": "python-3.14-ch05-u005",
+        "evidence": "a tuple with one item is constructed by following a value with a comma (it is not sufficient to enclose a single value in parentheses).",
+        "chunk_id": "a14a0c62dbc9ade9275bb1cfd18bbc57"
+      }
+    ],
+    "annotation": {
+      "origin": "AI-assisted; source checked against exported chunks",
+      "human_review": "pending"
+    }
+  },
+  {
+    "id": "D08",
+    "split": "dev",
+    "question": "a.pop() không truyền index sẽ xóa và trả về phần tử nào? Điều gì xảy ra nếu a rỗng?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Xóa và trả về phần tử cuối; nếu list rỗng thì phát sinh IndexError.",
+    "gold": [
+      {
+        "source_id": "python-3.14-ch05",
+        "source": "https://docs.python.org/3.14/tutorial/datastructures.html",
+        "page": "python-3.14-ch05-u001",
+        "evidence": "If no index is specified, a.pop() removes and returns the last item in the list. It raises an IndexError if the list is empty or the index is outside the list range.",
+        "chunk_id": "e4976e7c8c03d1c6a37a18f46e14e9dd"
+      }
+    ],
+    "annotation": {
+      "origin": "AI-assisted; source checked against exported chunks",
+      "human_review": "pending"
+    }
+  },
+  {
+    "id": "D09",
+    "split": "dev",
+    "question": "Khi duyệt dictionary, dùng phương thức nào để lấy đồng thời khóa và giá trị tương ứng?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Dùng phương thức items(), ví dụ for k, v in d.items().",
+    "gold": [
+      {
+        "source_id": "python-3.14-ch05",
+        "source": "https://docs.python.org/3.14/tutorial/datastructures.html",
+        "page": "python-3.14-ch05-u007",
+        "evidence": "When looping through dictionaries, the key and corresponding value can be retrieved at the same time using the items() method.",
+        "chunk_id": "fa52d5bbb11517433573b8febe0a1876"
+      }
+    ],
+    "annotation": {
+      "origin": "AI-assisted; source checked against exported chunks",
+      "human_review": "pending"
+    }
+  },
+  {
+    "id": "D10",
+    "split": "dev",
+    "question": "Có hai sequence cần duyệt đồng thời thành từng cặp phần tử tương ứng. Tài liệu giới thiệu hàm nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Dùng zip() để ghép các phần tử tương ứng khi duyệt hai hoặc nhiều sequence.",
+    "gold": [
+      {
+        "source_id": "python-3.14-ch05",
+        "source": "https://docs.python.org/3.14/tutorial/datastructures.html",
+        "page": "python-3.14-ch05-u008",
+        "evidence": "To loop over two or more sequences at the same time, the entries can be paired with the zip() function.",
+        "chunk_id": "d0465c0ebf1bcc71b35de11057f991e9"
+      }
+    ],
+    "annotation": {
+      "origin": "AI-assisted; source checked against exported chunks",
+      "human_review": "pending"
+    }
+  },
+  {
+    "id": "D11",
+    "split": "dev",
+    "question": "dir() không truyền đối số liệt kê những tên nào? Nó có tự liệt kê tên hàm và biến built-in không?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Liệt kê các tên đang được định nghĩa như biến, module và hàm; không liệt kê các tên hàm và biến built-in.",
+    "gold": [
+      {
+        "source_id": "python-3.14-ch06",
+        "source": "https://docs.python.org/3.14/tutorial/modules.html",
+        "page": "python-3.14-ch06-u005",
+        "evidence": "Without arguments, dir() lists the names you have defined currently:\n\n>>> a = [1, 2, 3, 4, 5]\n>>> import fibo\n>>> fib = fibo.fib\n>>> dir()\n['__builtins__', '__name__', 'a', 'fib', 'fibo', 'sys']\n\nNote that it lists all types of names: variables, modules, functions, etc.\n\ndir() does not list the names of built-in functions and variables. If you want a list of those, they are defined in the standard module builtins:",
+        "chunk_id": "653c279748bae8969296f00bc2941191"
+      }
+    ],
+    "annotation": {
+      "origin": "AI-assisted; source checked against exported chunks",
+      "human_review": "pending"
+    }
+  },
+  {
+    "id": "D12",
+    "split": "dev",
+    "question": "Python dựa vào thông tin nào của file nguồn để quyết định module đã biên dịch có lỗi thời và cần biên dịch lại?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "So sánh ngày/giờ sửa đổi của mã nguồn với phiên bản đã biên dịch.",
+    "gold": [
+      {
+        "source_id": "python-3.14-ch06",
+        "source": "https://docs.python.org/3.14/tutorial/modules.html",
+        "page": "python-3.14-ch06-u004",
+        "evidence": "Python checks the modification date of the source against the compiled version to see if it’s out of date and needs to be recompiled.",
+        "chunk_id": "4b9311d6dabb880f0d9037d258d191b8"
+      }
+    ],
+    "annotation": {
+      "origin": "AI-assisted; source checked against exported chunks",
+      "human_review": "pending"
+    }
+  },
+  {
+    "id": "D13",
+    "split": "dev",
+    "question": "Với file vừa mở để đọc và đang ở đầu file, bỏ size hoặc truyền size âm cho f.read(size) sẽ đọc bao nhiêu? Rủi ro bộ nhớ được tài liệu nhắc là gì?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Đọc toàn bộ nội dung file; file quá lớn có thể vượt bộ nhớ máy.",
+    "gold": [
+      {
+        "source_id": "python-3.14-ch07",
+        "source": "https://docs.python.org/3.14/tutorial/inputoutput.html",
+        "page": "python-3.14-ch07-u005",
+        "evidence": "When size is omitted or negative, the entire contents of the file will be read and returned; it’s your problem if the file is twice as large as your machine’s memory.",
+        "chunk_id": "b2e4e2a1efb032538c84a9e87be3cfb4"
+      }
+    ],
+    "annotation": {
+      "origin": "AI-assisted; source checked against exported chunks",
+      "human_review": "pending"
+    }
+  },
+  {
+    "id": "D14",
+    "split": "dev",
+    "question": "Giá trị f.tell() trong binary mode và text mode có ý nghĩa khác nhau thế nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Binary mode: số byte tính từ đầu file. Text mode: một số opaque biểu diễn vị trí, không nên hiểu là số byte.",
+    "gold": [
+      {
+        "source_id": "python-3.14-ch07",
+        "source": "https://docs.python.org/3.14/tutorial/inputoutput.html",
+        "page": "python-3.14-ch07-u006",
+        "evidence": "f.tell() returns an integer giving the file object’s current position in the file represented as number of bytes from the beginning of the file when in binary mode and an opaque number when in text mode.",
+        "chunk_id": "9c4ec9a68dac484801d37366b0214e51"
+      }
+    ],
+    "annotation": {
+      "origin": "AI-assisted; source checked against exported chunks",
+      "human_review": "pending"
+    }
+  },
+  {
+    "id": "D15",
+    "split": "dev",
+    "question": "Trong try...except, khối else phải đặt sau phần nào và được dùng khi nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Đặt sau tất cả các except; dùng cho code chỉ chạy khi khối try không phát sinh ngoại lệ.",
+    "gold": [
+      {
+        "source_id": "python-3.14-ch08",
+        "source": "https://docs.python.org/3.14/tutorial/errors.html",
+        "page": "python-3.14-ch08-u003",
+        "evidence": "The try … except statement has an optional else clause, which, when present, must follow all except clauses. It is useful for code that must be executed if the try clause does not raise an exception.",
+        "chunk_id": "89cb0b58f013c40c3ef13c336fcb8792"
+      }
+    ],
+    "annotation": {
+      "origin": "AI-assisted; source checked against exported chunks",
+      "human_review": "pending"
+    }
+  },
+  {
+    "id": "D16",
+    "split": "dev",
+    "question": "Chỉ dựa trên tài liệu đã cung cấp, khi một task trong asyncio.TaskGroup lỗi, các task còn lại được hủy và chờ kết thúc như thế nào?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Corpus không có phần giải thích asyncio hoặc TaskGroup. Các mục vòng lặp/ngoại lệ không quy định ngữ nghĩa hủy task bất đồng bộ.",
+    "absence_verification": {
+      "method": "Full-corpus term scan plus inspection of related section/term occurrences; not retrieval top-k",
+      "source_units_scanned": 54,
+      "terms": [
+        "asyncio",
+        "TaskGroup"
+      ],
+      "term_matches": {
+        "asyncio": [],
+        "TaskGroup": []
+      },
+      "related_section": "standard-modules",
+      "audit_file": "absence_audit.json"
+    },
+    "annotation": {
+      "origin": "AI-assisted corpus-scope assessment",
+      "human_review": "pending"
+    }
+  },
+  {
+    "id": "D17",
+    "split": "dev",
+    "question": "Tài liệu đã cung cấp hướng dẫn dùng @dataclass(frozen=True) để ngăn gán lại thuộc tính như thế nào và phát sinh ngoại lệ gì khi cố gán?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "dataclasses chỉ được nhắc làm ví dụ lớp có thứ tự thuộc tính trong match; frozen xuất hiện trong tên built-in frozenset. Không có hướng dẫn frozen=True hoặc ngoại lệ khi gán.",
+    "absence_verification": {
+      "method": "Full-corpus term scan plus inspection of related section/term occurrences; not retrieval top-k",
+      "source_units_scanned": 54,
+      "terms": [
+        "dataclass",
+        "frozen",
+        "FrozenInstanceError"
+      ],
+      "term_matches": {
+        "dataclass": [
+          {
+            "page": "python-3.14-ch04-u004",
+            "occurrences": 1
+          }
+        ],
+        "frozen": [
+          {
+            "page": "python-3.14-ch06-u006",
+            "occurrences": 1
+          }
+        ],
+        "FrozenInstanceError": []
+      },
+      "related_section": "match-statements",
+      "audit_file": "absence_audit.json"
+    },
+    "annotation": {
+      "origin": "AI-assisted corpus-scope assessment",
+      "human_review": "pending"
+    }
+  }
+]
